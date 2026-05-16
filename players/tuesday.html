@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>Stroke &amp; Bounce — Coolhand Billiards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     TEAM PIN — change this to update the gate
+     ============================================ */
+  /* PIN is set in JS below: const TEAM_PIN = "13701"; */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    background: #111111;
+    color: #FFFFFF;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px 64px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---------- Header ---------- */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 16px;
+  }
+
+  .header-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: invert(1);
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .team-name {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+
+  .team-meta {
+    font-weight: 300;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- Sections ---------- */
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section-label {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 14px;
+    padding-left: 2px;
+  }
+
+  /* ---------- Schedule image ---------- */
+  .schedule-card {
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    border-radius: 4px;
+    padding: 12px;
+    overflow: hidden;
+  }
+
+  .schedule-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+
+  .schedule-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    color: #555555;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ---------- Links ---------- */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 24px;
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .link:hover,
+  .link:focus-visible {
+    border-color: #FFFFFF;
+    outline: none;
+  }
+
+  .link:active {
+    transform: scale(0.99);
+    background: #1F1F1F;
+  }
+
+  .link-label {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.005em;
+  }
+
+  .link-arrow {
+    font-weight: 300;
+    font-size: 18px;
+    color: #888888;
+    line-height: 1;
+  }
+
+  /* ---------- PIN Gate ---------- */
+  .gate {
+    position: fixed;
+    inset: 0;
+    background: #111111;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    transition: opacity 400ms ease, visibility 400ms ease;
+  }
+
+  .gate.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .gate-logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 48px;
+    filter: invert(1);
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .gate-form {
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gate-label {
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 14px;
+  }
+
+  .gate-input {
+    width: 100%;
+    padding: 16px 20px;
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    transition: border-color 180ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .gate-input:focus {
+    outline: none;
+    border-color: #FFFFFF;
+  }
+
+  .gate-input::placeholder {
+    color: #444444;
+    letter-spacing: 0.1em;
+  }
+
+  .gate-input.shake {
+    animation: shake 360ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+
+  @keyframes shake {
+    10%, 90% { transform: translateX(-2px); }
+    20%, 80% { transform: translateX(4px); }
+    30%, 50%, 70% { transform: translateX(-8px); }
+    40%, 60% { transform: translateX(8px); }
+  }
+
+  @media (min-width: 480px) {
+    .team-name { font-size: 28px; }
+    .link-label { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- ============ PIN GATE ============ -->
+  <div class="gate" id="gate">
+    <img src="CHB_Black_trans.png" alt="Coolhand Billiards" class="gate-logo">
+    <form class="gate-form" id="gate-form" autocomplete="off">
+      <label for="pin-input" class="gate-label">Team PIN</label>
+      <input
+        type="password"
+        inputmode="numeric"
+        pattern="[0-9]*"
+        id="pin-input"
+        class="gate-input"
+        placeholder="•••••"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        aria-label="Team PIN">
+    </form>
+  </div>
+
+  <!-- ============ PAGE ============ -->
+  <div class="container">
+
+    <header class="header">
+      <img src="CHB_Black_trans.png" alt="Coolhand Billiards" class="header-logo">
+      <div class="team-name">Stroke &amp; Bounce</div>
+      <div class="team-meta">Tuesday · Hot Shots</div>
+    </header>
+
+    <!-- ---- Schedule ---- -->
+    <section class="section">
+      <div class="section-label">Schedule</div>
+      <div class="schedule-card">
+        <!-- Replace tuesday-schedule.png when ready -->
+        <img
+          src="tuesday-schedule.png"
+          alt="Stroke &amp; Bounce current session schedule"
+          class="schedule-image"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="schedule-placeholder" style="display:none;">Schedule image not found</div>
+      </div>
+    </section>
+
+    <!-- ---- Links ---- -->
+    <section class="section">
+      <div class="section-label">Links</div>
+      <div class="links">
+        <a href="https://playpool.io/division.php?did=13701" class="link" target="_blank" rel="noopener">
+          <span class="link-label">Current Session</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://playpool.io/events.php" class="link" target="_blank" rel="noopener">
+          <span class="link-label">Upcoming Events</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+<script>
+  // ============================================
+  // TEAM PIN — change this to update the gate
+  // ============================================
+  const TEAM_PIN = "13701";
+
+  const gate = document.getElementById("gate");
+  const form = document.getElementById("gate-form");
+  const input = document.getElementById("pin-input");
+
+  // Focus input on load
+  window.addEventListener("load", () => {
+    input.focus();
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkPin();
+  });
+
+  // Auto-check when PIN length matches (no submit needed)
+  input.addEventListener("input", () => {
+    if (input.value.length === TEAM_PIN.length) {
+      checkPin();
+    }
+  });
+
+  function checkPin() {
+    if (input.value === TEAM_PIN) {
+      gate.classList.add("hidden");
+      // Allow body scroll restoration if needed
+    } else {
+      input.classList.remove("shake");
+      // Force reflow to restart animation
+      void input.offsetWidth;
+      input.classList.add("shake");
+      input.value = "";
+      input.focus();
+    }
+  }
+</script>
+
+</body>
+</html>
