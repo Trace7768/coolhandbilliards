@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111111">
+<title>Coolhand Billiards — Player Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    background: #111111;
+    color: #FFFFFF;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px 64px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: 56px;
+    filter: invert(1);
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    padding: 28px 24px;
+    background: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .card:hover,
+  .card:focus-visible {
+    border-color: #FFFFFF;
+    outline: none;
+  }
+
+  .card:active {
+    transform: scale(0.99);
+    background: #1F1F1F;
+  }
+
+  .card-name {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+
+  .card-meta {
+    font-weight: 300;
+    font-size: 14px;
+    color: #888888;
+    letter-spacing: 0.02em;
+  }
+
+  @media (min-width: 480px) {
+    .logo {
+      width: 200px;
+    }
+    .card-name {
+      font-size: 22px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <img src="CHB_Black_trans.png" alt="Coolhand Billiards" class="logo">
+
+    <nav class="cards" aria-label="Teams">
+      <a href="tuesday.html" class="card">
+        <div class="card-name">Stroke &amp; Bounce</div>
+        <div class="card-meta">Tuesday · Hot Shots</div>
+      </a>
+
+      <a href="wednesday.html" class="card">
+        <div class="card-name">Thought It Would Go</div>
+        <div class="card-meta">Wednesday · Bluegrass Tavern</div>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
