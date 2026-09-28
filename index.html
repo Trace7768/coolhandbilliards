@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coolhand Billiards · NAPA Pool Leagues</title>
+<meta name="description" content="NAPA pool leagues in North Central Kentucky. Monday singles at Apex Billiards, Tuesday Etown Metro teams, Wednesday Bardstown teams. Est. 2017.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Coolhand Billiards · NAPA Pool Leagues">
+<meta property="og:description" content="NAPA pool leagues in North Central Kentucky — Monday, Tuesday and Wednesday nights.">
+<meta property="og:image" content="https://coolhandbilliards.com/players/CHB_Black_trans.png">
+<meta property="og:url" content="https://coolhandbilliards.com/">
+<link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<style>
+  :root{
+    color-scheme:dark;
+    --bg:#111111;
+    --surface:#1a1a1a;
+    --text:#ffffff;
+    --muted:#aaaaaa;
+    --faint:#6f6f6f;
+    --border:#2a2a2a;
+    --border-bright:#4a4a4a;
+    --font:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:var(--font);font-weight:300;line-height:1.55;
+    -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;
+    padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right));
+    padding-block:calc(48px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
+  }
+  main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:64px}
+  a{color:inherit}
+  a:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+
+  /* hero */
+  .hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+  .logo{width:min(220px,58vw);height:auto;filter:invert(1);display:block}
+  h1{font-weight:500;font-size:clamp(26px,6.4vw,36px);line-height:1.15;letter-spacing:-.01em;margin:6px 0 0;text-wrap:balance}
+  .sub{color:var(--muted);font-size:16px;margin:0;max-width:34ch}
+  .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px;width:100%}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    min-height:48px;padding:0 24px;flex:1 1 200px;max-width:260px;
+    font-size:15px;font-weight:500;letter-spacing:.02em;text-decoration:none;
+    border:1px solid var(--text);transition:background .15s,color .15s,border-color .15s;
+  }
+  .btn.primary{background:var(--text);color:var(--bg)}
+  .btn.primary:hover{background:transparent;color:var(--text)}
+  .btn.ghost{background:transparent;color:var(--text);border-color:var(--border-bright)}
+  .btn.ghost:hover{border-color:var(--text)}
+  .btn svg{width:17px;height:17px;flex:none}
+
+  /* sections */
+  section{display:flex;flex-direction:column;gap:18px}
+  h2{
+    margin:0;padding-bottom:12px;border-bottom:1px solid var(--border);
+    font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
+  }
+
+  .nights{display:flex;flex-direction:column}
+  .night{display:grid;grid-template-columns:118px 1fr;gap:4px 18px;padding:18px 0;border-bottom:1px solid var(--border)}
+  .night:last-child{border-bottom:none}
+  .day{font-size:20px;font-weight:500;line-height:1.25}
+  .where{font-size:16px;font-weight:400}
+  .fmt{grid-column:2;color:var(--muted);font-size:14px}
+  .time{color:var(--muted);font-size:14px;margin:0}
+
+  .steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;counter-reset:s}
+  .steps li{display:grid;grid-template-columns:32px 1fr;gap:14px;counter-increment:s}
+  .steps li::before{
+    content:counter(s);width:32px;height:32px;border:1px solid var(--border-bright);
+    display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;
+  }
+  .steps b{display:block;font-weight:500;font-size:16px}
+  .steps span{color:var(--muted);font-size:15px}
+
+  .portal{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    background:var(--surface);border:1px solid var(--border);padding:20px 22px;text-decoration:none;
+    transition:border-color .15s;
+  }
+  .portal:hover{border-color:var(--border-bright)}
+  .portal b{display:block;font-weight:500;font-size:17px}
+  .portal span{color:var(--muted);font-size:14px}
+  .portal i{font-style:normal;font-size:22px;color:var(--muted)}
+
+  footer{
+    display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;
+    color:var(--faint);font-size:12.5px;padding-top:24px;border-top:1px solid var(--border);
+  }
+  footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border-bright)}
+  footer a:hover{color:var(--text)}
+
+  @media (max-width:420px){
+    .night{grid-template-columns:1fr}
+    .fmt{grid-column:1}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+
+  <header class="hero">
+    <img class="logo" src="/players/CHB_Black_trans.png" alt="Coolhand Billiards — NAPA North Central Kentucky, Est. 2017" width="1211" height="1200">
+    <h1>NAPA pool leagues in North Central Kentucky</h1>
+    <p class="sub">Team and singles leagues three nights a week in Elizabethtown and Bardstown. All skill levels.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://www.facebook.com/NAPAofNCK" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3z"/></svg>
+        Join a league
+      </a>
+      <a class="btn ghost" href="/players">Player Portal</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="nights-h">
+    <h2 id="nights-h">League nights</h2>
+    <div class="nights">
+      <div class="night">
+        <div class="day">Monday</div>
+        <div class="where">Apex Billiards</div>
+        <div class="fmt">Singles · Elizabethtown</div>
+      </div>
+      <div class="night">
+        <div class="day">Tuesday</div>
+        <div class="where">Etown Metro</div>
+        <div class="fmt">Teams · Apex Billiards, American Legion Post 113 &amp; Hot Shots</div>
+      </div>
+      <div class="night">
+        <div class="day">Wednesday</div>
+        <div class="where">Bluegrass Tavern</div>
+        <div class="fmt">Teams · Bardstown</div>
+      </div>
+    </div>
+    <p class="time">Matches start at 6:00 PM.</p>
+  </section>
+
+  <section aria-labelledby="join-h">
+    <h2 id="join-h">How to join</h2>
+    <ol class="steps">
+      <li><div><b>Message us on Facebook</b><span>Tell us which night works and whether you have a team.</span></div></li>
+      <li><div><b>Get placed</b><span>We'll add you to a team, help you start one, or put you in singles.</span></div></li>
+      <li><div><b>Show up and shoot</b><span>NAPA handicaps keep matches fair from your first night.</span></div></li>
+    </ol>
+  </section>
+
+  <a class="portal" href="/players">
+    <div><b>Player Portal</b><span>Team schedules and session links for current players</span></div>
+    <i aria-hidden="true">→</i>
+  </a>
+
+  <footer>
+    <div>Coolhand Billiards LLC · NAPA North Central Kentucky · Est. 2017</div>
+    <div>Nelson, Hardin &amp; LaRue counties · <a href="https://www.facebook.com/NAPAofNCK" target="_blank" rel="noopener">Facebook</a></div>
+  </footer>
+
+</main>
+</body>
+</html>
