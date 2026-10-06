@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "divisions": [
     {
       "id": "monday-singles",
@@ -40,7 +40,11 @@
             {
               "home": "Michael Roark",
               "away": "Ronald Prior",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                4,
+                14
+              ]
             },
             {
               "home": "Brian Satterfield",
@@ -215,7 +219,11 @@
             {
               "home": "Jason Ohlrich",
               "away": "Pat Schultz",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                20,
+                1
+              ]
             },
             {
               "home": "Joe Lowery",
@@ -258,7 +266,11 @@
             {
               "home": "Gerry Herron",
               "away": "Michael Roark",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                1,
+                20
+              ]
             },
             {
               "home": "Teddy Barker jr.",
@@ -268,7 +280,11 @@
             {
               "home": "Pat Schultz",
               "away": "Mckay Payton",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Marcus Odom",
@@ -316,12 +332,20 @@
             {
               "home": "Ronald Prior",
               "away": "Gerry Herron",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Michael Roark",
               "away": "Teddy Barker jr.",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                22,
+                1
+              ]
             },
             {
               "home": "Brian Satterfield",
@@ -331,7 +355,11 @@
             {
               "home": "Mckay Payton",
               "away": "Marcus Odom",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
             },
             {
               "home": "Joe Lowery",
@@ -341,7 +369,11 @@
             {
               "home": "Jason Ohlrich",
               "away": "Logan Outland",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                7
+              ]
             }
           ]
         },
@@ -381,7 +413,11 @@
             {
               "home": "Austin Wheatley",
               "away": "Joe Lowery",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                14
+              ]
             },
             {
               "home": "Chris Lucas",
@@ -854,7 +890,11 @@
             {
               "home": "Teddy Barker jr.",
               "away": "Austin Wheatley",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                15
+              ]
             },
             {
               "home": "Pat Schultz",
