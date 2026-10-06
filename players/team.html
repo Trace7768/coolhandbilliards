@@ -106,7 +106,8 @@
     const page = document.getElementById("page");
     const div = sessions.divisions.find((d) => d.id === team.division);
     const parts = [el("div", {}, el("div", { class: "label" }, div ? div.night : "Team"), el("h1", {}, team.name),
-      div && el("p", { class: "lede" }, [...new Set([div.name, ...div.venues])].join(" · ")))];
+      div && el("p", { class: "lede" }, [...new Set([div.name, ...div.venues])].join(" · ")),
+      team.napa_name && team.napa_name !== team.name && el("p", { class: "lede" }, `Listed on NAPA as ${team.napa_name}`))];
 
     if (!div) {
       parts.push(el("p", { class: "muted" }, "Between sessions — the next schedule will show here once it's posted."));
