@@ -19,8 +19,9 @@ diff, and ask before committing or pushing.
 ## The repo is PUBLIC
 
 Anything committed — including deleted files in history — is visible on GitHub.
-- Never commit player names, phone numbers, emails, availability, or anything
-  meant only for a team.
+- Player names and team availability grids are OK (the owner approved this
+  2026-10-05; NAPA already publishes names). Never commit phone numbers,
+  emails, addresses, or other personal details.
 - Never commit secrets. (EmailJS public keys are designed to be public; that is
   the one exception, when the intake form is added.)
 - Team-page PINs are a convenience, not security. Real private content needs
