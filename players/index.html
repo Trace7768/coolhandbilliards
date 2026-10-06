@@ -1,124 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Player Portal · Coolhand Billiards</title>
+<meta name="robots" content="noindex">
 <meta name="theme-color" content="#111111">
-<title>Coolhand Billiards — Player Portal</title>
+<link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;500&display=swap" rel="stylesheet">
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html, body {
-    background: #111111;
-    color: #FFFFFF;
-    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    min-height: 100vh;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 24px 64px;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 640px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: 180px;
-    height: auto;
-    margin-bottom: 56px;
-    filter: invert(1);
-    user-select: none;
-    -webkit-user-drag: none;
-  }
-
-  .cards {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .card {
-    display: block;
-    width: 100%;
-    padding: 28px 24px;
-    background: #1A1A1A;
-    border: 1px solid #2A2A2A;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .card:hover,
-  .card:focus-visible {
-    border-color: #FFFFFF;
-    outline: none;
-  }
-
-  .card:active {
-    transform: scale(0.99);
-    background: #1F1F1F;
-  }
-
-  .card-name {
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: -0.01em;
-    margin-bottom: 6px;
-  }
-
-  .card-meta {
-    font-weight: 300;
-    font-size: 14px;
-    color: #888888;
-    letter-spacing: 0.02em;
-  }
-
-  @media (min-width: 480px) {
-    .logo {
-      width: 200px;
-    }
-    .card-name {
-      font-size: 22px;
-    }
-  }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<link rel="stylesheet" href="/assets/chb.css">
 </head>
 <body>
-  <div class="container">
-    <img src="CHB_Black_trans.png" alt="Coolhand Billiards" class="logo">
+<main>
+  <header class="top">
+    <a class="home" href="/"><img src="/players/CHB_Black_trans.png" alt=""><span>Coolhand Billiards</span></a>
+    <nav><a href="/schedules/">Schedules</a><a href="/players/" aria-current="page">Players</a></nav>
+  </header>
 
-    <nav class="cards" aria-label="Teams">
-      <a href="tuesday.html" class="card">
-        <div class="card-name">Stroke &amp; Bounce</div>
-        <div class="card-meta">Tuesday · Hot Shots</div>
-      </a>
-
-      <a href="wednesday.html" class="card">
-        <div class="card-name">Thought It Would Go</div>
-        <div class="card-meta">Wednesday · Bluegrass Tavern</div>
-      </a>
-    </nav>
+  <div>
+    <h1>Player Portal</h1>
+    <p class="lede">Pick your team. You'll need your team PIN once on each device.</p>
   </div>
+
+  <nav class="stack" id="teams" aria-label="Teams"><p class="status">Loading teams…</p></nav>
+
+  <a class="card" href="/schedules/">
+    <div><b>All schedules</b><span>Every active division, week by week</span></div>
+    <i aria-hidden="true">→</i>
+  </a>
+</main>
+
+<script src="/assets/league.js"></script>
+<script>
+(async () => {
+  const { el } = CHB;
+  const list = document.getElementById("teams");
+  try {
+    const [{ teams }, { divisions }] = await Promise.all([CHB.loadTeams(), CHB.loadSessions()]);
+    list.replaceChildren(...teams.map((t) => {
+      const div = divisions.find((d) => d.id === t.division);
+      return el("a", { class: "card", href: `/players/${t.id}/` },
+        el("div", {}, el("b", {}, t.name), el("span", {}, div ? `${div.night} · ${div.name}` : "Between sessions")),
+        el("i", { "aria-hidden": "true" }, "→"));
+    }));
+  } catch (e) {
+    list.replaceChildren(el("p", { class: "status" }, "Teams couldn't load. Try again in a minute."));
+  }
+})();
+</script>
 </body>
 </html>

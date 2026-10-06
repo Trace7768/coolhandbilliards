@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Team · Coolhand Billiards</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<link rel="stylesheet" href="/assets/chb.css">
+<style>
+  .gate{display:flex;flex-direction:column;align-items:center;gap:20px;padding-top:6vh;text-align:center}
+  .gate img{width:min(180px,50vw);filter:invert(1)}
+  .gate form{width:100%;max-width:280px;display:flex;flex-direction:column;gap:12px}
+  .gate input{
+    width:100%;padding:16px 20px;background:var(--surface);border:1px solid var(--border);
+    color:var(--text);font:inherit;font-size:20px;text-align:center;letter-spacing:.3em;
+  }
+  .gate input:focus{outline:none;border-color:var(--text)}
+  .gate .err{color:var(--muted);font-size:14px;min-height:1.5em;margin:0}
+  .gate input.shake{animation:shake .36s cubic-bezier(.36,.07,.19,.97) both}
+  @keyframes shake{10%,90%{transform:translateX(-2px)}20%,80%{transform:translateX(4px)}30%,50%,70%{transform:translateX(-8px)}40%,60%{transform:translateX(8px)}}
+  .next{background:var(--surface);border:1px solid var(--text);padding:18px 20px;display:flex;flex-direction:column;gap:4px}
+  .next .vs{font-size:20px;font-weight:500}
+  .next .meta{color:var(--muted);font-size:14px}
+  .lock{background:none;border:none;color:var(--faint);font:inherit;font-size:13px;cursor:pointer;padding:12px 0;align-self:center}
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="home" href="/"><img src="/players/CHB_Black_trans.png" alt=""><span>Coolhand Billiards</span></a>
+    <nav><a href="/schedules/">Schedules</a><a href="/players/">Players</a></nav>
+  </header>
+
+  <p class="status" id="status">Loading…</p>
+
+  <section class="gate" id="gate" hidden>
+    <div><div class="label">Team PIN</div><h1 id="gate-name"></h1></div>
+    <form id="gate-form" autocomplete="off">
+      <input id="pin" type="password" inputmode="numeric" pattern="[0-9]*" autocomplete="off" aria-label="Team PIN" placeholder="••••">
+      <button class="btn" type="submit">Open</button>
+      <p class="err" id="err" role="alert"></p>
+    </form>
+  </section>
+
+  <section id="page" class="stack" hidden></section>
+</main>
+
+<script src="/assets/league.js"></script>
+<script>
+(async () => {
+  const { el, fmtDate, currentWeek, where } = CHB;
+  const status = document.getElementById("status");
+  // Team id comes from /players/<id>/ (Netlify rewrite) or ?t=<id> (local preview).
+  const id = new URLSearchParams(location.search).get("t") || location.pathname.split("/").filter(Boolean)[1];
+
+  let team, sessions;
+  try {
+    const [teams, s] = await Promise.all([CHB.loadTeams(), CHB.loadSessions()]);
+    team = teams.teams.find((t) => t.id === id);
+    sessions = s;
+  } catch (e) {
+    status.textContent = "This page couldn't load. Try again in a minute.";
+    return;
+  }
+  if (!team) {
+    status.replaceChildren("Team not found. ", el("a", { href: "/players/" }, "See all teams"));
+    return;
+  }
+  document.title = `${team.name} · Coolhand Billiards`;
+  status.hidden = true;
+
+  // PINs are a convenience, not security: the hash only keeps them out of plain sight.
+  const KEY = `chb-pin-${team.id}`;
+  async function hash(pin) {
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${team.id}:${pin}`));
+    return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  }
+  const remembered = (() => { try { return localStorage.getItem(KEY); } catch { return null; } })();
+  if (remembered === team.pin_sha256) return show();
+
+  const gate = document.getElementById("gate");
+  const input = document.getElementById("pin");
+  document.getElementById("gate-name").textContent = team.name;
+  gate.hidden = false;
+  input.focus();
+  document.getElementById("gate-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if ((await hash(input.value.trim())) === team.pin_sha256) {
+      try { localStorage.setItem(KEY, team.pin_sha256); } catch {}
+      gate.hidden = true;
+      show();
+    } else {
+      input.classList.remove("shake"); void input.offsetWidth; input.classList.add("shake");
+      document.getElementById("err").textContent = "That PIN didn't match.";
+      input.value = "";
+      input.focus();
+    }
+  });
+
+  function show() {
+    const page = document.getElementById("page");
+    const div = sessions.divisions.find((d) => d.id === team.division);
+    const parts = [el("div", {}, el("div", { class: "label" }, div ? div.night : "Team"), el("h1", {}, team.name),
+      div && el("p", { class: "lede" }, [...new Set([div.name, ...div.venues])].join(" · ")))];
+
+    if (!div) {
+      parts.push(el("p", { class: "muted" }, "Between sessions — the next schedule will show here once it's posted."));
+    } else {
+      const nm = team.napa_name || team.name;
+      const t = CHB.today();
+      const upcoming = div.weeks.find((w) => w.date >= t && w.matches.some((m) => m.home === nm || m.away === nm));
+      const inDivision = div.weeks.some((w) => w.matches.some((m) => m.home === nm || m.away === nm));
+      if (upcoming) {
+        const m = upcoming.matches.find((x) => x.home === nm || x.away === nm);
+        const home = m.home === nm;
+        parts.push(el("div", { class: "next" },
+          el("div", { class: "label" }, upcoming.date === t ? "Tonight" : "Next match"),
+          el("div", { class: "vs" }, `vs ${home ? m.away : m.home}`),
+          el("div", { class: "meta" }, `${fmtDate(upcoming.date)} · Week ${upcoming.week} · ${home ? "Home" : "Away"}`),
+          el("div", { class: "meta" }, where(m))));
+      } else if (!inDivision) {
+        parts.push(el("p", { class: "muted" }, `${team.name} isn't on the current ${div.night} schedule.`));
+      } else {
+        parts.push(el("p", { class: "muted" }, "No more matches this session."));
+      }
+
+      const links = [
+        inDivision && { label: "Full schedule", url: `/schedules/?team=${encodeURIComponent(nm)}#${div.id}` },
+        ...team.links,
+        { label: "NAPA division page", url: div.source },
+        { label: "Upcoming events", url: "https://playpool.io/events.php" },
+      ].filter(Boolean);
+      parts.push(el("div", { class: "stack" }, links.map((l) => {
+        const external = /^https?:/.test(l.url);
+        return el("a", { class: "card", href: l.url, target: external ? "_blank" : null, rel: external ? "noopener" : null },
+          el("b", {}, l.label), el("i", { "aria-hidden": "true" }, "→"));
+      })));
+    }
+
+    const lock = el("button", { class: "lock", type: "button" }, "Lock this page on this device");
+    lock.addEventListener("click", () => { try { localStorage.removeItem(KEY); } catch {} location.reload(); });
+    parts.push(lock);
+
+    page.replaceChildren(...parts);
+    page.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>

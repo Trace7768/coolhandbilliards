@@ -1,0 +1,5 @@
+# Netlify rules. Real files always win over these, so teams.json, team.html,
+# and the logo are served normally.
+
+# Pretty team URLs: /players/stroke-and-bounce/ is served by players/team.html
+/players/:team   /players/team.html   200

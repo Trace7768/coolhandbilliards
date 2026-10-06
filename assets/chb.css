@@ -1,0 +1,117 @@
+/* Coolhand Billiards — shared styles for data-driven pages (schedules, players). */
+:root{
+  color-scheme:dark;
+  --bg:#111111;
+  --surface:#1a1a1a;
+  --surface-2:#202020;
+  --text:#ffffff;
+  --muted:#aaaaaa;
+  --faint:#6f6f6f;
+  --border:#2a2a2a;
+  --border-bright:#4a4a4a;
+  --font:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--font);font-weight:300;line-height:1.5;
+  -webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;
+  padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right));
+  padding-block:calc(28px + env(safe-area-inset-top)) calc(48px + env(safe-area-inset-bottom));
+}
+main{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+[hidden]{display:none!important}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.top .home{display:flex;align-items:center;gap:12px;text-decoration:none}
+.top .home img{width:44px;height:44px;filter:invert(1)}
+.top .home span{font-weight:500;font-size:15px;letter-spacing:.02em}
+.top nav{display:flex;gap:18px;font-size:14px}
+.top nav a{color:var(--muted);text-decoration:none;padding:12px 0}
+.top nav a:hover,.top nav a[aria-current]{color:var(--text)}
+
+h1{font-weight:500;font-size:clamp(26px,7vw,34px);line-height:1.15;letter-spacing:-.01em;margin:0}
+.lede{color:var(--muted);margin:8px 0 0;font-size:15px}
+.label{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.status{color:var(--muted);font-size:15px;padding:24px 0}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  display:inline-flex;align-items:center;min-height:44px;padding:0 16px;
+  border:1px solid var(--border-bright);font-size:14px;font-weight:500;text-decoration:none;
+}
+.chip:hover{border-color:var(--text)}
+
+/* cards and buttons */
+.card{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  background:var(--surface);border:1px solid var(--border);padding:20px;text-decoration:none;
+  transition:border-color .15s;
+}
+a.card:hover{border-color:var(--border-bright)}
+.card b{display:block;font-weight:500;font-size:18px}
+.card span{color:var(--muted);font-size:14px}
+.card i{font-style:normal;font-size:20px;color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:12px}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;
+  font:inherit;font-size:15px;font-weight:500;text-decoration:none;cursor:pointer;
+  border:1px solid var(--text);background:var(--text);color:var(--bg);
+}
+.btn:hover{background:transparent;color:var(--text)}
+
+/* division + weeks */
+.division{display:flex;flex-direction:column;gap:14px;scroll-margin-top:16px}
+.division-head{border-bottom:1px solid var(--border);padding-bottom:14px}
+.division-head h2{margin:2px 0 4px;font-weight:500;font-size:22px;line-height:1.25}
+.division-head p{margin:0;color:var(--muted);font-size:14px}
+.division-head a{color:var(--muted)}
+
+.week{border:1px solid var(--border);background:var(--surface);scroll-margin-top:16px}
+.week>summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  min-height:52px;padding:12px 16px;
+}
+.week>summary::-webkit-details-marker{display:none}
+.week>summary::after{content:"+";margin-left:auto;color:var(--muted);font-size:18px;line-height:1}
+.week[open]>summary::after{content:"–"}
+.week .wk{font-weight:500}
+.week .dt{color:var(--muted);font-size:14px}
+.week.past .wk,.week.past .dt{color:var(--faint)}
+.week.current{border-color:var(--text)}
+.tag{
+  font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 8px;border:1px solid currentColor;
+}
+.tag.now{background:var(--text);color:var(--bg);border-color:var(--text)}
+.notes{margin:0;padding:0 16px 10px;list-style:none;color:var(--muted);font-size:13px}
+.notes li::before{content:"! ";font-weight:500;color:var(--text)}
+
+.matches{list-style:none;margin:0;padding:0;border-top:1px solid var(--border)}
+.match{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:12px 16px;border-bottom:1px solid var(--border)}
+.match:last-child{border-bottom:none}
+.match .teams{font-size:16px;font-weight:400}
+.match .teams i{font-style:normal;color:var(--faint);font-size:13px;margin:0 6px}
+.match .where{grid-column:1;color:var(--muted);font-size:13px}
+.match .score{grid-row:1 / span 2;grid-column:2;align-self:center;font-size:15px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.match.mine{background:var(--surface-2)}
+.match .me{font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.closed{padding:12px 16px;color:var(--muted);border-top:1px solid var(--border);font-size:14px}
+
+.filter{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border-bright);padding:12px 16px;font-size:14px}
+.filter a{color:var(--muted);white-space:nowrap}
+
+footer{
+  display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;
+  color:var(--faint);font-size:12.5px;padding-top:24px;border-top:1px solid var(--border);
+}
+footer a{color:var(--muted)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}

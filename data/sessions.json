@@ -1,0 +1,1719 @@
+{
+  "updated": "2026-10-05",
+  "divisions": [
+    {
+      "id": "monday-singles",
+      "name": "Apex Fall Singles",
+      "night": "Monday",
+      "format": "Singles LC",
+      "napa_division_id": "14360",
+      "start": "2026-09-07",
+      "end": "2026-12-14",
+      "venues": [
+        "Apex Billiards 6",
+        "Apex Billiards 7"
+      ],
+      "source": "https://paper.playpool.io/print_schedule_web.php?did=14360",
+      "weeks": [
+        {
+          "week": 1,
+          "date": "2026-09-07",
+          "matches": [
+            {
+              "home": "Chris Lucas",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7",
+              "score": [
+                20,
+                1
+              ]
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "date": "2026-09-14",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                15
+              ]
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 6",
+              "score": [
+                15,
+                7
+              ]
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 7",
+              "score": [
+                15,
+                7
+              ]
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 7",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 6",
+              "score": [
+                15,
+                3
+              ]
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "date": "2026-09-21",
+          "matches": [
+            {
+              "home": "Chris Lucas",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 7",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Ronald Prior",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                3
+              ]
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 7",
+              "score": [
+                15,
+                3
+              ]
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6",
+              "score": [
+                1,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "date": "2026-09-28",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 6",
+              "score": [
+                15,
+                3
+              ]
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 6",
+              "score": [
+                15,
+                8
+              ]
+            },
+            {
+              "home": "Chris Lucas",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                8
+              ]
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "date": "2026-10-05",
+          "matches": [
+            {
+              "home": "Austin Wheatley",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ronald Prior",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "date": "2026-10-12",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 7",
+              "score": [
+                20,
+                1
+              ]
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Chris Lucas",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 7",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "date": "2026-10-19",
+          "matches": [
+            {
+              "home": "Joe Lowery",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ronald Prior",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                8
+              ]
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "date": "2026-10-26",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 7",
+              "score": [
+                7,
+                14
+              ]
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Chris Lucas",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "date": "2026-11-02",
+          "matches": [
+            {
+              "home": "Jason Ohlrich",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ronald Prior",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "date": "2026-11-09",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7",
+              "score": [
+                21,
+                1
+              ]
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Chris Lucas",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "date": "2026-11-16",
+          "matches": [
+            {
+              "home": "Mckay Payton",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ronald Prior",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 12,
+          "date": "2026-11-23",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Chris Lucas",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 13,
+          "date": "2026-11-30",
+          "matches": [
+            {
+              "home": "Brian Satterfield",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ronald Prior",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                15
+              ]
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 7",
+              "score": [
+                21,
+                1
+              ]
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 14,
+          "date": "2026-12-07",
+          "matches": [
+            {
+              "home": "Chance Whitlock",
+              "away": "Marcus Odom",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Brian Satterfield",
+              "away": "Michael Roark",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Mckay Payton",
+              "away": "Ronald Prior",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Jason Ohlrich",
+              "away": "Billy Wimberg",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Joe Lowery",
+              "away": "Ray Stovall",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Austin Wheatley",
+              "away": "Gerry Herron",
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
+            },
+            {
+              "home": "Chris Lucas",
+              "away": "Teddy Barker jr.",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Logan Outland",
+              "away": "Pat Schultz",
+              "venue": "Apex Billiards 6"
+            }
+          ]
+        },
+        {
+          "week": 15,
+          "date": "2026-12-14",
+          "matches": [
+            {
+              "home": "Ronald Prior",
+              "away": "Brian Satterfield",
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                7
+              ]
+            },
+            {
+              "home": "Billy Wimberg",
+              "away": "Mckay Payton",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Ray Stovall",
+              "away": "Jason Ohlrich",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Gerry Herron",
+              "away": "Joe Lowery",
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                7
+              ]
+            },
+            {
+              "home": "Teddy Barker jr.",
+              "away": "Austin Wheatley",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Pat Schultz",
+              "away": "Chris Lucas",
+              "venue": "Apex Billiards 7"
+            },
+            {
+              "home": "Marcus Odom",
+              "away": "Logan Outland",
+              "venue": "Apex Billiards 6"
+            },
+            {
+              "home": "Michael Roark",
+              "away": "Chance Whitlock",
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tuesday-etown-metro",
+      "name": "Etown Metro",
+      "night": "Tuesday",
+      "format": "No Limit LC",
+      "napa_division_id": "14269",
+      "start": "2026-08-18",
+      "end": "2026-10-27",
+      "venues": [
+        "American Legion Post 113",
+        "Apex Billiards",
+        "Hot Shots"
+      ],
+      "source": "https://paper.playpool.io/print_schedule_web.php?did=14269",
+      "weeks": [
+        {
+          "week": 1,
+          "date": "2026-08-18",
+          "matches": [
+            {
+              "home": "Sharp Shooters",
+              "away": "On Cue",
+              "venue": "American Legion Post 113",
+              "score": [
+                43,
+                9
+              ]
+            },
+            {
+              "home": "Make 'em Pay",
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards",
+              "score": [
+                30,
+                29
+              ]
+            },
+            {
+              "home": "Gunners 2.0",
+              "away": "Off the Rail",
+              "venue": "American Legion Post 113",
+              "score": [
+                35,
+                24
+              ]
+            },
+            {
+              "home": "The Billiard Bandits",
+              "away": "The Recyclables",
+              "venue": "Apex Billiards",
+              "score": [
+                18,
+                41
+              ]
+            },
+            {
+              "home": "Comeback Cueists",
+              "away": "Traitor Ron",
+              "venue": "Apex Billiards",
+              "score": [
+                33,
+                24
+              ]
+            },
+            {
+              "home": "Balls in Hand",
+              "away": "Beyond Cue",
+              "venue": "Hot Shots",
+              "score": [
+                48,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "date": "2026-08-25",
+          "matches": [
+            {
+              "home": "Beyond Cue",
+              "away": "Traitor Ron",
+              "venue": "Apex Billiards",
+              "score": [
+                21,
+                31
+              ]
+            },
+            {
+              "home": "The Recyclables",
+              "away": "Comeback Cueists",
+              "venue": "American Legion Post 113",
+              "score": [
+                12,
+                50
+              ]
+            },
+            {
+              "home": "Off the Rail",
+              "away": "The Billiard Bandits",
+              "venue": "Apex Billiards",
+              "score": [
+                53,
+                7
+              ]
+            },
+            {
+              "home": "Blazing Cue-migos",
+              "away": "Gunners 2.0",
+              "venue": "American Legion Post 113",
+              "score": [
+                35,
+                20
+              ]
+            },
+            {
+              "home": "On Cue",
+              "away": "Make 'em Pay",
+              "venue": "Apex Billiards",
+              "score": [
+                24,
+                35
+              ]
+            },
+            {
+              "home": "Balls in Hand",
+              "away": "Sharp Shooters",
+              "venue": "Hot Shots",
+              "score": [
+                18,
+                42
+              ]
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "date": "2026-09-01",
+          "matches": [
+            {
+              "home": "Sharp Shooters",
+              "away": "Beyond Cue",
+              "venue": "American Legion Post 113",
+              "score": [
+                41,
+                18
+              ]
+            },
+            {
+              "home": "Traitor Ron",
+              "away": "The Recyclables",
+              "venue": "Hot Shots",
+              "score": [
+                11,
+                48
+              ]
+            },
+            {
+              "home": "Comeback Cueists",
+              "away": "Off the Rail",
+              "venue": "Apex Billiards",
+              "score": [
+                32,
+                20
+              ]
+            },
+            {
+              "home": "The Billiard Bandits",
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards",
+              "score": [
+                24,
+                31
+              ]
+            },
+            {
+              "home": "Gunners 2.0",
+              "away": "On Cue",
+              "venue": "American Legion Post 113",
+              "score": [
+                22,
+                41
+              ]
+            },
+            {
+              "home": "Make 'em Pay",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards",
+              "score": [
+                28,
+                31
+              ]
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "date": "2026-09-08",
+          "matches": [
+            {
+              "home": "Beyond Cue",
+              "away": "The Recyclables",
+              "venue": "Apex Billiards",
+              "score": [
+                20,
+                36
+              ]
+            },
+            {
+              "home": "Off the Rail",
+              "away": "Traitor Ron",
+              "venue": "Apex Billiards",
+              "score": [
+                21,
+                35
+              ]
+            },
+            {
+              "home": "Blazing Cue-migos",
+              "away": "Comeback Cueists",
+              "venue": "American Legion Post 113",
+              "score": [
+                43,
+                11
+              ]
+            },
+            {
+              "home": "On Cue",
+              "away": "The Billiard Bandits",
+              "venue": "Apex Billiards",
+              "score": [
+                54,
+                9
+              ]
+            },
+            {
+              "home": "Sharp Shooters",
+              "away": "Make 'em Pay",
+              "venue": "American Legion Post 113",
+              "score": [
+                32,
+                24
+              ]
+            },
+            {
+              "home": "Balls in Hand",
+              "away": "Gunners 2.0",
+              "venue": "Hot Shots",
+              "score": [
+                36,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "date": "2026-09-15",
+          "matches": [
+            {
+              "home": "Make 'em Pay",
+              "away": "Beyond Cue",
+              "venue": "Apex Billiards",
+              "score": [
+                31,
+                20
+              ]
+            },
+            {
+              "home": "The Recyclables",
+              "away": "Off the Rail",
+              "venue": "American Legion Post 113",
+              "score": [
+                31,
+                20
+              ]
+            },
+            {
+              "home": "Traitor Ron",
+              "away": "Blazing Cue-migos",
+              "venue": "Hot Shots",
+              "score": [
+                22,
+                41
+              ]
+            },
+            {
+              "home": "Comeback Cueists",
+              "away": "On Cue",
+              "venue": "Apex Billiards",
+              "score": [
+                21,
+                32
+              ]
+            },
+            {
+              "home": "Gunners 2.0",
+              "away": "Sharp Shooters",
+              "venue": "American Legion Post 113",
+              "score": [
+                37,
+                19
+              ]
+            },
+            {
+              "home": "The Billiard Bandits",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards",
+              "score": [
+                18,
+                41
+              ]
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "date": "2026-09-22",
+          "matches": [
+            {
+              "home": "Beyond Cue",
+              "away": "Off the Rail",
+              "venue": "Apex Billiards",
+              "score": [
+                7,
+                50
+              ]
+            },
+            {
+              "home": "Blazing Cue-migos",
+              "away": "The Recyclables",
+              "venue": "American Legion Post 113",
+              "score": [
+                42,
+                17
+              ]
+            },
+            {
+              "home": "On Cue",
+              "away": "Traitor Ron",
+              "venue": "Apex Billiards",
+              "score": [
+                6,
+                28
+              ]
+            },
+            {
+              "home": "Make 'em Pay",
+              "away": "Gunners 2.0",
+              "venue": "Apex Billiards",
+              "score": [
+                42,
+                17
+              ]
+            },
+            {
+              "home": "Sharp Shooters",
+              "away": "The Billiard Bandits",
+              "venue": "American Legion Post 113",
+              "score": [
+                43,
+                13
+              ]
+            },
+            {
+              "home": "Balls in Hand",
+              "away": "Comeback Cueists",
+              "venue": "Hot Shots",
+              "score": [
+                28,
+                31
+              ]
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "date": "2026-09-29",
+          "matches": [
+            {
+              "home": "Gunners 2.0",
+              "away": "Beyond Cue",
+              "venue": "American Legion Post 113",
+              "score": [
+                41,
+                19
+              ]
+            },
+            {
+              "home": "Off the Rail",
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards",
+              "score": [
+                42,
+                17
+              ]
+            },
+            {
+              "home": "The Recyclables",
+              "away": "On Cue",
+              "venue": "American Legion Post 113",
+              "score": [
+                42,
+                13
+              ]
+            },
+            {
+              "home": "The Billiard Bandits",
+              "away": "Make 'em Pay",
+              "venue": "Apex Billiards",
+              "score": [
+                55,
+                9
+              ]
+            },
+            {
+              "home": "Comeback Cueists",
+              "away": "Sharp Shooters",
+              "venue": "Apex Billiards",
+              "score": [
+                28,
+                35
+              ]
+            },
+            {
+              "home": "Traitor Ron",
+              "away": "Balls in Hand",
+              "venue": "Hot Shots",
+              "score": [
+                32,
+                24
+              ]
+            }
+          ]
+        },
+        {
+          "week": 8,
+          "date": "2026-10-06",
+          "matches": [
+            {
+              "home": "Beyond Cue",
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "On Cue",
+              "away": "Off the Rail",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Gunners 2.0",
+              "away": "The Billiard Bandits",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Make 'em Pay",
+              "away": "Comeback Cueists",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Sharp Shooters",
+              "away": "Traitor Ron",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Balls in Hand",
+              "away": "The Recyclables",
+              "venue": "Hot Shots"
+            }
+          ]
+        },
+        {
+          "week": 9,
+          "date": "2026-10-13",
+          "matches": [
+            {
+              "home": "The Billiard Bandits",
+              "away": "Beyond Cue",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Blazing Cue-migos",
+              "away": "On Cue",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Comeback Cueists",
+              "away": "Gunners 2.0",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Traitor Ron",
+              "away": "Make 'em Pay",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "The Recyclables",
+              "away": "Sharp Shooters",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Off the Rail",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards"
+            }
+          ]
+        },
+        {
+          "week": 10,
+          "date": "2026-10-20",
+          "notes": [
+            "Last chance to make roster changes"
+          ],
+          "matches": [
+            {
+              "home": "Beyond Cue",
+              "away": "On Cue",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "The Billiard Bandits",
+              "away": "Comeback Cueists",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Gunners 2.0",
+              "away": "Traitor Ron",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Make 'em Pay",
+              "away": "The Recyclables",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Sharp Shooters",
+              "away": "Off the Rail",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Balls in Hand",
+              "away": "Blazing Cue-migos",
+              "venue": "Hot Shots"
+            }
+          ]
+        },
+        {
+          "week": 11,
+          "date": "2026-10-27",
+          "notes": [
+            "No more roster changes",
+            "Make up match deadline"
+          ],
+          "matches": [
+            {
+              "home": "On Cue",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Blazing Cue-migos",
+              "away": "Sharp Shooters",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Off the Rail",
+              "away": "Make 'em Pay",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "The Recyclables",
+              "away": "Gunners 2.0",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Traitor Ron",
+              "away": "The Billiard Bandits",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "Comeback Cueists",
+              "away": "Beyond Cue",
+              "venue": "Apex Billiards"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wednesday-bardstown",
+      "name": "Bluegrass Tavern",
+      "night": "Wednesday",
+      "format": "No Limit LC",
+      "napa_division_id": "14465",
+      "start": "2026-09-30",
+      "end": "2026-11-11",
+      "venues": [
+        "Bluegrass Tavern"
+      ],
+      "source": "https://paper.playpool.io/print_schedule_web.php?did=14465",
+      "weeks": [
+        {
+          "week": 1,
+          "date": "2026-09-30",
+          "matches": [
+            {
+              "home": "Less Talk More Chalk",
+              "away": "Bluegrass Bandits",
+              "venue": "Bluegrass Tavern",
+              "table": "1",
+              "score": [
+                49,
+                15
+              ]
+            },
+            {
+              "home": "Old Enough",
+              "away": "Soul Snatcher",
+              "venue": "Bluegrass Tavern",
+              "table": "4",
+              "score": [
+                24,
+                35
+              ]
+            },
+            {
+              "home": "Chalk's Free",
+              "away": "Death By 1000 Scratches",
+              "venue": "Bluegrass Tavern",
+              "table": "2",
+              "score": [
+                42,
+                13
+              ]
+            },
+            {
+              "home": "3 Old Men",
+              "away": "Thought It Would Go",
+              "venue": "Bluegrass Tavern",
+              "table": "3",
+              "score": [
+                19,
+                43
+              ]
+            }
+          ]
+        },
+        {
+          "week": 2,
+          "date": "2026-10-07",
+          "matches": [
+            {
+              "home": "Thought It Would Go",
+              "away": "Death By 1000 Scratches",
+              "venue": "Bluegrass Tavern",
+              "table": "3"
+            },
+            {
+              "home": "Soul Snatcher",
+              "away": "Chalk's Free",
+              "venue": "Bluegrass Tavern",
+              "table": "1"
+            },
+            {
+              "home": "Bluegrass Bandits",
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern",
+              "table": "2"
+            },
+            {
+              "home": "3 Old Men",
+              "away": "Less Talk More Chalk",
+              "venue": "Bluegrass Tavern",
+              "table": "4"
+            }
+          ]
+        },
+        {
+          "week": 3,
+          "date": "2026-10-14",
+          "matches": [
+            {
+              "home": "Old Enough",
+              "away": "3 Old Men",
+              "venue": "Bluegrass Tavern",
+              "table": "1"
+            },
+            {
+              "home": "Chalk's Free",
+              "away": "Bluegrass Bandits",
+              "venue": "Bluegrass Tavern",
+              "table": "3"
+            },
+            {
+              "home": "Death By 1000 Scratches",
+              "away": "Soul Snatcher",
+              "venue": "Bluegrass Tavern",
+              "table": "4"
+            },
+            {
+              "home": "Less Talk More Chalk",
+              "away": "Thought It Would Go",
+              "venue": "Bluegrass Tavern",
+              "table": "2"
+            }
+          ]
+        },
+        {
+          "week": 4,
+          "date": "2026-10-21",
+          "matches": [
+            {
+              "home": "Thought It Would Go",
+              "away": "Soul Snatcher",
+              "venue": "Bluegrass Tavern",
+              "table": "1"
+            },
+            {
+              "home": "Bluegrass Bandits",
+              "away": "Death By 1000 Scratches",
+              "venue": "Bluegrass Tavern",
+              "table": "4"
+            },
+            {
+              "home": "Less Talk More Chalk",
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern",
+              "table": "3"
+            },
+            {
+              "home": "3 Old Men",
+              "away": "Chalk's Free",
+              "venue": "Bluegrass Tavern",
+              "table": "2"
+            }
+          ]
+        },
+        {
+          "week": 5,
+          "date": "2026-10-28",
+          "matches": [
+            {
+              "home": "Death By 1000 Scratches",
+              "away": "3 Old Men",
+              "venue": "Bluegrass Tavern",
+              "table": "3"
+            },
+            {
+              "home": "Chalk's Free",
+              "away": "Less Talk More Chalk",
+              "venue": "Bluegrass Tavern",
+              "table": "4"
+            },
+            {
+              "home": "Soul Snatcher",
+              "away": "Bluegrass Bandits",
+              "venue": "Bluegrass Tavern",
+              "table": "2"
+            },
+            {
+              "home": "Old Enough",
+              "away": "Thought It Would Go",
+              "venue": "Bluegrass Tavern",
+              "table": "1"
+            }
+          ]
+        },
+        {
+          "week": 6,
+          "date": "2026-11-04",
+          "notes": [
+            "Last chance to make roster changes"
+          ],
+          "matches": [
+            {
+              "home": "Thought It Would Go",
+              "away": "Bluegrass Bandits",
+              "venue": "Bluegrass Tavern",
+              "table": "4"
+            },
+            {
+              "home": "Old Enough",
+              "away": "Chalk's Free",
+              "venue": "Bluegrass Tavern",
+              "table": "3"
+            },
+            {
+              "home": "Less Talk More Chalk",
+              "away": "Death By 1000 Scratches",
+              "venue": "Bluegrass Tavern",
+              "table": "1"
+            },
+            {
+              "home": "3 Old Men",
+              "away": "Soul Snatcher",
+              "venue": "Bluegrass Tavern",
+              "table": "2"
+            }
+          ]
+        },
+        {
+          "week": 7,
+          "date": "2026-11-11",
+          "notes": [
+            "No more roster changes",
+            "Make up match deadline"
+          ],
+          "matches": [
+            {
+              "home": "Bluegrass Bandits",
+              "away": "3 Old Men",
+              "venue": "Bluegrass Tavern",
+              "table": "1"
+            },
+            {
+              "home": "Soul Snatcher",
+              "away": "Less Talk More Chalk",
+              "venue": "Bluegrass Tavern",
+              "table": "3"
+            },
+            {
+              "home": "Death By 1000 Scratches",
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern",
+              "table": "2"
+            },
+            {
+              "home": "Chalk's Free",
+              "away": "Thought It Would Go",
+              "venue": "Bluegrass Tavern",
+              "table": "4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

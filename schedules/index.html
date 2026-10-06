@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schedules · Coolhand Billiards</title>
+<meta name="description" content="Weekly match schedules for every active Coolhand Billiards NAPA division.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<link rel="stylesheet" href="/assets/chb.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="home" href="/"><img src="/players/CHB_Black_trans.png" alt=""><span>Coolhand Billiards</span></a>
+    <nav><a href="/schedules/" aria-current="page">Schedules</a><a href="/players/">Players</a></nav>
+  </header>
+
+  <div>
+    <h1>Schedules</h1>
+    <p class="lede" id="lede">Every active NAPA division. The current week is open.</p>
+  </div>
+
+  <div class="filter" id="filter" hidden></div>
+  <nav class="chips" id="chips" aria-label="Divisions"></nav>
+  <div id="divisions"><p class="status">Loading schedules…</p></div>
+
+  <footer>
+    <div>Coolhand Billiards LLC · NAPA North Central Kentucky</div>
+    <div id="updated"></div>
+  </footer>
+</main>
+
+<script src="/assets/league.js"></script>
+<script>
+(async () => {
+  const { el, fmtDate, currentWeek, where } = CHB;
+  const root = document.getElementById("divisions");
+  const team = new URLSearchParams(location.search).get("team");
+
+  let data;
+  try {
+    data = await CHB.loadSessions();
+  } catch (e) {
+    root.replaceChildren(el("p", { class: "status" }, "Schedules couldn't load. Try again in a minute."));
+    return;
+  }
+
+  if (team) {
+    const f = document.getElementById("filter");
+    f.append(el("span", {}, "Showing ", el("b", {}, team)), el("a", { href: "/schedules/" + location.hash }, "Show all"));
+    f.hidden = false;
+  }
+
+  const chips = document.getElementById("chips");
+  root.replaceChildren();
+
+  for (const div of data.divisions) {
+    const cur = currentWeek(div);
+    const plays = (m) => team && (m.home === team || m.away === team);
+    // With a team filter, only show divisions that team is in.
+    if (team && !div.weeks.some((w) => w.matches.some(plays))) continue;
+
+    chips.append(el("a", { class: "chip", href: "#" + div.id }, div.night));
+
+    const head = el("div", { class: "division-head" },
+      el("div", { class: "label" }, div.night),
+      el("h2", {}, div.name),
+      el("p", {}, `${div.format} · ${div.venues.join(", ")}`),
+      el("p", {}, `${fmtDate(div.start, false)} – ${fmtDate(div.end, false)} · `,
+        el("a", { href: div.source, target: "_blank", rel: "noopener" }, `NAPA division ${div.napa_division_id}`)));
+
+    const weeks = div.weeks.map((w) => {
+      const isCur = cur && w.week === cur.week;
+      const isPast = cur ? w.week < cur.week : true;
+      const matches = team ? w.matches.filter(plays) : w.matches;
+      const summary = el("summary", {},
+        el("span", { class: "wk" }, `Week ${w.week}`),
+        el("span", { class: "dt" }, fmtDate(w.date)),
+        isCur && el("span", { class: "tag now" }, w.date === CHB.today() ? "Tonight" : "Up next"));
+      const body = matches.length
+        ? el("ol", { class: "matches" }, matches.map((m) => {
+            const name = (n) => (n === team ? el("span", { class: "me" }, n) : n);
+            return el("li", { class: "match" + (plays(m) ? " mine" : "") },
+              el("span", { class: "teams" }, name(m.home), el("i", {}, "vs"), name(m.away)),
+              el("span", { class: "where" }, where(m)),
+              m.score && el("span", { class: "score", "aria-label": `Score ${m.score[0]} to ${m.score[1]}` }, `${m.score[0]}–${m.score[1]}`));
+          }))
+        : el("div", { class: "closed" }, team ? "Bye / no match this week" : "No matches this week");
+      return el("details", { class: "week" + (isCur ? " current" : "") + (isPast ? " past" : ""), id: `${div.id}-w${w.week}`, open: isCur || !!team },
+        summary,
+        w.notes && el("ul", { class: "notes" }, w.notes.map((n) => el("li", {}, n))),
+        body);
+    });
+
+    root.append(el("section", { class: "division", id: div.id, "aria-label": `${div.night} ${div.name}` }, head, ...weeks));
+  }
+
+  if (!root.children.length) {
+    root.append(el("p", { class: "status" }, team ? `No matches found for ${team} in the current schedules.` : "No active divisions right now."));
+  }
+  document.getElementById("updated").textContent = `Updated ${fmtDate(data.updated, false)}`;
+
+  // The page was built after load, so jump to #division-id ourselves.
+  const target = location.hash && document.querySelector(location.hash);
+  if (target) target.scrollIntoView();
+})();
+</script>
+</body>
+</html>
