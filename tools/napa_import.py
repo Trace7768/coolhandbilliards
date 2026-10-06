@@ -9,6 +9,13 @@ session, keep the key and change only the number.
 
 Reads https://paper.playpool.io/print_schedule_web.php?did=<ID> for each
 division and rewrites data/sessions.json with all of them, in the order given.
+
+    python tools/napa_import.py --refresh
+
+re-reads the divisions already in data/sessions.json (picks up new scores and
+schedule changes). Used by the scheduled GitHub workflow.
+
+The file is only rewritten when something actually changed.
 """
 
 import html
@@ -136,6 +143,11 @@ def parse_division(key, did):
 def main(args):
     if not args:
         sys.exit(__doc__)
+    old = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    if args == ["--refresh"]:
+        args = [f"{d['id']}={d['napa_division_id']}" for d in old.get("divisions", [])]
+        if not args:
+            sys.exit(f"--refresh: no divisions in {OUT}")
     divisions = []
     for arg in args:
         key, _, did = arg.partition("=")
@@ -145,6 +157,9 @@ def main(args):
         matches = sum(len(w["matches"]) for w in d["weeks"])
         print(f"{key}: {d['night']} {d['name']} ({did}) - {len(d['weeks'])} weeks, {matches} matches, {d['start']} to {d['end']}")
         divisions.append(d)
+    if divisions == old.get("divisions"):
+        print("No changes.")
+        return
     OUT.parent.mkdir(exist_ok=True)
     data = {"updated": date.today().isoformat(), "divisions": divisions}
     OUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

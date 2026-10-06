@@ -1,0 +1,43 @@
+# Pulls the latest NAPA schedules and scores into data/sessions.json and
+# publishes them (Netlify deploys on the push). Only that file is ever changed.
+name: Refresh schedules
+
+on:
+  schedule:
+    # 8:00 AM Kentucky time on Tue, Wed, Thu. GitHub schedules run in UTC, so
+    # both 12:00 (summer, EDT) and 13:00 (winter, EST) are listed; the extra
+    # run finds no changes and does nothing.
+    - cron: "0 12,13 * * 2,3,4"
+  workflow_dispatch: # adds a "Run workflow" button on GitHub for a manual refresh
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-schedules
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read NAPA schedules
+        run: python tools/napa_import.py --refresh
+
+      - name: Publish if anything changed
+        run: |
+          if git diff --quiet -- data/sessions.json; then
+            echo "Schedules unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sessions.json
+          git commit -m "Refresh schedules from NAPA"
+          git pull --rebase
+          git push

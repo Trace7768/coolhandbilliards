@@ -13,6 +13,14 @@ diff, and ask before committing or pushing.
 - **Never commit or push without showing the diff and getting a clear OK.**
   Approval for one commit does not carry over to the next.
 - Keep unrelated changes in separate commits.
+- **One approved exception:** the GitHub workflow
+  `.github/workflows/refresh-schedules.yml` runs `napa_import.py --refresh`
+  Tue/Wed/Thu at 8 AM Kentucky time and commits/pushes `data/sessions.json`
+  on its own when scores or schedules change. It touches nothing else.
+- Because of that bot, GitHub is often ahead of this computer. Run
+  `git pull` before starting any work.
+- Pushing from the command line has no GitHub sign-in; the owner pushes with
+  "Push origin" in GitHub Desktop.
 - Git is not on PATH. Use GitHub Desktop's copy:
   `$env:LOCALAPPDATA\GitHubDesktop\app-*\resources\app\git\cmd\git.exe`
 
@@ -92,7 +100,9 @@ team URLs only work on Netlify; locally use `/players/team.html?t=<team id>`.
 1. The owner sends the new NAPA division IDs (or print-schedule links).
 2. Run `python tools/napa_import.py monday-singles=<ID> tuesday-etown-metro=<ID> wednesday-bardstown=<ID>`
    — list every active division; any left off disappear from the site.
-   A brand-new league night gets a new permanent key.
+   A brand-new league night gets a new permanent key. This sets which
+   divisions the Tue/Wed/Thu auto-refresh follows. If a league night moves
+   to a different day, update the cron days in the workflow file too.
 3. Check each team in `players/teams.json`: `division` points at the right key
    and `napa_name` matches NAPA's spelling exactly. PINs don't change.
 4. Update team links if the owner sent new ones.
