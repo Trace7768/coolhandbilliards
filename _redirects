@@ -1,5 +1,9 @@
 # Netlify rules. Real files always win over these, so teams.json, team.html,
 # and the logo are served normally.
 
+# Old session-based team pages (retired) -> permanent team pages
+/players/tuesday.html     /players/stroke-and-bounce/     301
+/players/wednesday.html   /players/thought-it-would-go/   301
+
 # Pretty team URLs: /players/stroke-and-bounce/ is served by players/team.html
 /players/:team   /players/team.html   200
