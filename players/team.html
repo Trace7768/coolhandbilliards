@@ -26,6 +26,26 @@
   .next{background:var(--surface);border:1px solid var(--text);padding:18px 20px;display:flex;flex-direction:column;gap:4px}
   .next .vs{font-size:20px;font-weight:500}
   .next .meta{color:var(--muted);font-size:14px}
+  .lineup{display:flex;flex-direction:column;gap:6px;font-size:15px}
+  .lineup b{font-weight:500}
+  .grid-wrap{overflow-x:auto;border:1px solid var(--border);background:var(--surface)}
+  .grid{border-collapse:collapse;width:100%;font-size:13px;text-align:center}
+  .grid th,.grid td{padding:8px 4px;border-bottom:1px solid var(--border)}
+  .grid tr:last-child td,.grid tr:last-child th{border-bottom:none}
+  .grid thead th{font-weight:500;line-height:1.2}
+  .grid thead small{display:block;color:var(--muted);font-weight:300;font-size:11px}
+  .grid tbody th{text-align:left;font-weight:500;padding-left:12px;white-space:nowrap}
+  .grid tbody th small{display:block;color:var(--muted);font-weight:300;font-size:11px}
+  .grid .cur{background:var(--surface-2)}
+  .grid thead .cur{box-shadow:inset 0 2px 0 var(--text)}
+  .st{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;font-weight:500}
+  .st.play{background:var(--text);color:var(--bg)}
+  .st.alt{border:1px solid var(--text)}
+  .st.need{border:2px solid var(--text)}
+  .st.off{color:var(--faint)}
+  .legend{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--muted);font-size:13px}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend .st{width:22px;height:22px;font-size:12px}
   .lock{background:none;border:none;color:var(--faint);font:inherit;font-size:13px;cursor:pointer;padding:12px 0;align-self:center}
 </style>
 </head>
@@ -130,6 +150,9 @@
         parts.push(el("p", { class: "muted" }, "No more matches this session."));
       }
 
+      const av = team.availability;
+      if (av && av.napa_division_id === div.napa_division_id) parts.push(availability(av, div, upcoming || CHB.currentWeek(div)));
+
       const links = [
         inDivision && { label: "Full schedule", url: `/schedules/?team=${encodeURIComponent(nm)}#${div.id}` },
         ...team.links,
@@ -149,6 +172,42 @@
 
     page.replaceChildren(...parts);
     page.hidden = false;
+  }
+
+  // Player availability for the session: a lineup line for the coming week, then the full grid.
+  function availability(av, div, cur) {
+    const STATUS = {
+      PLAY: { cls: "play", mark: "P", label: "Playing" },
+      ALT: { cls: "alt", mark: "A", label: "Alternate" },
+      NEED: { cls: "need", mark: "!", label: "Need a player" },
+      OFF: { cls: "off", mark: "–", label: "Off" },
+    };
+    const mark = (s) => {
+      const st = STATUS[s] || STATUS.OFF;
+      return el("span", { class: `st ${st.cls}`, title: st.label }, st.mark);
+    };
+    const curIdx = cur ? div.weeks.findIndex((w) => w.week === cur.week) : -1;
+    const section = [el("div", { class: "label" }, "Availability")];
+
+    if (curIdx >= 0) {
+      const who = (s) => av.players.filter((p) => p.weeks[curIdx] === s).map((p) => p.name);
+      section.push(el("div", { class: "lineup" },
+        el("div", { class: "muted" }, `Week ${cur.week} · ${fmtDate(cur.date)}`),
+        ...["PLAY", "ALT", "NEED", "OFF"].map((s) => who(s).length > 0 && el("div", {}, el("b", {}, `${STATUS[s].label}: `), who(s).join(", ")))));
+    }
+
+    const head = el("tr", {}, el("th", { scope: "col" }, el("span", { class: "label" }, "Wk")),
+      div.weeks.map((w, i) => el("th", { scope: "col", class: i === curIdx ? "cur" : null }, w.week, el("small", {}, fmtDate(w.date, false)))));
+    const rows = av.players.map((p) => {
+      const n = (s) => p.weeks.filter((x) => x === s).length;
+      return el("tr", {},
+        el("th", { scope: "row" }, p.name, el("small", {}, `${n("PLAY")}P / ${n("ALT")}A`)),
+        div.weeks.map((w, i) => el("td", { class: i === curIdx ? "cur" : null }, mark(p.weeks[i]))));
+    });
+    section.push(
+      el("div", { class: "grid-wrap" }, el("table", { class: "grid" }, el("thead", {}, head), el("tbody", {}, rows))),
+      el("div", { class: "legend" }, Object.values(STATUS).map((st) => el("span", {}, el("span", { class: `st ${st.cls}` }, st.mark), st.label))));
+    return el("section", { class: "stack" }, section);
   }
 })();
 </script>

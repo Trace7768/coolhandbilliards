@@ -14,7 +14,17 @@
       "napa_name": "Thought It Would Go",
       "division": "wednesday-bardstown",
       "pin_sha256": "e99c0379b2d452b64d4d31f963dc6d32248e9c1e1e6582c24c00f21be9c47240",
-      "links": []
+      "links": [],
+      "availability": {
+        "napa_division_id": "14465",
+        "players": [
+          { "name": "Gassman",    "weeks": ["PLAY", "OFF",  "PLAY", "OFF",  "PLAY", "PLAY", "PLAY"] },
+          { "name": "Stirsman",   "weeks": ["PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF"] },
+          { "name": "Mobley",     "weeks": ["PLAY", "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY"] },
+          { "name": "Lucas",      "weeks": ["OFF",  "PLAY", "PLAY", "PLAY", "PLAY", "OFF",  "PLAY"] },
+          { "name": "Mrs. Lucas", "weeks": ["OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF"] }
+        ]
+      }
     }
   ]
 }

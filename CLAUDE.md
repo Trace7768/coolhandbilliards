@@ -56,7 +56,12 @@ Anything committed — including deleted files in history — is visible on GitH
   with home/away/venue/table/score).
 - `players/teams.json`: one entry per team — permanent `id` (URL), display
   `name`, `napa_name` (exactly as NAPA spells it), `division` (a key from
-  sessions.json), `pin_sha256`, and `links` (`[{ "label", "url" }]`).
+  sessions.json), `pin_sha256`, `links` (`[{ "label", "url" }]`), and optional
+  `availability`: `{ "napa_division_id", "players": [{ "name", "weeks": [...] }] }`
+  with one of PLAY / ALT / NEED / OFF per week, in week order. It only shows
+  while `napa_division_id` matches the team's current division, so a new
+  session hides the old grid until the owner sends a new one (usually a
+  screenshot of the owner's hand-made grid — transcribe it and read it back to check).
 - Division keys are permanent: `monday-singles`, `tuesday-etown-metro`,
   `wednesday-bardstown`. Each session only the NAPA number changes.
 - PIN hash = SHA-256 of `<team id>:<PIN>`, e.g.
