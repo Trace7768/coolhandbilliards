@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1361,32 +1361,56 @@
             {
               "home": "Beyond Cue",
               "away": "Blazing Cue-migos",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                26,
+                29
+              ]
             },
             {
               "home": "On Cue",
               "away": "Off the Rail",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                24,
+                31
+              ]
             },
             {
               "home": "Gunners 2.0",
               "away": "The Billiard Bandits",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                41,
+                18
+              ]
             },
             {
               "home": "Make 'em Pay",
               "away": "Comeback Cueists",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                17,
+                42
+              ]
             },
             {
               "home": "Sharp Shooters",
               "away": "Traitor Ron",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                35,
+                24
+              ]
             },
             {
               "home": "Balls in Hand",
               "away": "The Recyclables",
-              "venue": "Hot Shots"
+              "venue": "Hot Shots",
+              "score": [
+                20,
+                35
+              ]
             }
           ]
         },
