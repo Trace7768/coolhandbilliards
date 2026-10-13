@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-13",
   "divisions": [
     {
       "id": "monday-singles",
@@ -327,7 +327,11 @@
             {
               "home": "Billy Wimberg",
               "away": "Ray Stovall",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                30,
+                14
+              ]
             },
             {
               "home": "Ronald Prior",
@@ -393,7 +397,11 @@
             {
               "home": "Gerry Herron",
               "away": "Billy Wimberg",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Teddy Barker jr.",
@@ -431,7 +439,11 @@
             {
               "home": "Logan Outland",
               "away": "Mckay Payton",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                3
+              ]
             }
           ]
         },
@@ -560,7 +572,11 @@
             {
               "home": "Ray Stovall",
               "away": "Pat Schultz",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                14
+              ]
             },
             {
               "home": "Billy Wimberg",
@@ -609,7 +625,11 @@
             {
               "home": "Pat Schultz",
               "away": "Gerry Herron",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                1,
+                24
+              ]
             },
             {
               "home": "Marcus Odom",
@@ -832,7 +852,11 @@
             {
               "home": "Joe Lowery",
               "away": "Ray Stovall",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                15,
+                3
+              ]
             },
             {
               "home": "Austin Wheatley",
@@ -1598,25 +1622,41 @@
               "home": "Thought It Would Go",
               "away": "Death By 1000 Scratches",
               "venue": "Bluegrass Tavern",
-              "table": "3"
+              "table": "3",
+              "score": [
+                35,
+                28
+              ]
             },
             {
               "home": "Soul Snatcher",
               "away": "Chalk's Free",
               "venue": "Bluegrass Tavern",
-              "table": "1"
+              "table": "1",
+              "score": [
+                43,
+                13
+              ]
             },
             {
               "home": "Bluegrass Bandits",
               "away": "Old Enough",
               "venue": "Bluegrass Tavern",
-              "table": "2"
+              "table": "2",
+              "score": [
+                8,
+                48
+              ]
             },
             {
               "home": "3 Old Men",
               "away": "Less Talk More Chalk",
               "venue": "Bluegrass Tavern",
-              "table": "4"
+              "table": "4",
+              "score": [
+                16,
+                43
+              ]
             }
           ]
         },
