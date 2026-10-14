@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1445,41 +1445,62 @@
             {
               "home": "The Billiard Bandits",
               "away": "Beyond Cue",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                18,
+                42
+              ]
             },
             {
               "home": "Blazing Cue-migos",
               "away": "On Cue",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                28,
+                36
+              ]
             },
             {
               "home": "Comeback Cueists",
               "away": "Gunners 2.0",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                36,
+                28
+              ]
             },
             {
               "home": "Traitor Ron",
               "away": "Make 'em Pay",
-              "venue": "Hot Shots"
+              "venue": "Hot Shots",
+              "score": [
+                35,
+                24
+              ]
             },
             {
               "home": "The Recyclables",
               "away": "Sharp Shooters",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                24,
+                37
+              ]
             },
             {
               "home": "Off the Rail",
               "away": "Balls in Hand",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                29,
+                31
+              ]
             }
           ]
         },
         {
           "week": 10,
           "date": "2026-10-20",
-          "notes": [
-            "Last chance to make roster changes"
-          ],
           "matches": [
             {
               "home": "Beyond Cue",
