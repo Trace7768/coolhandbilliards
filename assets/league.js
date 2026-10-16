@@ -22,13 +22,23 @@ const CHB = (() => {
     return division.weeks.find((w) => w.date >= t) || null;
   }
 
-  async function getJSON(url) {
-    const res = await fetch(url, { cache: "no-cache" });
-    if (!res.ok) throw new Error(`${url}: ${res.status}`);
-    return res.json();
+  async function getJSON(url, timeoutMs = 8000) {
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), timeoutMs);
+    try {
+      const res = await fetch(url, { cache: "no-cache", signal: ctl.signal });
+      if (!res.ok) throw new Error(`${url}: ${res.status}`);
+      return await res.json();
+    } finally {
+      clearTimeout(timer);
+    }
   }
 
-  const loadSessions = () => getJSON("/data/sessions.json");
+  // Schedules are read straight from GitHub, where the auto-refresh workflow
+  // saves them, so score updates never need a (credit-costing) Netlify deploy.
+  // Falls back to the copy deployed with the site. Needs the repo to be public.
+  const LIVE_SESSIONS = "https://raw.githubusercontent.com/Trace7768/coolhandbilliards/main/data/sessions.json";
+  const loadSessions = () => getJSON(LIVE_SESSIONS, 4000).catch(() => getJSON("/data/sessions.json"));
   const loadTeams = () => getJSON("/players/teams.json");
 
   function el(tag, attrs = {}, ...children) {

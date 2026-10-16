@@ -1,13 +1,15 @@
-# Pulls the latest NAPA schedules and scores into data/sessions.json and
-# publishes them (Netlify deploys on the push). Only that file is ever changed.
+# Pulls the latest NAPA schedules and scores into data/sessions.json and saves
+# them to GitHub. Pages read that file from GitHub directly, so no Netlify
+# deploy (and no credits) is needed. Only that file is ever changed.
 name: Refresh schedules
 
 on:
   schedule:
-    # 8:00 AM Kentucky time on Tue, Wed, Thu. GitHub schedules run in UTC, so
-    # both 12:00 (summer, EDT) and 13:00 (winter, EST) are listed; the extra
-    # run finds no changes and does nothing.
-    - cron: "0 12,13 * * 2,3,4"
+    # ~7:47 AM Kentucky time on Tue, Wed, Thu. GitHub schedules run in UTC, so
+    # both 11:47 (summer, EDT) and 12:47 (winter, EST) are listed; the extra
+    # run finds no changes and does nothing. An odd minute avoids GitHub's
+    # top-of-the-hour delays.
+    - cron: "47 11,12 * * 2,3,4"
   workflow_dispatch: # adds a "Run workflow" button on GitHub for a manual refresh
 
 permissions:
@@ -38,6 +40,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/sessions.json
-          git commit -m "Refresh schedules from NAPA"
+          git commit -m "Refresh schedules from NAPA [skip netlify]"
           git pull --rebase
           git push

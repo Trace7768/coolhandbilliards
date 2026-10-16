@@ -17,6 +17,14 @@ diff, and ask before committing or pushing.
   `.github/workflows/refresh-schedules.yml` runs `napa_import.py --refresh`
   Tue/Wed/Thu at 8 AM Kentucky time and commits/pushes `data/sessions.json`
   on its own when scores or schedules change. It touches nothing else.
+- **Netlify credits:** the free plan has 300 credits/month and each production
+  deploy costs 15. At 0 the whole site goes offline until the next cycle.
+  So: the bot's commits skip Netlify (`[skip netlify]`), pages read
+  `data/sessions.json` from raw.githubusercontent.com (falling back to the
+  deployed copy), and `netlify.toml` skips deploys that only touch data,
+  notes, or tooling. Batch site changes into one push where possible.
+  If the repo is ever made private, the GitHub read stops working — switch
+  `assets/league.js` back to `/data/sessions.json` and revisit credits.
 - Because of that bot, GitHub is often ahead of this computer. Run
   `git pull` before starting any work.
 - Pushing from the command line has no GitHub sign-in; the owner pushes with
