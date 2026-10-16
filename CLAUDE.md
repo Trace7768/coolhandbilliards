@@ -88,6 +88,9 @@ Anything committed — including deleted files in history — is visible on GitH
   The owner keeps originals in
   `Proton Drive\coolhandbilliards\My files\AI\NAPA\Players\HOH\<Name>\`
   (certificate PNG, photos, a .txt note).
+- A player's FIRST Hall of Hustler award goes on the Hall of Hustler page.
+  Repeat awards are blog posts only (certificate image as the photo, no
+  framed photos) — the owner's rule.
 - `data/posts.json`: `posts: [{ "id", "date", "title", "body", "photo"?, "photo_alt"? }]`;
   blank lines in `body` separate paragraphs. Photos go in `media/blog/`.
 - Photos: resize before committing — longest side 1600px, JPEG quality ~82,
