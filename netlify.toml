@@ -2,6 +2,6 @@
 # skip deploys that visitors wouldn't notice.
 [build]
   publish = "."
-  # Exit 0 = skip this deploy. Skips when the only changes are the schedule
-  # data (pages read it from GitHub directly), notes, or tooling.
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)data/sessions.json' ':(exclude)CLAUDE.md' ':(exclude)README.md' ':(exclude)tools/' ':(exclude).github/'"
+  # Exit 0 = skip this deploy. Skips when the only changes are data files or
+  # photos (pages read those from GitHub directly), notes, or tooling.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)data/' ':(exclude)media/' ':(exclude)CLAUDE.md' ':(exclude)README.md' ':(exclude)tools/' ':(exclude).github/'"

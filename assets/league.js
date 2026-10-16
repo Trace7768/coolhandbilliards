@@ -34,11 +34,17 @@ const CHB = (() => {
     }
   }
 
-  // Schedules are read straight from GitHub, where the auto-refresh workflow
-  // saves them, so score updates never need a (credit-costing) Netlify deploy.
-  // Falls back to the copy deployed with the site. Needs the repo to be public.
-  const LIVE_SESSIONS = "https://raw.githubusercontent.com/Trace7768/coolhandbilliards/main/data/sessions.json";
-  const loadSessions = () => getJSON(LIVE_SESSIONS, 4000).catch(() => getJSON("/data/sessions.json"));
+  // Data files (schedules, awards, posts) and their photos are read straight
+  // from GitHub, so updating them never needs a (credit-costing) Netlify
+  // deploy. Falls back to the copy deployed with the site. Needs the repo to
+  // be public.
+  // A local preview (python -m http.server) uses this computer's files instead.
+  const GITHUB = location.hostname === "localhost" ? "/" : "https://raw.githubusercontent.com/Trace7768/coolhandbilliards/main/";
+  const loadLive = (path) => getJSON(GITHUB + path, 4000).catch(() => getJSON("/" + path));
+  // Photos live in the repo too; a new one may not be on Netlify yet, so use GitHub's copy.
+  const photo = (path) => GITHUB + path.replace(/^\//, "");
+
+  const loadSessions = () => loadLive("data/sessions.json");
   const loadTeams = () => getJSON("/players/teams.json");
 
   function el(tag, attrs = {}, ...children) {
@@ -59,5 +65,15 @@ const CHB = (() => {
     return match.table ? `${match.venue} · Table ${match.table}` : match.venue;
   }
 
-  return { today, fmtDate, currentWeek, loadSessions, loadTeams, el, where };
+  // "2026-09" -> "September 2026"; "2026-09-14" -> "September 14, 2026"
+  function fmtLong(iso) {
+    const FULL = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const [y, m, d] = iso.split("-").map(Number);
+    return d ? `${FULL[m - 1]} ${d}, ${y}` : `${FULL[m - 1]} ${y}`;
+  }
+
+  // Plain text with blank lines between paragraphs -> <p> elements.
+  const paragraphs = (text) => text.split(/\n\s*\n/).map((p) => el("p", {}, p.trim()));
+
+  return { today, fmtDate, fmtLong, currentWeek, loadLive, loadSessions, loadTeams, photo, paragraphs, el, where };
 })();

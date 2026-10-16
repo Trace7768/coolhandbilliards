@@ -25,14 +25,55 @@ a{color:inherit}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--text);outline-offset:3px}
 [hidden]{display:none!important}
 
-/* top bar */
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+/* top bar: logo row, then the menu on its own row on phones */
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px}
 .top .home{display:flex;align-items:center;gap:12px;text-decoration:none}
 .top .home img{width:44px;height:44px;filter:invert(1)}
 .top .home span{font-weight:500;font-size:15px;letter-spacing:.02em}
-.top nav{display:flex;gap:18px;font-size:14px}
-.top nav a{color:var(--muted);text-decoration:none;padding:12px 0}
+.top nav{display:flex;flex-wrap:wrap;gap:0 18px;font-size:14px}
+.top nav a{color:var(--muted);text-decoration:none;padding:12px 0;white-space:nowrap}
 .top nav a:hover,.top nav a[aria-current]{color:var(--text)}
+@media (max-width:620px){.top nav{width:100%;justify-content:space-between;border-top:1px solid var(--border)}}
+
+/* Hall of Hustler explainer */
+.explain{border:1px solid var(--border);background:var(--surface)}
+.explain>summary{list-style:none;cursor:pointer;display:flex;align-items:center;min-height:52px;padding:12px 16px;font-weight:500}
+.explain>summary::-webkit-details-marker{display:none}
+.explain>summary::after{content:"+";margin-left:auto;color:var(--muted);font-size:18px}
+.explain[open]>summary::after{content:"–"}
+.explain-body{display:flex;flex-direction:column;gap:12px;padding:0 16px 16px;font-size:15px}
+.explain-body p{margin:0}
+.explain-body a{color:var(--text)}
+.ladder{list-style:none;margin:0;padding:0;border-top:1px solid var(--border)}
+.ladder li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--border)}
+.ladder b{font-weight:500;font-size:18px;font-variant-numeric:tabular-nums}
+.bonus{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.bonus b{font-weight:500}
+
+/* photo cards (Hall of Hustler, blog) */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);padding:0;font:inherit;color:inherit;text-align:left;cursor:pointer;transition:border-color .15s}
+.tile:hover{border-color:var(--border-bright)}
+.tile img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--surface-2)}
+.tile b{font-weight:500;font-size:16px;padding:12px 12px 0}
+.tile span{color:var(--muted);font-size:13px;padding:2px 12px 12px;white-space:pre-line}
+.empty{border:1px dashed var(--border-bright);padding:32px 20px;text-align:center;color:var(--muted)}
+
+dialog.viewer{background:var(--bg);color:var(--text);border:1px solid var(--border-bright);padding:0;width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 24px)}
+dialog.viewer::backdrop{background:rgba(0,0,0,.8)}
+dialog.viewer .body{display:flex;flex-direction:column;gap:12px;padding:20px}
+dialog.viewer img{width:100%;display:block}
+dialog.viewer h2{margin:0;font-weight:500;font-size:22px}
+dialog.viewer p{margin:0}
+dialog.viewer .close{position:sticky;top:0;display:flex;justify-content:flex-end;background:var(--bg);z-index:1}
+dialog.viewer .close button{background:none;border:none;color:var(--text);font:inherit;font-size:28px;line-height:1;min-width:48px;min-height:48px;cursor:pointer}
+
+.post{display:flex;flex-direction:column;gap:12px;padding-bottom:32px;border-bottom:1px solid var(--border);scroll-margin-top:16px}
+.post:last-child{border-bottom:none}
+.post h2{margin:0;font-weight:500;font-size:22px;line-height:1.25}
+.post time{color:var(--muted);font-size:14px}
+.post p{margin:0}
+.post img{width:100%;display:block}
 
 h1{font-weight:500;font-size:clamp(26px,7vw,34px);line-height:1.15;letter-spacing:-.01em;margin:0}
 .lede{color:var(--muted);margin:8px 0 0;font-size:15px}

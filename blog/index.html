@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blog · Coolhand Billiards</title>
+<meta name="description" content="News and announcements from Coolhand Billiards NAPA leagues.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<link rel="stylesheet" href="/assets/chb.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="home" href="/"><img src="/players/CHB_Black_trans.png" alt=""><span>Coolhand Billiards</span></a>
+    <nav><a href="/schedules/">Schedules</a><a href="/hall-of-hustler/">Hall of Hustler</a><a href="/blog/" aria-current="page">Blog</a><a href="/players/">Team Hub</a></nav>
+  </header>
+
+  <h1>Blog</h1>
+
+  <div id="posts" class="stack"><p class="status">Loading…</p></div>
+</main>
+
+<script src="/assets/league.js"></script>
+<script>
+(async () => {
+  const { el, fmtLong, photo, paragraphs } = CHB;
+  const root = document.getElementById("posts");
+
+  let posts;
+  try {
+    ({ posts } = await CHB.loadLive("data/posts.json"));
+  } catch (e) {
+    root.replaceChildren(el("p", { class: "status" }, "Posts couldn't load. Try again in a minute."));
+    return;
+  }
+  if (!posts.length) {
+    root.replaceChildren(el("div", { class: "empty" }, "No posts yet."));
+    return;
+  }
+
+  posts.sort((a, b) => b.date.localeCompare(a.date));
+  root.replaceChildren(...posts.map((p) => el("article", { class: "post", id: p.id },
+    el("time", { datetime: p.date }, fmtLong(p.date)),
+    el("h2", {}, p.title),
+    p.photo && el("img", { src: photo(p.photo), alt: p.photo_alt || "", loading: "lazy" }),
+    ...paragraphs(p.body))));
+
+  // Built after load, so jump to a linked post (/blog/#post-id) ourselves.
+  const target = location.hash && document.getElementById(location.hash.slice(1));
+  if (target) target.scrollIntoView();
+})();
+</script>
+</body>
+</html>

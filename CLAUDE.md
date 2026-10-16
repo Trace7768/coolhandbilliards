@@ -20,9 +20,9 @@ diff, and ask before committing or pushing.
 - **Netlify credits:** the free plan has 300 credits/month and each production
   deploy costs 15. At 0 the whole site goes offline until the next cycle.
   So: the bot's commits skip Netlify (`[skip netlify]`), pages read
-  `data/sessions.json` from raw.githubusercontent.com (falling back to the
-  deployed copy), and `netlify.toml` skips deploys that only touch data,
-  notes, or tooling. Batch site changes into one push where possible.
+  everything in `data/` and `media/` from raw.githubusercontent.com (falling
+  back to the deployed copy), and `netlify.toml` skips deploys that only
+  touch data, photos, notes, or tooling. Batch site changes into one push where possible.
   If the repo is ever made private, the GitHub read stops working — switch
   `assets/league.js` back to `/data/sessions.json` and revisit credits.
 - Because of that bot, GitHub is often ahead of this computer. Run
@@ -79,6 +79,21 @@ Anything committed — including deleted files in history — is visible on GitH
   while `napa_division_id` matches the team's current division, so a new
   session hides the old grid until the owner sends a new one (usually a
   screenshot of the owner's hand-made grid — transcribe it and read it back to check).
+- `data/hall-of-hustler.json`: `inductees: [{ "id", "name", "date" ("YYYY-MM"
+  or "YYYY-MM-DD"), "points", "game", "night"?, "note"?, "thumb",
+  "photos": ["media/hoh/<id>-1.jpg", …] }]`. `id` = `<lastname>-<YYYY-MM>`;
+  `/hall-of-hustler/#<id>` opens it. Facts (points, game, match date) come
+  from the NAPA certificate. Photo order: presentation photo, other photos,
+  certificate last. `thumb` = `<id>-thumb.jpg`, 640px, made from photo 1.
+  The owner keeps originals in
+  `Proton Drive\coolhandbilliards\My files\AI\NAPA\Players\HOH\<Name>\`
+  (certificate PNG, photos, a .txt note).
+- `data/posts.json`: `posts: [{ "id", "date", "title", "body", "photo"?, "photo_alt"? }]`;
+  blank lines in `body` separate paragraphs. Photos go in `media/blog/`.
+- Photos: resize before committing — longest side 1600px, JPEG quality ~82,
+  EXIF stripped (Pillow is installed). Never commit phone originals.
+- Adding awards, posts or photos costs no Netlify credits: pages read `data/`
+  and `media/` from GitHub, and `netlify.toml` skips deploys that only touch them.
 - Division keys are permanent: `monday-singles`, `tuesday-etown-metro`,
   `wednesday-bardstown`. Each session only the NAPA number changes.
 - PIN hash = SHA-256 of `<team id>:<PIN>`, e.g.
@@ -89,9 +104,11 @@ Anything committed — including deleted files in history — is visible on GitH
 
 | Path | What it is |
 |---|---|
-| `index.html` | Homepage: league nights, how to join, links to Schedules and Player Portal |
+| `index.html` | Homepage: league nights, how to join, links to every section |
 | `schedules/index.html` | Public schedules for every division; `?team=<NAPA name>` filters to one team |
-| `players/index.html` | Player Portal: team list from `teams.json` |
+| `hall-of-hustler/index.html` | Hall of Hustler award gallery from `data/hall-of-hustler.json` |
+| `blog/index.html` | Blog posts from `data/posts.json` |
+| `players/index.html` | Team Hub (URL stays `/players/` so team links keep working): team list from `teams.json` |
 | `players/team.html` | Team page template; served at `/players/<team id>/` by `_redirects` |
 | `assets/chb.css`, `assets/league.js` | Shared styles and data helpers |
 | `tools/napa_import.py` | Converts NAPA printable schedules into `data/sessions.json` |
@@ -100,7 +117,8 @@ Anything committed — including deleted files in history — is visible on GitH
 Not in the repo yet: the intake form (`chb-intake.html`) — waiting on EmailJS
 keys.
 
-Preview locally with `python -m http.server 8787` from the repo root. Pretty
+Preview locally with `python -m http.server 8787` from the repo root (on
+localhost, pages read `data/` and `media/` from this computer, not GitHub). Pretty
 team URLs only work on Netlify; locally use `/players/team.html?t=<team id>`.
 
 ## New session checklist

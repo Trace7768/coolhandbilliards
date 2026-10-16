@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hall of Hustler · Coolhand Billiards</title>
+<meta name="description" content="Coolhand Billiards Hall of Hustler award winners.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap">
+<link rel="stylesheet" href="/assets/chb.css">
+</head>
+<body>
+<main>
+  <header class="top">
+    <a class="home" href="/"><img src="/players/CHB_Black_trans.png" alt=""><span>Coolhand Billiards</span></a>
+    <nav><a href="/schedules/">Schedules</a><a href="/hall-of-hustler/" aria-current="page">Hall of Hustler</a><a href="/blog/">Blog</a><a href="/players/">Team Hub</a></nav>
+  </header>
+
+  <div class="stack">
+    <div>
+      <h1>Hall of Hustler</h1>
+      <p class="lede">Score 23 or more points in a single NAPA match and you're in. Each inductee gets a certificate from NAPA HQ and a permanent spot in NAPA's national Hall of Hustlers.</p>
+    </div>
+
+    <details class="explain">
+      <summary>How do you get to 23?</summary>
+      <div class="explain-body">
+        <p>Points for one match build like this:</p>
+        <ol class="ladder">
+          <li><span>Show up for your match</span><b>1</b></li>
+          <li><span>Win a game</span><b>3</b></li>
+          <li><span>Reach the hill (one win from the match)</span><b>7</b></li>
+          <li><span>Win the match</span><b>14</b></li>
+          <li><span>Sweep: win without your opponent winning a game</span><b>20</b></li>
+        </ol>
+        <p>Getting to 23 takes a sweep plus at least 3 bonus points, worth +1 each time:</p>
+        <ul class="bonus">
+          <li><b>Snap</b> — win a game on the break</li>
+          <li><b>Run out</b> — clear every ball in a single turn at the table</li>
+          <li><b>Lag and sweep</b> — win the lag, let your opponent pick the game format, then sweep them</li>
+        </ul>
+        <p class="muted">23 is hard to get.</p>
+        <p><a href="https://poolshooters.com/top_expanded.php" target="_blank" rel="noopener">See NAPA's national rankings</a></p>
+      </div>
+    </details>
+  </div>
+
+  <div id="list"><p class="status">Loading…</p></div>
+
+  <dialog class="viewer" id="viewer" aria-labelledby="viewer-name">
+    <div class="close"><button type="button" aria-label="Close">×</button></div>
+    <div class="body" id="viewer-body"></div>
+  </dialog>
+</main>
+
+<script src="/assets/league.js"></script>
+<script>
+(async () => {
+  const { el, fmtLong, photo, paragraphs } = CHB;
+  const list = document.getElementById("list");
+  const viewer = document.getElementById("viewer");
+  const body = document.getElementById("viewer-body");
+  viewer.querySelector(".close button").addEventListener("click", () => viewer.close());
+  viewer.addEventListener("click", (e) => { if (e.target === viewer) viewer.close(); });
+
+  let inductees;
+  try {
+    ({ inductees } = await CHB.loadLive("data/hall-of-hustler.json"));
+  } catch (e) {
+    list.replaceChildren(el("p", { class: "status" }, "This page couldn't load. Try again in a minute."));
+    return;
+  }
+  if (!inductees.length) {
+    list.replaceChildren(el("div", { class: "empty" }, "First inductees coming soon."));
+    return;
+  }
+
+  // Newest first; dates are "YYYY-MM" or "YYYY-MM-DD", which sort as text.
+  inductees.sort((a, b) => b.date.localeCompare(a.date));
+  const score = (p) => [p.points && `${p.points} points`, p.game].filter(Boolean).join(" · ");
+
+  function open(p) {
+    body.replaceChildren(
+      el("h2", { id: "viewer-name" }, p.name),
+      el("div", { class: "muted" }, [score(p), fmtLong(p.date), p.night].filter(Boolean).join(" · ")),
+      ...(p.note ? paragraphs(p.note) : []),
+      ...(p.photos || []).map((src, i) => el("img", { src: photo(src), alt: i === 0 ? `${p.name}'s Hall of Hustler presentation` : "", loading: i ? "lazy" : null })));
+    viewer.showModal();
+    history.replaceState(null, "", "#" + p.id);
+  }
+  viewer.addEventListener("close", () => history.replaceState(null, "", location.pathname));
+
+  list.replaceChildren(el("div", { class: "gallery" }, inductees.map((p) => {
+    const cover = p.thumb || (p.photos && p.photos[0]);
+    const tile = el("button", { class: "tile", type: "button" },
+      cover && el("img", { src: photo(cover), alt: "", loading: "lazy" }),
+      el("b", {}, p.name),
+      el("span", {}, [score(p), fmtLong(p.date)].filter(Boolean).join("\n")));
+    tile.addEventListener("click", () => open(p));
+    return tile;
+  })));
+
+  // A shared link like /hall-of-hustler/#gassman opens that inductee.
+  const linked = inductees.find((p) => "#" + p.id === location.hash);
+  if (linked) open(linked);
+})();
+</script>
+</body>
+</html>
