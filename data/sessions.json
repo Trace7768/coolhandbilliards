@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1541,36 +1541,63 @@
         {
           "week": 10,
           "date": "2026-10-20",
+          "notes": [
+            "Last chance to make roster changes"
+          ],
           "matches": [
             {
               "home": "Beyond Cue",
               "away": "On Cue",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                29,
+                30
+              ]
             },
             {
               "home": "The Billiard Bandits",
               "away": "Comeback Cueists",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                9,
+                57
+              ]
             },
             {
               "home": "Gunners 2.0",
               "away": "Traitor Ron",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                41,
+                22
+              ]
             },
             {
               "home": "Make 'em Pay",
               "away": "The Recyclables",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                29,
+                35
+              ]
             },
             {
               "home": "Sharp Shooters",
               "away": "Off the Rail",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                29,
+                31
+              ]
             },
             {
               "home": "Balls in Hand",
               "away": "Blazing Cue-migos",
-              "venue": "Hot Shots"
+              "venue": "Hot Shots",
+              "score": [
+                31,
+                24
+              ]
             }
           ]
         },
@@ -1578,7 +1605,6 @@
           "week": 11,
           "date": "2026-10-27",
           "notes": [
-            "No more roster changes",
             "Make up match deadline"
           ],
           "matches": [
