@@ -57,6 +57,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .tile img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--surface-2)}
 .tile b{font-weight:500;font-size:16px;padding:12px 12px 0}
 .tile span{color:var(--muted);font-size:13px;padding:2px 12px 12px;white-space:pre-line}
+.tile .tag.times{align-self:flex-start;margin:8px 12px 0;padding:2px 6px;font-size:10px;color:var(--text)}
+dialog.viewer .tag.times{align-self:flex-start}
 .empty{border:1px dashed var(--border-bright);padding:32px 20px;text-align:center;color:var(--muted)}
 
 dialog.viewer{background:var(--bg);color:var(--text);border:1px solid var(--border-bright);padding:0;width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 24px)}

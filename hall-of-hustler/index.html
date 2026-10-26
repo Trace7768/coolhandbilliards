@@ -81,11 +81,16 @@
   // Newest first; dates are "YYYY-MM" or "YYYY-MM-DD", which sort as text.
   inductees.sort((a, b) => b.date.localeCompare(a.date));
   const score = (p) => [p.points && `${p.points} points`, p.game].filter(Boolean).join(" · ");
+  // Repeat winners: only the first award has a card; the count shows how many they have.
+  const times = (p) => p.awards > 1 && el("span", { class: "tag times" }, `${p.awards}× Hall of Hustler`);
+  // The card's date and score are from the first award, so say so for repeat winners.
+  const when = (p) => (p.awards > 1 ? "First award: " : "") + fmtLong(p.date);
 
   function open(p) {
     body.replaceChildren(
       el("h2", { id: "viewer-name" }, p.name),
-      el("div", { class: "muted" }, [score(p), fmtLong(p.date), p.night].filter(Boolean).join(" · ")),
+      times(p),
+      el("div", { class: "muted" }, [when(p), score(p), p.night].filter(Boolean).join(" · ")),
       ...(p.note ? paragraphs(p.note) : []),
       ...(p.photos || []).map((src, i) => el("img", { src: photo(src), alt: i === 0 ? `${p.name}'s Hall of Hustler presentation` : "", loading: i ? "lazy" : null })));
     viewer.showModal();
@@ -98,7 +103,8 @@
     const tile = el("button", { class: "tile", type: "button" },
       cover && el("img", { src: photo(cover), alt: "", loading: "lazy" }),
       el("b", {}, p.name),
-      el("span", {}, [score(p), fmtLong(p.date)].filter(Boolean).join("\n")));
+      times(p),
+      el("span", {}, [when(p), score(p)].filter(Boolean).join("\n")));
     tile.addEventListener("click", () => open(p));
     return tile;
   })));
