@@ -90,7 +90,8 @@ Anything committed — including deleted files in history — is visible on GitH
   (certificate PNG, photos, a .txt note).
 - A player's FIRST Hall of Hustler award goes on the Hall of Hustler page.
   Repeat awards are blog posts only (certificate image as the photo, no
-  framed photos) — the owner's rule.
+  framed photos) — the owner's rule. Also bump `"awards"` on the player's
+  Hall of Hustler entry (shows "2× Hall of Hustler" on the card).
 - `data/posts.json`: `posts: [{ "id", "date", "title", "body", "photo"?, "photo_alt"? }]`;
   blank lines in `body` separate paragraphs. Photos go in `media/blog/`.
 - Photos: resize before committing — longest side 1600px, JPEG quality ~82,
@@ -111,14 +112,26 @@ Anything committed — including deleted files in history — is visible on GitH
 | `schedules/index.html` | Public schedules for every division; `?team=<NAPA name>` filters to one team |
 | `hall-of-hustler/index.html` | Hall of Hustler award gallery from `data/hall-of-hustler.json` |
 | `blog/index.html` | Blog posts from `data/posts.json` |
+| `intake/index.html` | Unlisted new-player intake form (see below) |
 | `players/index.html` | Team Hub (URL stays `/players/` so team links keep working): team list from `teams.json` |
 | `players/team.html` | Team page template; served at `/players/<team id>/` by `_redirects` |
 | `assets/chb.css`, `assets/league.js` | Shared styles and data helpers |
 | `tools/napa_import.py` | Converts NAPA printable schedules into `data/sessions.json` |
 | `players/CHB_Black_trans.png` | Logo, favicon, social share image |
 
-Not in the repo yet: the intake form (`chb-intake.html`) — waiting on EmailJS
-keys.
+### Intake form (`/intake/`)
+
+- Unlisted on purpose: never link it from the site, keep `noindex`. The owner
+  sends the link to new players directly.
+- Sends through EmailJS's REST API (no SDK) using the CHB EmailJS account
+  (coolhandbilliards@gmail.com; separate from the owner's other business —
+  never use that account). Template "CHB Player Intake" delivers to the
+  address set on the template; "Do not save private data" is on.
+  Free plan = 200 emails/month.
+- Spam traps: hidden `website` field and a 4-second minimum fill time; both
+  fake a success and send nothing. If spam still gets through, add Cloudflare
+  Turnstile or EmailJS reCAPTCHA.
+- Template variables must match the `params` object in the page.
 
 Preview locally with `python -m http.server 8787` from the repo root (on
 localhost, pages read `data/` and `media/` from this computer, not GitHub). Pretty
