@@ -129,8 +129,14 @@ Anything committed — including deleted files in history — is visible on GitH
   address set on the template; "Do not save private data" is on.
   Free plan = 200 emails/month.
 - Spam traps: hidden `website` field and a 4-second minimum fill time; both
-  fake a success and send nothing. If spam still gets through, add Cloudflare
-  Turnstile or EmailJS reCAPTCHA.
+  fake a success and send nothing.
+- EmailJS Account → Security: "Allow EmailJS API for non-browser
+  applications" is OFF (keep it off). The Domains allowlist is EMPTY — it's a
+  paid feature, so don't assume requests are limited to the site.
+- If spam shows up (junk "New player intake" emails, or the 200/month counter
+  dropping fast), add EmailJS's reCAPTCHA v2 (free; template Settings tab +
+  a Google reCAPTCHA key) or Cloudflare Turnstile.
+- Tested end to end 2026-10-26: submission arrives in the Gmail inbox.
 - Template variables must match the `params` object in the page.
 
 Preview locally with `python -m http.server 8787` from the repo root (on
