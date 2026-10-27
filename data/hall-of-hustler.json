@@ -6,8 +6,13 @@
       "date": "2026-08-19",
       "points": 23,
       "game": "9-Ball",
+      "note": "Bill has earned Hall of Hustlers before, but this is his first with us, and it's well deserved. Congratulations, Bill, on a great match.",
       "thumb": "media/hoh/gassman-2026-08-thumb.jpg",
-      "photos": ["media/hoh/gassman-2026-08-1.jpg", "media/hoh/gassman-2026-08-2.jpg", "media/hoh/gassman-2026-08-3.jpg"]
+      "photos": [
+        "media/hoh/gassman-2026-08-1.jpg",
+        "media/hoh/gassman-2026-08-2.jpg",
+        "media/hoh/gassman-2026-08-3.jpg"
+      ]
     },
     {
       "id": "isham-2026-02",
@@ -15,8 +20,12 @@
       "date": "2026-02-17",
       "points": 23,
       "game": "10-Ball",
+      "note": "Always a pleasure to award one of our players their first Hall of Hustler. Barry has been an active NAPA player since 2019, and this one was looonnngg overdue. Great shooting, Barry!",
       "thumb": "media/hoh/isham-2026-02-thumb.jpg",
-      "photos": ["media/hoh/isham-2026-02-1.jpg", "media/hoh/isham-2026-02-2.jpg"]
+      "photos": [
+        "media/hoh/isham-2026-02-1.jpg",
+        "media/hoh/isham-2026-02-2.jpg"
+      ]
     },
     {
       "id": "carroll-2025-10",
@@ -24,8 +33,13 @@
       "date": "2025-10-14",
       "points": 23,
       "game": "7-Ball",
+      "note": "It's always fun to present one of our players with their first Hall of Hustler. If you've played with us for a while, you know how hard a 23-point night is to get. The shutout is impressive on its own, but it's the next 3 points that separate the small group of players who've done it. Snaps and runouts are where years of practice shine. Congratulations, Michael!",
       "thumb": "media/hoh/carroll-2025-10-thumb.jpg",
-      "photos": ["media/hoh/carroll-2025-10-1.jpg", "media/hoh/carroll-2025-10-2.jpg", "media/hoh/carroll-2025-10-3.jpg"]
+      "photos": [
+        "media/hoh/carroll-2025-10-1.jpg",
+        "media/hoh/carroll-2025-10-2.jpg",
+        "media/hoh/carroll-2025-10-3.jpg"
+      ]
     },
     {
       "id": "herron-2025-03",
@@ -34,18 +48,29 @@
       "date": "2025-03-11",
       "points": 24,
       "game": "8-Ball",
+      "note": "It's always a pleasure when one of our NAPA players earns their first Hall of Hustler. Gerry did it in style with a shutout and 3 break-and-outs in 8-Ball. Congratulations!",
       "thumb": "media/hoh/herron-2025-03-thumb.jpg",
-      "photos": ["media/hoh/herron-2025-03-1.jpg", "media/hoh/herron-2025-03-2.jpg", "media/hoh/herron-2025-03-3.jpg"]
+      "photos": [
+        "media/hoh/herron-2025-03-1.jpg",
+        "media/hoh/herron-2025-03-2.jpg",
+        "media/hoh/herron-2025-03-3.jpg"
+      ]
     },
     {
       "id": "hutchins-2023-05",
       "name": "Levi Hutchins",
       "awards": 9,
-      "date": "2023-05-31",
-      "points": 23,
-      "game": "8-Ball",
+      "date": "2023-05-17",
+      "points": 25,
+      "game": "9-Ball",
+      "note": "Some award nights are better than others. Levi picked up two Hall of Hustlers in his first session, at 25 and 23 points.",
       "thumb": "media/hoh/hutchins-2023-05-thumb.jpg",
-      "photos": ["media/hoh/hutchins-2023-05-1.jpg", "media/hoh/hutchins-2023-05-2.jpg", "media/hoh/hutchins-2023-05-3.jpg"]
+      "photos": [
+        "media/hoh/hutchins-2023-05-1.jpg",
+        "media/hoh/hutchins-2023-05-2.jpg",
+        "media/hoh/hutchins-2023-05-4.jpg",
+        "media/hoh/hutchins-2023-05-3.jpg"
+      ]
     },
     {
       "id": "taylor-2023-02",
@@ -53,8 +78,13 @@
       "date": "2023-02-28",
       "points": 23,
       "game": "10-Ball",
+      "note": "My pleasure to welcome our latest Hall of Hustler, Gentry Taylor, who scored 23 points in 10-Ball.",
       "thumb": "media/hoh/taylor-2023-02-thumb.jpg",
-      "photos": ["media/hoh/taylor-2023-02-1.jpg", "media/hoh/taylor-2023-02-2.jpg", "media/hoh/taylor-2023-02-3.jpg"]
+      "photos": [
+        "media/hoh/taylor-2023-02-1.jpg",
+        "media/hoh/taylor-2023-02-2.jpg",
+        "media/hoh/taylor-2023-02-3.jpg"
+      ]
     },
     {
       "id": "jaggers-2022-03",
@@ -62,8 +92,13 @@
       "date": "2022-03-08",
       "points": 23,
       "game": "10-Ball",
+      "note": "It was a privilege to present Steve Jaggers with his NAPA Hall of Hustlers award.",
       "thumb": "media/hoh/jaggers-2022-03-thumb.jpg",
-      "photos": ["media/hoh/jaggers-2022-03-1.jpg", "media/hoh/jaggers-2022-03-2.jpg", "media/hoh/jaggers-2022-03-3.jpg"]
+      "photos": [
+        "media/hoh/jaggers-2022-03-1.jpg",
+        "media/hoh/jaggers-2022-03-2.jpg",
+        "media/hoh/jaggers-2022-03-3.jpg"
+      ]
     },
     {
       "id": "bryant-2021-03",
@@ -72,8 +107,13 @@
       "date": "2021-03-16",
       "points": 25,
       "game": "10-Ball",
+      "note": "Tim Bryant is the first player to enter our division's Hall of Hustlers. It takes 23 points to get in, and Tim smashed a 25-pointer. Great match to watch!",
       "thumb": "media/hoh/bryant-2021-03-thumb.jpg",
-      "photos": ["media/hoh/bryant-2021-03-1.jpg", "media/hoh/bryant-2021-03-2.jpg", "media/hoh/bryant-2021-03-3.jpg"]
+      "photos": [
+        "media/hoh/bryant-2021-03-1.jpg",
+        "media/hoh/bryant-2021-03-2.jpg",
+        "media/hoh/bryant-2021-03-3.jpg"
+      ]
     }
   ]
 }
