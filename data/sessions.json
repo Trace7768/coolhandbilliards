@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1641,38 +1641,63 @@
           "week": 11,
           "date": "2026-10-27",
           "notes": [
+            "No more roster changes",
             "Make up match deadline"
           ],
           "matches": [
             {
               "home": "On Cue",
               "away": "Balls in Hand",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                45,
+                16
+              ]
             },
             {
               "home": "Blazing Cue-migos",
               "away": "Sharp Shooters",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                22,
+                37
+              ]
             },
             {
               "home": "Off the Rail",
               "away": "Make 'em Pay",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                57,
+                5
+              ]
             },
             {
               "home": "The Recyclables",
               "away": "Gunners 2.0",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                20,
+                35
+              ]
             },
             {
               "home": "Traitor Ron",
               "away": "The Billiard Bandits",
-              "venue": "Hot Shots"
+              "venue": "Hot Shots",
+              "score": [
+                31,
+                24
+              ]
             },
             {
               "home": "Comeback Cueists",
               "away": "Beyond Cue",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                49,
+                7
+              ]
             }
           ]
         }
