@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1908,34 +1908,47 @@
               "home": "Death By 1000 Scratches",
               "away": "3 Old Men",
               "venue": "Bluegrass Tavern",
-              "table": "3"
+              "table": "3",
+              "score": [
+                9,
+                54
+              ]
             },
             {
               "home": "Chalk's Free",
               "away": "Less Talk More Chalk",
               "venue": "Bluegrass Tavern",
-              "table": "4"
+              "table": "4",
+              "score": [
+                26,
+                30
+              ]
             },
             {
               "home": "Soul Snatcher",
               "away": "Bluegrass Bandits",
               "venue": "Bluegrass Tavern",
-              "table": "2"
+              "table": "2",
+              "score": [
+                39,
+                24
+              ]
             },
             {
               "home": "Old Enough",
               "away": "Thought It Would Go",
               "venue": "Bluegrass Tavern",
-              "table": "1"
+              "table": "1",
+              "score": [
+                20,
+                37
+              ]
             }
           ]
         },
         {
           "week": 6,
           "date": "2026-11-04",
-          "notes": [
-            "Last chance to make roster changes"
-          ],
           "matches": [
             {
               "home": "Thought It Would Go",
