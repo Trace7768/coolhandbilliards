@@ -22,6 +22,7 @@ import html
 import json
 import re
 import sys
+import time
 import urllib.request
 from datetime import date
 from html.parser import HTMLParser
@@ -82,9 +83,22 @@ def parse_date(text):
     return date(int(m.group(3)), MONTHS[m.group(1).lower()], int(m.group(2))).isoformat()
 
 
+def fetch(url, tries=3):
+    """NAPA's site occasionally refuses or drops a request; wait and retry."""
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (coolhandbilliards.com schedule sync)"})
+    for attempt in range(1, tries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8", errors="replace")
+        except Exception as e:
+            if attempt == tries:
+                sys.exit(f"{url}: failed after {tries} tries ({e})")
+            print(f"{url}: {e}; retrying in {20 * attempt}s")
+            time.sleep(20 * attempt)
+
+
 def parse_division(key, did):
-    with urllib.request.urlopen(SOURCE.format(did), timeout=30) as r:
-        page = r.read().decode("utf-8", errors="replace")
+    page = fetch(SOURCE.format(did))
     p = RowParser()
     p.feed(page)
 
