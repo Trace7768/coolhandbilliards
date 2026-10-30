@@ -1,12 +1,81 @@
 {
   "teams": [
     {
-      "id": "stroke-and-bounce",
-      "name": "Stroke & Bounce",
+      "id": "booga-and-bounce",
+      "name": "Booga & Bounce",
       "napa_name": "Booga & Bounce",
       "division": "tuesday-etown-metro",
-      "pin_sha256": "2a430671b511fe1613e6777a0bd8588cb61e32cf1cf813d3d1a58a07d26cae94",
-      "links": []
+      "pin_sha256": "6082635641d72e2d801e7f80dded30b79121ceb1e3415bf49d551b3b61157343",
+      "links": [],
+      "availability": {
+        "napa_division_id": "14566",
+        "players": [
+          {
+            "name": "Kerry",
+            "weeks": [
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY"
+            ]
+          },
+          {
+            "name": "Kendra",
+            "weeks": [
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "OFF"
+            ]
+          },
+          {
+            "name": "Brian",
+            "weeks": [
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY"
+            ]
+          },
+          {
+            "name": "Shawn",
+            "weeks": [
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "ALT",
+              "PLAY",
+              "PLAY",
+              "OFF",
+              "PLAY",
+              "PLAY",
+              "PLAY"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "thought-it-would-go",
@@ -18,11 +87,66 @@
       "availability": {
         "napa_division_id": "14465",
         "players": [
-          { "name": "Gassman",    "weeks": ["PLAY", "OFF",  "PLAY", "OFF",  "PLAY", "PLAY", "PLAY"] },
-          { "name": "Stirsman",   "weeks": ["PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF"] },
-          { "name": "Mobley",     "weeks": ["PLAY", "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY"] },
-          { "name": "Lucas",      "weeks": ["OFF",  "PLAY", "PLAY", "PLAY", "PLAY", "OFF",  "PLAY"] },
-          { "name": "Mrs. Lucas", "weeks": ["OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF"] }
+          {
+            "name": "Gassman",
+            "weeks": [
+              "PLAY",
+              "OFF",
+              "PLAY",
+              "OFF",
+              "PLAY",
+              "PLAY",
+              "PLAY"
+            ]
+          },
+          {
+            "name": "Stirsman",
+            "weeks": [
+              "PLAY",
+              "PLAY",
+              "OFF",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "OFF"
+            ]
+          },
+          {
+            "name": "Mobley",
+            "weeks": [
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "OFF",
+              "PLAY",
+              "PLAY"
+            ]
+          },
+          {
+            "name": "Lucas",
+            "weeks": [
+              "OFF",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "PLAY",
+              "OFF",
+              "PLAY"
+            ]
+          },
+          {
+            "name": "Mrs. Lucas",
+            "weeks": [
+              "OFF",
+              "OFF",
+              "OFF",
+              "OFF",
+              "OFF",
+              "OFF",
+              "OFF"
+            ]
+          }
         ]
       }
     }

@@ -101,8 +101,10 @@ Anything committed — including deleted files in history — is visible on GitH
 - Division keys are permanent: `monday-singles`, `tuesday-etown-metro`,
   `wednesday-bardstown`. Each session only the NAPA number changes.
 - PIN hash = SHA-256 of `<team id>:<PIN>`, e.g.
-  `python -c "import hashlib;print(hashlib.sha256(b'stroke-and-bounce:1234').hexdigest())"`.
-  Never write the plain PIN into the repo.
+  `python -c "import hashlib;print(hashlib.sha256(b'booga-and-bounce:1234').hexdigest())"`.
+  Never write the plain PIN into the repo. Renaming a team's `id` changes
+  its URL AND its hash: recompute the hash and add an old→new 301 in
+  `_redirects` above the `/players/:team` rule.
 
 ## Site map
 
