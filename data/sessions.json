@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1024,680 +1024,416 @@
       "name": "Etown Metro",
       "night": "Tuesday",
       "format": "No Limit LC",
-      "napa_division_id": "14269",
-      "start": "2026-08-18",
-      "end": "2026-10-27",
+      "napa_division_id": "14566",
+      "start": "2026-11-03",
+      "end": "2027-01-26",
       "venues": [
         "American Legion Post 113",
         "Apex Billiards",
         "Hot Shots"
       ],
-      "source": "https://paper.playpool.io/print_schedule_web.php?did=14269",
+      "source": "https://paper.playpool.io/print_schedule_web.php?did=14566",
       "weeks": [
         {
           "week": 1,
-          "date": "2026-08-18",
+          "date": "2026-11-03",
           "matches": [
             {
-              "home": "Sharp Shooters",
-              "away": "On Cue",
-              "venue": "American Legion Post 113",
-              "score": [
-                43,
-                9
-              ]
-            },
-            {
-              "home": "Make 'em Pay",
-              "away": "Blazing Cue-migos",
-              "venue": "Apex Billiards",
-              "score": [
-                30,
-                29
-              ]
-            },
-            {
-              "home": "Gunners 2.0",
-              "away": "Off the Rail",
-              "venue": "American Legion Post 113",
-              "score": [
-                35,
-                24
-              ]
+              "home": "Make 'Em Pay",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards"
             },
             {
               "home": "The Billiard Bandits",
-              "away": "The Recyclables",
-              "venue": "Apex Billiards",
-              "score": [
-                18,
-                41
-              ]
-            },
-            {
-              "home": "Comeback Cueists",
-              "away": "Traitor Ron",
-              "venue": "Apex Billiards",
-              "score": [
-                33,
-                24
-              ]
-            },
-            {
-              "home": "Balls in Hand",
               "away": "Beyond Cue",
-              "venue": "Hot Shots",
-              "score": [
-                48,
-                7
-              ]
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Come Back Cueists",
+              "away": "On Cue",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Booga & Bounce",
+              "away": "Off the Raill",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "The Recyclables",
+              "away": "Blazing Cue-migos",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Gunners",
+              "away": "Sharp Shooters",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 2,
-          "date": "2026-08-25",
+          "date": "2026-11-10",
           "matches": [
             {
-              "home": "Beyond Cue",
-              "away": "Traitor Ron",
-              "venue": "Apex Billiards",
-              "score": [
-                21,
-                31
-              ]
+              "home": "Sharp Shooters",
+              "away": "Blazing Cue-migos",
+              "venue": "American Legion Post 113"
             },
             {
-              "home": "The Recyclables",
-              "away": "Comeback Cueists",
-              "venue": "American Legion Post 113",
-              "score": [
-                12,
-                50
-              ]
-            },
-            {
-              "home": "Off the Rail",
-              "away": "The Billiard Bandits",
-              "venue": "Apex Billiards",
-              "score": [
-                53,
-                7
-              ]
-            },
-            {
-              "home": "Blazing Cue-migos",
-              "away": "Gunners 2.0",
-              "venue": "American Legion Post 113",
-              "score": [
-                35,
-                20
-              ]
+              "home": "Off the Raill",
+              "away": "The Recyclables",
+              "venue": "Apex Billiards"
             },
             {
               "home": "On Cue",
-              "away": "Make 'em Pay",
-              "venue": "Apex Billiards",
-              "score": [
-                24,
-                35
-              ]
+              "away": "Booga & Bounce",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Beyond Cue",
+              "away": "Come Back Cueists",
+              "venue": "Apex Billiards"
             },
             {
               "home": "Balls in Hand",
-              "away": "Sharp Shooters",
-              "venue": "Hot Shots",
-              "score": [
-                18,
-                42
-              ]
+              "away": "The Billiard Bandits",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "Gunners",
+              "away": "Make 'Em Pay",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 3,
-          "date": "2026-09-01",
+          "date": "2026-11-17",
           "matches": [
             {
-              "home": "Sharp Shooters",
+              "home": "Make 'Em Pay",
+              "away": "Sharp Shooters",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Blazing Cue-migos",
+              "away": "Off the Raill",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "The Recyclables",
+              "away": "On Cue",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Booga & Bounce",
               "away": "Beyond Cue",
-              "venue": "American Legion Post 113",
-              "score": [
-                41,
-                18
-              ]
+              "venue": "Hot Shots"
             },
             {
-              "home": "Traitor Ron",
-              "away": "The Recyclables",
-              "venue": "Hot Shots",
-              "score": [
-                11,
-                48
-              ]
-            },
-            {
-              "home": "Comeback Cueists",
-              "away": "Off the Rail",
-              "venue": "Apex Billiards",
-              "score": [
-                32,
-                20
-              ]
+              "home": "Come Back Cueists",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards"
             },
             {
               "home": "The Billiard Bandits",
-              "away": "Blazing Cue-migos",
-              "venue": "Apex Billiards",
-              "score": [
-                24,
-                31
-              ]
-            },
-            {
-              "home": "Gunners 2.0",
-              "away": "On Cue",
-              "venue": "American Legion Post 113",
-              "score": [
-                22,
-                41
-              ]
-            },
-            {
-              "home": "Make 'em Pay",
-              "away": "Balls in Hand",
-              "venue": "Apex Billiards",
-              "score": [
-                28,
-                31
-              ]
+              "away": "Gunners",
+              "venue": "Apex Billiards"
             }
           ]
         },
         {
           "week": 4,
-          "date": "2026-09-08",
+          "date": "2026-11-24",
           "matches": [
             {
-              "home": "Beyond Cue",
-              "away": "The Recyclables",
-              "venue": "Apex Billiards",
-              "score": [
-                20,
-                36
-              ]
-            },
-            {
-              "home": "Off the Rail",
-              "away": "Traitor Ron",
-              "venue": "Apex Billiards",
-              "score": [
-                21,
-                35
-              ]
-            },
-            {
-              "home": "Blazing Cue-migos",
-              "away": "Comeback Cueists",
-              "venue": "American Legion Post 113",
-              "score": [
-                43,
-                11
-              ]
+              "home": "Sharp Shooters",
+              "away": "Off the Raill",
+              "venue": "American Legion Post 113"
             },
             {
               "home": "On Cue",
-              "away": "The Billiard Bandits",
-              "venue": "Apex Billiards",
-              "score": [
-                54,
-                9
-              ]
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards"
             },
             {
-              "home": "Sharp Shooters",
-              "away": "Make 'em Pay",
-              "venue": "American Legion Post 113",
-              "score": [
-                32,
-                24
-              ]
+              "home": "Beyond Cue",
+              "away": "The Recyclables",
+              "venue": "Apex Billiards"
             },
             {
               "home": "Balls in Hand",
-              "away": "Gunners 2.0",
-              "venue": "Hot Shots",
-              "score": [
-                36,
-                20
-              ]
+              "away": "Booga & Bounce",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "Make 'Em Pay",
+              "away": "The Billiard Bandits",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Gunners",
+              "away": "Come Back Cueists",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 5,
-          "date": "2026-09-15",
+          "date": "2026-12-01",
           "matches": [
             {
-              "home": "Make 'em Pay",
+              "home": "The Billiard Bandits",
+              "away": "Sharp Shooters",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Off the Raill",
+              "away": "On Cue",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Blazing Cue-migos",
               "away": "Beyond Cue",
-              "venue": "Apex Billiards",
-              "score": [
-                31,
-                20
-              ]
+              "venue": "American Legion Post 113"
             },
             {
               "home": "The Recyclables",
-              "away": "Off the Rail",
-              "venue": "American Legion Post 113",
-              "score": [
-                31,
-                20
-              ]
-            },
-            {
-              "home": "Traitor Ron",
-              "away": "Blazing Cue-migos",
-              "venue": "Hot Shots",
-              "score": [
-                22,
-                41
-              ]
-            },
-            {
-              "home": "Comeback Cueists",
-              "away": "On Cue",
-              "venue": "Apex Billiards",
-              "score": [
-                21,
-                32
-              ]
-            },
-            {
-              "home": "Gunners 2.0",
-              "away": "Sharp Shooters",
-              "venue": "American Legion Post 113",
-              "score": [
-                37,
-                19
-              ]
-            },
-            {
-              "home": "The Billiard Bandits",
               "away": "Balls in Hand",
-              "venue": "Apex Billiards",
-              "score": [
-                18,
-                41
-              ]
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Come Back Cueists",
+              "away": "Make 'Em Pay",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Booga & Bounce",
+              "away": "Gunners",
+              "venue": "Hot Shots"
             }
           ]
         },
         {
           "week": 6,
-          "date": "2026-09-22",
+          "date": "2026-12-08",
           "matches": [
             {
-              "home": "Beyond Cue",
-              "away": "Off the Rail",
-              "venue": "Apex Billiards",
-              "score": [
-                7,
-                50
-              ]
-            },
-            {
-              "home": "Blazing Cue-migos",
-              "away": "The Recyclables",
-              "venue": "American Legion Post 113",
-              "score": [
-                42,
-                17
-              ]
-            },
-            {
-              "home": "On Cue",
-              "away": "Traitor Ron",
-              "venue": "Apex Billiards",
-              "score": [
-                6,
-                28
-              ]
-            },
-            {
-              "home": "Make 'em Pay",
-              "away": "Gunners 2.0",
-              "venue": "Apex Billiards",
-              "score": [
-                42,
-                17
-              ]
-            },
-            {
               "home": "Sharp Shooters",
-              "away": "The Billiard Bandits",
-              "venue": "American Legion Post 113",
-              "score": [
-                43,
-                13
-              ]
+              "away": "On Cue",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Beyond Cue",
+              "away": "Off the Raill",
+              "venue": "Apex Billiards"
             },
             {
               "home": "Balls in Hand",
-              "away": "Comeback Cueists",
-              "venue": "Hot Shots",
-              "score": [
-                28,
-                31
-              ]
+              "away": "Blazing Cue-migos",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "The Billiard Bandits",
+              "away": "Come Back Cueists",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Make 'Em Pay",
+              "away": "Booga & Bounce",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Gunners",
+              "away": "The Recyclables",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 7,
-          "date": "2026-09-29",
+          "date": "2026-12-15",
           "matches": [
             {
-              "home": "Gunners 2.0",
-              "away": "Beyond Cue",
-              "venue": "American Legion Post 113",
-              "score": [
-                41,
-                19
-              ]
+              "home": "Come Back Cueists",
+              "away": "Sharp Shooters",
+              "venue": "Apex Billiards"
             },
             {
-              "home": "Off the Rail",
-              "away": "Blazing Cue-migos",
-              "venue": "Apex Billiards",
-              "score": [
-                42,
-                17
-              ]
+              "home": "On Cue",
+              "away": "Beyond Cue",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Off the Raill",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Booga & Bounce",
+              "away": "The Billiard Bandits",
+              "venue": "Hot Shots"
             },
             {
               "home": "The Recyclables",
-              "away": "On Cue",
-              "venue": "American Legion Post 113",
-              "score": [
-                42,
-                13
-              ]
+              "away": "Make 'Em Pay",
+              "venue": "American Legion Post 113"
             },
             {
-              "home": "The Billiard Bandits",
-              "away": "Make 'em Pay",
-              "venue": "Apex Billiards",
-              "score": [
-                55,
-                9
-              ]
-            },
-            {
-              "home": "Comeback Cueists",
-              "away": "Sharp Shooters",
-              "venue": "Apex Billiards",
-              "score": [
-                28,
-                35
-              ]
-            },
-            {
-              "home": "Traitor Ron",
-              "away": "Balls in Hand",
-              "venue": "Hot Shots",
-              "score": [
-                32,
-                24
-              ]
+              "home": "Blazing Cue-migos",
+              "away": "Gunners",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 8,
-          "date": "2026-10-06",
+          "date": "2027-01-05",
           "matches": [
             {
-              "home": "Beyond Cue",
-              "away": "Blazing Cue-migos",
-              "venue": "Apex Billiards",
-              "score": [
-                26,
-                29
-              ]
-            },
-            {
-              "home": "On Cue",
-              "away": "Off the Rail",
-              "venue": "Apex Billiards",
-              "score": [
-                24,
-                31
-              ]
-            },
-            {
-              "home": "Gunners 2.0",
-              "away": "The Billiard Bandits",
-              "venue": "American Legion Post 113",
-              "score": [
-                41,
-                18
-              ]
-            },
-            {
-              "home": "Make 'em Pay",
-              "away": "Comeback Cueists",
-              "venue": "Apex Billiards",
-              "score": [
-                17,
-                42
-              ]
-            },
-            {
               "home": "Sharp Shooters",
-              "away": "Traitor Ron",
-              "venue": "American Legion Post 113",
-              "score": [
-                35,
-                24
-              ]
+              "away": "Beyond Cue",
+              "venue": "American Legion Post 113"
             },
             {
               "home": "Balls in Hand",
+              "away": "On Cue",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "Come Back Cueists",
+              "away": "Booga & Bounce",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "The Billiard Bandits",
               "away": "The Recyclables",
-              "venue": "Hot Shots",
-              "score": [
-                20,
-                35
-              ]
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Make 'Em Pay",
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Gunners",
+              "away": "Off the Raill",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 9,
-          "date": "2026-10-13",
+          "date": "2027-01-12",
           "matches": [
             {
-              "home": "The Billiard Bandits",
-              "away": "Beyond Cue",
-              "venue": "Apex Billiards",
-              "score": [
-                18,
-                42
-              ]
+              "home": "Booga & Bounce",
+              "away": "Sharp Shooters",
+              "venue": "Hot Shots"
             },
             {
-              "home": "Blazing Cue-migos",
-              "away": "On Cue",
-              "venue": "American Legion Post 113",
-              "score": [
-                28,
-                36
-              ]
-            },
-            {
-              "home": "Comeback Cueists",
-              "away": "Gunners 2.0",
-              "venue": "Apex Billiards",
-              "score": [
-                36,
-                28
-              ]
-            },
-            {
-              "home": "Traitor Ron",
-              "away": "Make 'em Pay",
-              "venue": "Hot Shots",
-              "score": [
-                35,
-                24
-              ]
+              "home": "Beyond Cue",
+              "away": "Balls in Hand",
+              "venue": "Apex Billiards"
             },
             {
               "home": "The Recyclables",
-              "away": "Sharp Shooters",
-              "venue": "American Legion Post 113",
-              "score": [
-                24,
-                37
-              ]
+              "away": "Come Back Cueists",
+              "venue": "American Legion Post 113"
             },
             {
-              "home": "Off the Rail",
-              "away": "Balls in Hand",
-              "venue": "Apex Billiards",
-              "score": [
-                29,
-                31
-              ]
+              "home": "Blazing Cue-migos",
+              "away": "The Billiard Bandits",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Off the Raill",
+              "away": "Make 'Em Pay",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "On Cue",
+              "away": "Gunners",
+              "venue": "Apex Billiards"
             }
           ]
         },
         {
           "week": 10,
-          "date": "2026-10-20",
+          "date": "2027-01-19",
           "notes": [
             "Last chance to make roster changes"
           ],
           "matches": [
             {
-              "home": "Beyond Cue",
-              "away": "On Cue",
-              "venue": "Apex Billiards",
-              "score": [
-                29,
-                30
-              ]
+              "home": "Sharp Shooters",
+              "away": "Balls in Hand",
+              "venue": "American Legion Post 113"
+            },
+            {
+              "home": "Booga & Bounce",
+              "away": "The Recyclables",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "Come Back Cueists",
+              "away": "Blazing Cue-migos",
+              "venue": "Apex Billiards"
             },
             {
               "home": "The Billiard Bandits",
-              "away": "Comeback Cueists",
-              "venue": "Apex Billiards",
-              "score": [
-                9,
-                57
-              ]
+              "away": "Off the Raill",
+              "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners 2.0",
-              "away": "Traitor Ron",
-              "venue": "American Legion Post 113",
-              "score": [
-                41,
-                22
-              ]
+              "home": "Make 'Em Pay",
+              "away": "On Cue",
+              "venue": "Apex Billiards"
             },
             {
-              "home": "Make 'em Pay",
-              "away": "The Recyclables",
-              "venue": "Apex Billiards",
-              "score": [
-                29,
-                35
-              ]
-            },
-            {
-              "home": "Sharp Shooters",
-              "away": "Off the Rail",
-              "venue": "American Legion Post 113",
-              "score": [
-                29,
-                31
-              ]
-            },
-            {
-              "home": "Balls in Hand",
-              "away": "Blazing Cue-migos",
-              "venue": "Hot Shots",
-              "score": [
-                31,
-                24
-              ]
+              "home": "Gunners",
+              "away": "Beyond Cue",
+              "venue": "American Legion Post 113"
             }
           ]
         },
         {
           "week": 11,
-          "date": "2026-10-27",
+          "date": "2027-01-26",
           "notes": [
             "No more roster changes",
             "Make up match deadline"
           ],
           "matches": [
             {
+              "home": "Balls in Hand",
+              "away": "Gunners",
+              "venue": "Hot Shots"
+            },
+            {
+              "home": "Beyond Cue",
+              "away": "Make 'Em Pay",
+              "venue": "Apex Billiards"
+            },
+            {
               "home": "On Cue",
-              "away": "Balls in Hand",
-              "venue": "Apex Billiards",
-              "score": [
-                45,
-                16
-              ]
+              "away": "The Billiard Bandits",
+              "venue": "Apex Billiards"
+            },
+            {
+              "home": "Off the Raill",
+              "away": "Come Back Cueists",
+              "venue": "Apex Billiards"
             },
             {
               "home": "Blazing Cue-migos",
-              "away": "Sharp Shooters",
-              "venue": "American Legion Post 113",
-              "score": [
-                22,
-                37
-              ]
-            },
-            {
-              "home": "Off the Rail",
-              "away": "Make 'em Pay",
-              "venue": "Apex Billiards",
-              "score": [
-                57,
-                5
-              ]
+              "away": "Booga & Bounce",
+              "venue": "American Legion Post 113"
             },
             {
               "home": "The Recyclables",
-              "away": "Gunners 2.0",
-              "venue": "American Legion Post 113",
-              "score": [
-                20,
-                35
-              ]
-            },
-            {
-              "home": "Traitor Ron",
-              "away": "The Billiard Bandits",
-              "venue": "Hot Shots",
-              "score": [
-                31,
-                24
-              ]
-            },
-            {
-              "home": "Comeback Cueists",
-              "away": "Beyond Cue",
-              "venue": "Apex Billiards",
-              "score": [
-                49,
-                7
-              ]
+              "away": "Sharp Shooters",
+              "venue": "American Legion Post 113"
             }
           ]
         }
