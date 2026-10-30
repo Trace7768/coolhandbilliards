@@ -1017,7 +1017,92 @@
             }
           ]
         }
-      ]
+      ],
+      "standings": {
+        "round": 8,
+        "rows": [
+          {
+            "place": 1,
+            "name": "Gerry Herron",
+            "points": 171
+          },
+          {
+            "place": 2,
+            "name": "Michael Roark",
+            "points": 161
+          },
+          {
+            "place": 3,
+            "name": "Chance Whitlock",
+            "points": 135
+          },
+          {
+            "place": 4,
+            "name": "Mckay Payton",
+            "points": 111
+          },
+          {
+            "place": 5,
+            "name": "Joe Lowery",
+            "points": 107
+          },
+          {
+            "place": 6,
+            "name": "Ronald Prior",
+            "points": 98
+          },
+          {
+            "place": 7,
+            "name": "Jason Ohlrich",
+            "points": 91
+          },
+          {
+            "place": 8,
+            "name": "Austin Wheatley",
+            "points": 88
+          },
+          {
+            "place": 9,
+            "name": "Brian Satterfield",
+            "points": 83
+          },
+          {
+            "place": 10,
+            "name": "Logan Outland",
+            "points": 82
+          },
+          {
+            "place": 11,
+            "name": "Ray Stovall",
+            "points": 82
+          },
+          {
+            "place": 12,
+            "name": "Marcus Odom",
+            "points": 70
+          },
+          {
+            "place": 13,
+            "name": "Billy Wimberg",
+            "points": 70
+          },
+          {
+            "place": 14,
+            "name": "Pat Schultz",
+            "points": 65
+          },
+          {
+            "place": 15,
+            "name": "Chris Lucas",
+            "points": 55
+          },
+          {
+            "place": 16,
+            "name": "Teddy Barker jr.",
+            "points": 48
+          }
+        ]
+      }
     },
     {
       "id": "tuesday-etown-metro",
@@ -1746,7 +1831,52 @@
             }
           ]
         }
-      ]
+      ],
+      "standings": {
+        "round": 5,
+        "rows": [
+          {
+            "place": 1,
+            "name": "Less Talk More Chalk",
+            "points": 199
+          },
+          {
+            "place": 2,
+            "name": "Soul Snatcher",
+            "points": 184
+          },
+          {
+            "place": 3,
+            "name": "Thought It Would Go",
+            "points": 168
+          },
+          {
+            "place": 4,
+            "name": "3 Old Men",
+            "points": 162
+          },
+          {
+            "place": 5,
+            "name": "Old Enough",
+            "points": 132
+          },
+          {
+            "place": 6,
+            "name": "Chalk's Free",
+            "points": 129
+          },
+          {
+            "place": 7,
+            "name": "Bluegrass Bandits",
+            "points": 123
+          },
+          {
+            "place": 8,
+            "name": "Death By 1000 Scratches",
+            "points": 97
+          }
+        ]
+      }
     }
   ]
 }
