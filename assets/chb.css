@@ -157,6 +157,10 @@ a.card:hover{border-color:var(--border-bright)}
 .standings tbody tr:first-child th,.standings tbody tr:first-child td{font-weight:500;color:var(--text)}
 .standings tr.mine{background:var(--surface-2)}
 .standings tr.mine th{font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.leaders th small{display:block;color:var(--muted);font-size:12px;font-weight:300}
+.leaders td:last-child{vertical-align:top}
+.leaders .closed{border-top:none;font-size:13px}
+.leaders .closed+table{border-top:1px solid var(--border)}
 .next .place{color:var(--text);font-size:14px}
 
 .filter{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border-bright);padding:12px 16px;font-size:14px}

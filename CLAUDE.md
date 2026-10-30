@@ -71,9 +71,14 @@ Anything committed — including deleted files in history — is visible on GitH
 - `data/sessions.json`: every active division — key (`id`), NAPA name, night,
   format, NAPA division ID, start/end, venues, weeks (date, notes, matches
   with home/away/venue/table/score), and `standings` (`{ round, rows: [{ place,
-  name, points }] }`) copied from NAPA's weekly scratch sheet. Absent until
-  NAPA has standings (new session). If the sheet can't be read, the importer
-  keeps the previous standings.
+  name, points }] }`) and `leaders` (`{ min_matches, rows: [{ name, gender,
+  matches, avg }] }`, NAPA's top ~20 by average points per match) — both
+  copied from NAPA's weekly scratch sheet. Absent until NAPA has results (new
+  session). If the sheet can't be read, the importer keeps the previous copy.
+- Top players box (Schedules page): ranks players who've met `min_matches`;
+  until at least 3 have (e.g. Monday singles' minimum is the whole 15-match
+  session), shows the overall top 5 with "x of N matches". Also names the top
+  female player.
 - Standings shown on the site are NAPA's official ones. Summing match scores
   matches NAPA for team divisions but NOT for singles (makeups get recorded
   combined, e.g. a "30" match), so `assets/league.js` only falls back to

@@ -86,6 +86,34 @@
               el("td", {}, r.place), el("th", { scope: "row" }, r.name), el("td", {}, r.points)))))
         : el("div", { class: "closed" }, `Standings start after week 1 (${fmtDate(div.weeks[0].date)}).`));
 
+    // Top players by average points per match, from NAPA's scratch sheet.
+    // Ranked among players who've met the division's minimum, as NAPA counts
+    // them; until at least 3 have, show the leaders so far with their progress.
+    let leaders = null;
+    if (div.leaders && div.leaders.rows.length) {
+      const min = div.leaders.min_matches || 0;
+      const all = div.leaders.rows;
+      const qualified = all.filter((r) => r.matches >= min);
+      const early = qualified.length < 3;
+      const pool = early ? all : qualified;
+      const top = pool.slice(0, 5);
+      const female = pool.find((r) => r.gender === "F");
+      const progress = (r) => (r.matches >= min ? `${r.matches} matches` : `${r.matches} of ${min} matches`);
+      leaders = el("details", { class: "week standings leaders", id: `${div.id}-players` },
+        el("summary", {}, el("span", { class: "wk" }, "Top players"),
+          el("span", { class: "dt" }, `${top[0].name} ${top[0].avg.toFixed(2)}`)),
+        early && min > 0 && el("div", { class: "closed" }, `Early in the session: most players haven't reached the ${min}-match minimum yet. Leaders so far:`),
+        el("table", {},
+          el("thead", {}, el("tr", {}, el("th", { scope: "col" }, "#"), el("th", { scope: "col" }, "Player"), el("th", { scope: "col" }, "Avg"))),
+          el("tbody", {}, top.map((r, i) => el("tr", {},
+            el("td", {}, i + 1),
+            el("th", { scope: "row" }, r.name, el("small", {}, progress(r))),
+            el("td", {}, r.avg.toFixed(2)))))),
+        el("div", { class: "closed" },
+          female ? `Top female player: ${female.name}, ${female.avg.toFixed(2)} (${progress(female)}). ` : "",
+          `Average points per match${min ? `; ${min}-match minimum to qualify` : ""}. From NAPA's weekly scratch sheet.`));
+    }
+
     const weeks = div.weeks.map((w) => {
       const isCur = cur && w.week === cur.week;
       const isPast = cur ? w.week < cur.week : true;
@@ -109,7 +137,7 @@
         body);
     });
 
-    root.append(el("section", { class: "division", id: div.id, "aria-label": `${div.night} ${div.name}` }, head, standings, ...weeks));
+    root.append(el("section", { class: "division", id: div.id, "aria-label": `${div.night} ${div.name}` }, head, standings, leaders, ...weeks));
   }
 
   if (!root.children.length) {

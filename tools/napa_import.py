@@ -159,19 +159,25 @@ def parse_division(key, did):
     }
 
 
-def parse_standings(did):
-    """NAPA's official standings from the weekly scratch sheet.
+def parse_scratch(did):
+    """NAPA's weekly scratch sheet: official standings and player averages.
 
-    Returns {"round": N, "rows": [{"place", "name", "points"}]}, an empty dict
-    when NAPA has none yet (new session), or None if the sheet couldn't be read.
-    Official, not computed from scores: singles divisions record makeups in
-    ways that make summed match scores disagree with NAPA.
+    Returns {"standings": ..., "leaders": ...} (either may be missing while a
+    new session has no results), or None if the sheet couldn't be read.
+      standings = {"round": N, "rows": [{"place", "name", "points"}]}
+      leaders   = {"min_matches": N, "rows": [{"name", "gender", "matches", "avg"}]}
+    Standings are NAPA's, not summed from match scores: singles divisions
+    record makeups in ways that make summed scores disagree with NAPA.
+    NAPA lists the top players by average (about 20), in order.
     """
     page = fetch(SCRATCH.format(did), fatal=False)
     if page is None:
         return None
     p = RowParser()
     p.feed(page)
+    text = clean(re.sub(r"<[^>]+>", " ", page))
+    out = {}
+
     rows, started = [], False
     for row in p.rows:
         cells = [clean(c[2]) for c in row]
@@ -182,10 +188,27 @@ def parse_standings(did):
             rows.append({"place": int(cells[0]), "name": cells[1], "points": int(cells[2])})
         elif rows or (cells and cells[0].upper() != "PLACE"):
             break
-    if not rows:
-        return {}
-    rm = re.search(r"Matches from:.*?Round:\s*(\d+)", clean(re.sub(r"<[^>]+>", " ", page)))
-    return {"round": int(rm.group(1)) if rm else None, "rows": rows}
+    if rows:
+        rm = re.search(r"Matches from:.*?Round:\s*(\d+)", text)
+        out["standings"] = {"round": int(rm.group(1)) if rm else None, "rows": rows}
+
+    # Player rows: "Name (handicaps) M|F", AP, MP, FF20, FF14, ADJ AP, ADJ MP, AVG.
+    # A bracketed ADJ MP ("[ 3 ]") means under the division's minimum.
+    leaders = []
+    for row in p.rows:
+        cells = [clean(c[2]) for c in row]
+        if len(cells) != 8 or not re.fullmatch(r"\d+\.\d+", cells[7]):
+            continue
+        nm = re.match(r"^(.*?)\s*\(.*\)\s*([MF])?$", cells[0])
+        mp = re.search(r"\d+", cells[6])
+        if not (nm and mp):
+            continue
+        leaders.append({"name": nm.group(1), "gender": nm.group(2) or "",
+                        "matches": int(mp.group()), "avg": float(cells[7])})
+    if leaders:
+        mm = re.search(r"MINIMUM MATCHES REQUIRED:\s*(\d+)", text)
+        out["leaders"] = {"min_matches": int(mm.group(1)) if mm else None, "rows": leaders}
+    return out
 
 
 def main(args):
@@ -202,12 +225,11 @@ def main(args):
         if not (key and did.isdigit()):
             sys.exit(f"Bad argument {arg!r}; expected key=ID, e.g. tuesday-etown-metro=14269")
         d = parse_division(key, did)
-        st = parse_standings(did)
-        if st is None:  # couldn't read NAPA's sheet: keep the last good standings
+        sc = parse_scratch(did)
+        if sc is None:  # couldn't read NAPA's sheet: keep the last good copy
             prev = next((o for o in old.get("divisions", []) if o.get("napa_division_id") == str(did)), {})
-            st = prev.get("standings")
-        if st:
-            d["standings"] = st
+            sc = {k: prev[k] for k in ("standings", "leaders") if k in prev}
+        d.update(sc)
         matches = sum(len(w["matches"]) for w in d["weeks"])
         print(f"{key}: {d['night']} {d['name']} ({did}) - {len(d['weeks'])} weeks, {matches} matches, {d['start']} to {d['end']}")
         divisions.append(d)
