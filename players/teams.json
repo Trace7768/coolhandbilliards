@@ -10,70 +10,27 @@
       "availability": {
         "napa_division_id": "14566",
         "players": [
-          {
-            "name": "Kerry",
-            "weeks": [
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY"
-            ]
-          },
-          {
-            "name": "Kendra",
-            "weeks": [
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "OFF"
-            ]
-          },
-          {
-            "name": "Brian",
-            "weeks": [
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY"
-            ]
-          },
-          {
-            "name": "Shawn",
-            "weeks": [
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "ALT",
-              "PLAY",
-              "PLAY",
-              "OFF",
-              "PLAY",
-              "PLAY",
-              "PLAY"
-            ]
-          }
+          { "name": "Kerry",  "weeks": ["PLAY", "PLAY", "PLAY", "ALT",  "PLAY", "PLAY", "PLAY", "PLAY", "ALT",  "PLAY", "PLAY"] },
+          { "name": "Kendra", "weeks": ["PLAY", "PLAY", "ALT",  "PLAY", "PLAY", "PLAY", "ALT",  "PLAY", "PLAY", "PLAY", "OFF"] },
+          { "name": "Brian",  "weeks": ["PLAY", "ALT",  "PLAY", "PLAY", "PLAY", "ALT",  "PLAY", "PLAY", "PLAY", "ALT",  "PLAY"] },
+          { "name": "Shawn",  "weeks": ["ALT",  "PLAY", "PLAY", "PLAY", "ALT",  "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY"] }
+        ]
+      }
+    },
+    {
+      "id": "sharp-shooters",
+      "name": "Sharp Shooters",
+      "napa_name": "Sharp Shooters",
+      "division": "tuesday-etown-metro",
+      "pin_sha256": "3d3808844aff78d954811748e31d076cebcb7fca27ecb64ef32a34e9d85c105d",
+      "links": [],
+      "availability": {
+        "napa_division_id": "14566",
+        "players": [
+          { "name": "Dean",   "weeks": ["PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY"] },
+          { "name": "Justin", "weeks": ["OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY"] },
+          { "name": "Coy",    "weeks": ["PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY"] },
+          { "name": "Tony",   "weeks": ["PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF"] }
         ]
       }
     },
@@ -87,66 +44,11 @@
       "availability": {
         "napa_division_id": "14465",
         "players": [
-          {
-            "name": "Gassman",
-            "weeks": [
-              "PLAY",
-              "OFF",
-              "PLAY",
-              "OFF",
-              "PLAY",
-              "PLAY",
-              "PLAY"
-            ]
-          },
-          {
-            "name": "Stirsman",
-            "weeks": [
-              "PLAY",
-              "PLAY",
-              "OFF",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "OFF"
-            ]
-          },
-          {
-            "name": "Mobley",
-            "weeks": [
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "OFF",
-              "PLAY",
-              "PLAY"
-            ]
-          },
-          {
-            "name": "Lucas",
-            "weeks": [
-              "OFF",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "PLAY",
-              "OFF",
-              "PLAY"
-            ]
-          },
-          {
-            "name": "Mrs. Lucas",
-            "weeks": [
-              "OFF",
-              "OFF",
-              "OFF",
-              "OFF",
-              "OFF",
-              "OFF",
-              "OFF"
-            ]
-          }
+          { "name": "Gassman",    "weeks": ["PLAY", "OFF",  "PLAY", "OFF",  "PLAY", "PLAY", "PLAY"] },
+          { "name": "Stirsman",   "weeks": ["PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF"] },
+          { "name": "Mobley",     "weeks": ["PLAY", "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY"] },
+          { "name": "Lucas",      "weeks": ["OFF",  "PLAY", "PLAY", "PLAY", "PLAY", "OFF",  "PLAY"] },
+          { "name": "Mrs. Lucas", "weeks": ["OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF"] }
         ]
       }
     }
