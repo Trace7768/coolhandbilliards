@@ -1102,6 +1102,71 @@
             "points": 48
           }
         ]
+      },
+      "leaders": {
+        "min_matches": 15,
+        "rows": [
+          {
+            "name": "Jason Ohlrich",
+            "gender": "M",
+            "matches": 7,
+            "avg": 13.0
+          },
+          {
+            "name": "Michael Roark",
+            "gender": "M",
+            "matches": 13,
+            "avg": 12.38
+          },
+          {
+            "name": "Chance Whitlock",
+            "gender": "M",
+            "matches": 11,
+            "avg": 12.27
+          },
+          {
+            "name": "Ronald Prior",
+            "gender": "M",
+            "matches": 8,
+            "avg": 12.25
+          },
+          {
+            "name": "Billy Wimberg",
+            "gender": "M",
+            "matches": 6,
+            "avg": 11.67
+          },
+          {
+            "name": "Gerry Herron",
+            "gender": "M",
+            "matches": 15,
+            "avg": 11.4
+          },
+          {
+            "name": "Mckay Payton",
+            "gender": "M",
+            "matches": 10,
+            "avg": 11.1
+          },
+          {
+            "name": "Joe Lowery",
+            "gender": "M",
+            "matches": 10,
+            "avg": 10.7
+          },
+          {
+            "name": "Logan Outland",
+            "gender": "M",
+            "matches": 8,
+            "avg": 10.25
+          },
+          {
+            "name": "Brian Satterfield",
+            "gender": "M",
+            "matches": 9,
+            "avg": 9.22
+          }
+        ]
       }
     },
     {
@@ -1874,6 +1939,101 @@
             "place": 8,
             "name": "Death By 1000 Scratches",
             "points": 97
+          }
+        ]
+      },
+      "leaders": {
+        "min_matches": 4,
+        "rows": [
+          {
+            "name": "Mikey Gilpin",
+            "gender": "M",
+            "matches": 2,
+            "avg": 17.5
+          },
+          {
+            "name": "Clint Hill",
+            "gender": "M",
+            "matches": 5,
+            "avg": 16.8
+          },
+          {
+            "name": "Cole Bray",
+            "gender": "M",
+            "matches": 3,
+            "avg": 16.0
+          },
+          {
+            "name": "Mark Obrien",
+            "gender": "M",
+            "matches": 2,
+            "avg": 14.0
+          },
+          {
+            "name": "Brian Stirsman",
+            "gender": "M",
+            "matches": 4,
+            "avg": 14.0
+          },
+          {
+            "name": "Bobby Goff",
+            "gender": "M",
+            "matches": 3,
+            "avg": 14.0
+          },
+          {
+            "name": "Cockey Carey",
+            "gender": "M",
+            "matches": 5,
+            "avg": 13.0
+          },
+          {
+            "name": "Bentlee Barnett",
+            "gender": "M",
+            "matches": 5,
+            "avg": 12.6
+          },
+          {
+            "name": "Bill Gassman",
+            "gender": "M",
+            "matches": 4,
+            "avg": 12.5
+          },
+          {
+            "name": "Calvin Hardin",
+            "gender": "M",
+            "matches": 4,
+            "avg": 12.25
+          },
+          {
+            "name": "Ray Ralston",
+            "gender": "M",
+            "matches": 3,
+            "avg": 11.67
+          },
+          {
+            "name": "Levi Hutchins",
+            "gender": "M",
+            "matches": 5,
+            "avg": 11.6
+          },
+          {
+            "name": "Mert Netherland",
+            "gender": "F",
+            "matches": 5,
+            "avg": 11.2
+          },
+          {
+            "name": "Brian Satterfield",
+            "gender": "M",
+            "matches": 2,
+            "avg": 10.5
+          },
+          {
+            "name": "Joe Mann",
+            "gender": "M",
+            "matches": 4,
+            "avg": 10.5
           }
         ]
       }
