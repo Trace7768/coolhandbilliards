@@ -29,6 +29,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 SOURCE = "https://paper.playpool.io/print_schedule_web.php?did={}"
+SCRATCH = "https://paper.playpool.io/scratch.php?division={}&mastersDivision=N&mastersRace="
 OUT = Path(__file__).resolve().parent.parent / "data" / "sessions.json"
 MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
@@ -83,8 +84,9 @@ def parse_date(text):
     return date(int(m.group(3)), MONTHS[m.group(1).lower()], int(m.group(2))).isoformat()
 
 
-def fetch(url, tries=3):
-    """NAPA's site occasionally refuses or drops a request; wait and retry."""
+def fetch(url, tries=3, fatal=True):
+    """NAPA's site occasionally refuses or drops a request; wait and retry.
+    With fatal=False, return None instead of stopping when it never works."""
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (coolhandbilliards.com schedule sync)"})
     for attempt in range(1, tries + 1):
         try:
@@ -92,6 +94,9 @@ def fetch(url, tries=3):
                 return r.read().decode("utf-8", errors="replace")
         except Exception as e:
             if attempt == tries:
+                if not fatal:
+                    print(f"{url}: failed after {tries} tries ({e}); skipping")
+                    return None
                 sys.exit(f"{url}: failed after {tries} tries ({e})")
             print(f"{url}: {e}; retrying in {20 * attempt}s")
             time.sleep(20 * attempt)
@@ -154,6 +159,35 @@ def parse_division(key, did):
     }
 
 
+def parse_standings(did):
+    """NAPA's official standings from the weekly scratch sheet.
+
+    Returns {"round": N, "rows": [{"place", "name", "points"}]}, an empty dict
+    when NAPA has none yet (new session), or None if the sheet couldn't be read.
+    Official, not computed from scores: singles divisions record makeups in
+    ways that make summed match scores disagree with NAPA.
+    """
+    page = fetch(SCRATCH.format(did), fatal=False)
+    if page is None:
+        return None
+    p = RowParser()
+    p.feed(page)
+    rows, started = [], False
+    for row in p.rows:
+        cells = [clean(c[2]) for c in row]
+        if not started:
+            started = any("CURRENT STANDINGS" in c.upper() for c in cells)
+            continue
+        if len(cells) == 3 and cells[0].isdigit() and re.fullmatch(r"-?\d+", cells[2]):
+            rows.append({"place": int(cells[0]), "name": cells[1], "points": int(cells[2])})
+        elif rows or (cells and cells[0].upper() != "PLACE"):
+            break
+    if not rows:
+        return {}
+    rm = re.search(r"Matches from:.*?Round:\s*(\d+)", clean(re.sub(r"<[^>]+>", " ", page)))
+    return {"round": int(rm.group(1)) if rm else None, "rows": rows}
+
+
 def main(args):
     if not args:
         sys.exit(__doc__)
@@ -168,6 +202,12 @@ def main(args):
         if not (key and did.isdigit()):
             sys.exit(f"Bad argument {arg!r}; expected key=ID, e.g. tuesday-etown-metro=14269")
         d = parse_division(key, did)
+        st = parse_standings(did)
+        if st is None:  # couldn't read NAPA's sheet: keep the last good standings
+            prev = next((o for o in old.get("divisions", []) if o.get("napa_division_id") == str(did)), {})
+            st = prev.get("standings")
+        if st:
+            d["standings"] = st
         matches = sum(len(w["matches"]) for w in d["weeks"])
         print(f"{key}: {d['night']} {d['name']} ({did}) - {len(d['weeks'])} weeks, {matches} matches, {d['start']} to {d['end']}")
         divisions.append(d)

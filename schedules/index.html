@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Schedules · Coolhand Billiards</title>
-<meta name="description" content="Weekly match schedules for every active Coolhand Billiards NAPA division.">
+<title>Schedules &amp; Standings · Coolhand Billiards</title>
+<meta name="description" content="Standings and weekly match schedules for every active Coolhand Billiards NAPA division.">
 <meta name="theme-color" content="#111111">
 <link rel="icon" type="image/png" href="/players/CHB_Black_trans.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
   </header>
 
   <div>
-    <h1>Schedules</h1>
-    <p class="lede" id="lede">Every active NAPA division. The current week is open.</p>
+    <h1>Schedules &amp; Standings</h1>
+    <p class="lede" id="lede">Every active NAPA division: standings first, then each week. The current week is open.</p>
   </div>
 
   <div class="filter" id="filter" hidden></div>
@@ -73,6 +73,19 @@
       el("p", {}, `${fmtDate(div.start, false)} – ${fmtDate(div.end, false)} · `,
         el("a", { href: div.source, target: "_blank", rel: "noopener" }, `NAPA division ${div.napa_division_id}`)));
 
+    // Standings: NAPA's official numbers, refreshed by the schedule robot.
+    const st = CHB.standings(div);
+    const singles = /singles/i.test(div.format);
+    const standings = el("details", { class: "week standings", id: `${div.id}-standings`, open: true },
+      el("summary", {}, el("span", { class: "wk" }, "Standings"),
+        st.label && el("span", { class: "dt" }, st.label)),
+      st.rows.length
+        ? el("table", {},
+            el("thead", {}, el("tr", {}, el("th", { scope: "col" }, "#"), el("th", { scope: "col" }, singles ? "Player" : "Team"), el("th", { scope: "col" }, "Pts"))),
+            el("tbody", {}, st.rows.map((r) => el("tr", { class: r.name === team ? "mine" : null },
+              el("td", {}, r.place), el("th", { scope: "row" }, r.name), el("td", {}, r.points)))))
+        : el("div", { class: "closed" }, `Standings start after week 1 (${fmtDate(div.weeks[0].date)}).`));
+
     const weeks = div.weeks.map((w) => {
       const isCur = cur && w.week === cur.week;
       const isPast = cur ? w.week < cur.week : true;
@@ -96,7 +109,7 @@
         body);
     });
 
-    root.append(el("section", { class: "division", id: div.id, "aria-label": `${div.night} ${div.name}` }, head, ...weeks));
+    root.append(el("section", { class: "division", id: div.id, "aria-label": `${div.night} ${div.name}` }, head, standings, ...weeks));
   }
 
   if (!root.children.length) {

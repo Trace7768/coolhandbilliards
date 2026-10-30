@@ -69,8 +69,15 @@ Anything committed — including deleted files in history — is visible on GitH
 ## Data
 
 - `data/sessions.json`: every active division — key (`id`), NAPA name, night,
-  format, NAPA division ID, start/end, venues, and weeks (date, notes, matches
-  with home/away/venue/table/score).
+  format, NAPA division ID, start/end, venues, weeks (date, notes, matches
+  with home/away/venue/table/score), and `standings` (`{ round, rows: [{ place,
+  name, points }] }`) copied from NAPA's weekly scratch sheet. Absent until
+  NAPA has standings (new session). If the sheet can't be read, the importer
+  keeps the previous standings.
+- Standings shown on the site are NAPA's official ones. Summing match scores
+  matches NAPA for team divisions but NOT for singles (makeups get recorded
+  combined, e.g. a "30" match), so `assets/league.js` only falls back to
+  summing for team divisions.
 - `players/teams.json`: one entry per team — permanent `id` (URL), display
   `name`, `napa_name` (exactly as NAPA spells it), `division` (a key from
   sessions.json), `pin_sha256`, `links` (`[{ "label", "url" }]`), and optional
@@ -111,7 +118,7 @@ Anything committed — including deleted files in history — is visible on GitH
 | Path | What it is |
 |---|---|
 | `index.html` | Homepage: league nights, how to join, links to every section |
-| `schedules/index.html` | Public schedules for every division; `?team=<NAPA name>` filters to one team |
+| `schedules/index.html` | "Schedules & Standings": standings then weeks for every division; `?team=<NAPA name>` filters to one team. Menu label stays "Schedules" (phone width) |
 | `hall-of-hustler/index.html` | Hall of Hustler award gallery from `data/hall-of-hustler.json` |
 | `blog/index.html` | Blog posts from `data/posts.json` |
 | `intake/index.html` | Unlisted new-player intake form (see below) |
