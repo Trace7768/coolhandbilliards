@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-03",
   "divisions": [
     {
       "id": "monday-singles",
@@ -49,7 +49,11 @@
             {
               "home": "Brian Satterfield",
               "away": "Billy Wimberg",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                7,
+                14
+              ]
             },
             {
               "home": "Mckay Payton",
@@ -436,7 +440,11 @@
             {
               "home": "Marcus Odom",
               "away": "Brian Satterfield",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Austin Wheatley",
@@ -533,7 +541,11 @@
             {
               "home": "Brian Satterfield",
               "away": "Logan Outland",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             }
           ]
         },
@@ -553,7 +565,11 @@
             {
               "home": "Teddy Barker jr.",
               "away": "Ray Stovall",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Pat Schultz",
@@ -567,12 +583,20 @@
             {
               "home": "Marcus Odom",
               "away": "Ronald Prior",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                22,
+                1
+              ]
             },
             {
               "home": "Joe Lowery",
               "away": "Jason Ohlrich",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Austin Wheatley",
@@ -610,7 +634,11 @@
             {
               "home": "Jason Ohlrich",
               "away": "Chance Whitlock",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                15,
+                7
+              ]
             },
             {
               "home": "Gerry Herron",
@@ -665,7 +693,11 @@
             {
               "home": "Ronald Prior",
               "away": "Logan Outland",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             }
           ]
         },
@@ -708,7 +740,11 @@
             {
               "home": "Joe Lowery",
               "away": "Brian Satterfield",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
             },
             {
               "home": "Austin Wheatley",
@@ -757,7 +793,11 @@
             {
               "home": "Brian Satterfield",
               "away": "Jason Ohlrich",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                15,
+                7
+              ]
             },
             {
               "home": "Michael Roark",
@@ -855,7 +895,11 @@
             {
               "home": "Pat Schultz",
               "away": "Marcus Odom",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                7,
+                16
+              ]
             },
             {
               "home": "Michael Roark",
@@ -971,7 +1015,11 @@
             {
               "home": "Billy Wimberg",
               "away": "Mckay Payton",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                20,
+                1
+              ]
             },
             {
               "home": "Ray Stovall",
@@ -1019,7 +1067,7 @@
         }
       ],
       "standings": {
-        "round": 8,
+        "round": 9,
         "rows": [
           {
             "place": 1,
@@ -1034,62 +1082,62 @@
           {
             "place": 3,
             "name": "Chance Whitlock",
-            "points": 135
+            "points": 142
           },
           {
             "place": 4,
-            "name": "Mckay Payton",
-            "points": 111
+            "name": "Jason Ohlrich",
+            "points": 127
           },
           {
             "place": 5,
-            "name": "Joe Lowery",
-            "points": 107
+            "name": "Brian Satterfield",
+            "points": 125
           },
           {
             "place": 6,
-            "name": "Ronald Prior",
-            "points": 98
+            "name": "Joe Lowery",
+            "points": 124
           },
           {
             "place": 7,
-            "name": "Jason Ohlrich",
-            "points": 91
+            "name": "Mckay Payton",
+            "points": 112
           },
           {
             "place": 8,
+            "name": "Marcus Odom",
+            "points": 111
+          },
+          {
+            "place": 9,
+            "name": "Logan Outland",
+            "points": 110
+          },
+          {
+            "place": 10,
+            "name": "Billy Wimberg",
+            "points": 104
+          },
+          {
+            "place": 11,
+            "name": "Ronald Prior",
+            "points": 102
+          },
+          {
+            "place": 12,
+            "name": "Ray Stovall",
+            "points": 96
+          },
+          {
+            "place": 13,
             "name": "Austin Wheatley",
             "points": 88
           },
           {
-            "place": 9,
-            "name": "Brian Satterfield",
-            "points": 83
-          },
-          {
-            "place": 10,
-            "name": "Logan Outland",
-            "points": 82
-          },
-          {
-            "place": 11,
-            "name": "Ray Stovall",
-            "points": 82
-          },
-          {
-            "place": 12,
-            "name": "Marcus Odom",
-            "points": 70
-          },
-          {
-            "place": 13,
-            "name": "Billy Wimberg",
-            "points": 70
-          },
-          {
             "place": 14,
             "name": "Pat Schultz",
-            "points": 65
+            "points": 72
           },
           {
             "place": 15,
@@ -1099,7 +1147,7 @@
           {
             "place": 16,
             "name": "Teddy Barker jr.",
-            "points": 48
+            "points": 51
           }
         ]
       },
@@ -1107,10 +1155,16 @@
         "min_matches": 15,
         "rows": [
           {
+            "name": "Billy Wimberg",
+            "gender": "M",
+            "matches": 8,
+            "avg": 13.0
+          },
+          {
             "name": "Jason Ohlrich",
             "gender": "M",
-            "matches": 7,
-            "avg": 13.0
+            "matches": 10,
+            "avg": 12.7
           },
           {
             "name": "Michael Roark",
@@ -1121,20 +1175,8 @@
           {
             "name": "Chance Whitlock",
             "gender": "M",
-            "matches": 11,
-            "avg": 12.27
-          },
-          {
-            "name": "Ronald Prior",
-            "gender": "M",
-            "matches": 8,
-            "avg": 12.25
-          },
-          {
-            "name": "Billy Wimberg",
-            "gender": "M",
-            "matches": 6,
-            "avg": 11.67
+            "matches": 12,
+            "avg": 11.83
           },
           {
             "name": "Gerry Herron",
@@ -1143,28 +1185,34 @@
             "avg": 11.4
           },
           {
-            "name": "Mckay Payton",
+            "name": "Logan Outland",
             "gender": "M",
             "matches": 10,
-            "avg": 11.1
+            "avg": 11.0
           },
           {
             "name": "Joe Lowery",
             "gender": "M",
+            "matches": 12,
+            "avg": 10.33
+          },
+          {
+            "name": "Ronald Prior",
+            "gender": "M",
             "matches": 10,
-            "avg": 10.7
+            "avg": 10.2
           },
           {
-            "name": "Logan Outland",
+            "name": "Mckay Payton",
             "gender": "M",
-            "matches": 8,
-            "avg": 10.25
+            "matches": 11,
+            "avg": 10.18
           },
           {
-            "name": "Brian Satterfield",
+            "name": "Marcus Odom",
             "gender": "M",
-            "matches": 9,
-            "avg": 9.22
+            "matches": 11,
+            "avg": 10.09
           }
         ]
       }
@@ -1214,7 +1262,7 @@
               "venue": "American Legion Post 113"
             },
             {
-              "home": "Gunners",
+              "home": "Gunners 2.0",
               "away": "Sharp Shooters",
               "venue": "American Legion Post 113"
             }
@@ -1250,7 +1298,7 @@
               "venue": "Hot Shots"
             },
             {
-              "home": "Gunners",
+              "home": "Gunners 2.0",
               "away": "Make 'Em Pay",
               "venue": "American Legion Post 113"
             }
@@ -1287,7 +1335,7 @@
             },
             {
               "home": "The Billiard Bandits",
-              "away": "Gunners",
+              "away": "Gunners 2.0",
               "venue": "Apex Billiards"
             }
           ]
@@ -1322,7 +1370,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners",
+              "home": "Gunners 2.0",
               "away": "Comeback Cueists",
               "venue": "American Legion Post 113"
             }
@@ -1359,7 +1407,7 @@
             },
             {
               "home": "Booga & Bounce",
-              "away": "Gunners",
+              "away": "Gunners 2.0",
               "venue": "Hot Shots"
             }
           ]
@@ -1394,7 +1442,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners",
+              "home": "Gunners 2.0",
               "away": "The Recyclables",
               "venue": "American Legion Post 113"
             }
@@ -1431,7 +1479,7 @@
             },
             {
               "home": "Blazing Cue-migos",
-              "away": "Gunners",
+              "away": "Gunners 2.0",
               "venue": "American Legion Post 113"
             }
           ]
@@ -1466,7 +1514,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners",
+              "home": "Gunners 2.0",
               "away": "Off the Rail",
               "venue": "American Legion Post 113"
             }
@@ -1503,7 +1551,7 @@
             },
             {
               "home": "On Cue",
-              "away": "Gunners",
+              "away": "Gunners 2.0",
               "venue": "Apex Billiards"
             }
           ]
@@ -1541,7 +1589,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners",
+              "home": "Gunners 2.0",
               "away": "Beyond Cue",
               "venue": "American Legion Post 113"
             }
@@ -1557,7 +1605,7 @@
           "matches": [
             {
               "home": "Balls in Hand",
-              "away": "Gunners",
+              "away": "Gunners 2.0",
               "venue": "Hot Shots"
             },
             {
