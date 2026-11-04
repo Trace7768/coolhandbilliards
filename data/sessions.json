@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1239,32 +1239,56 @@
             {
               "home": "Make 'Em Pay",
               "away": "Balls in Hand",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                28,
+                35
+              ]
             },
             {
               "home": "The Billiard Bandits",
               "away": "Beyond Cue",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                13,
+                44
+              ]
             },
             {
               "home": "Comeback Cueists",
               "away": "On Cue",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                62,
+                3
+              ]
             },
             {
               "home": "Booga & Bounce",
               "away": "Off the Rail",
-              "venue": "Hot Shots"
+              "venue": "Hot Shots",
+              "score": [
+                31,
+                20
+              ]
             },
             {
               "home": "The Recyclables",
               "away": "Blazing Cue-migos",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                13,
+                42
+              ]
             },
             {
               "home": "Gunners 2.0",
               "away": "Sharp Shooters",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                31,
+                20
+              ]
             }
           ]
         },
@@ -1635,7 +1659,137 @@
             }
           ]
         }
-      ]
+      ],
+      "standings": {
+        "round": 1,
+        "rows": [
+          {
+            "place": 1,
+            "name": "Comeback Cueists",
+            "points": 62
+          },
+          {
+            "place": 2,
+            "name": "Beyond Cue",
+            "points": 44
+          },
+          {
+            "place": 3,
+            "name": "Blazing Cue-migos",
+            "points": 42
+          },
+          {
+            "place": 4,
+            "name": "Balls in Hand",
+            "points": 35
+          },
+          {
+            "place": 5,
+            "name": "Gunners 2.0",
+            "points": 31
+          },
+          {
+            "place": 6,
+            "name": "Booga & Bounce",
+            "points": 31
+          },
+          {
+            "place": 7,
+            "name": "Make 'Em Pay",
+            "points": 28
+          },
+          {
+            "place": 8,
+            "name": "Sharp Shooters",
+            "points": 20
+          },
+          {
+            "place": 9,
+            "name": "Off the Rail",
+            "points": 20
+          },
+          {
+            "place": 10,
+            "name": "The Billiard Bandits",
+            "points": 13
+          },
+          {
+            "place": 11,
+            "name": "The Recyclables",
+            "points": 13
+          },
+          {
+            "place": 12,
+            "name": "On Cue",
+            "points": 3
+          }
+        ]
+      },
+      "leaders": {
+        "min_matches": 6,
+        "rows": [
+          {
+            "name": "Tim Bryant",
+            "gender": "M",
+            "matches": 1,
+            "avg": 21.0
+          },
+          {
+            "name": "Michael Carroll",
+            "gender": "M",
+            "matches": 1,
+            "avg": 21.0
+          },
+          {
+            "name": "Josh Brangers",
+            "gender": "M",
+            "matches": 1,
+            "avg": 20.0
+          },
+          {
+            "name": "Roy Christofferson",
+            "gender": "M",
+            "matches": 1,
+            "avg": 20.0
+          },
+          {
+            "name": "Tim Simmons",
+            "gender": "M",
+            "matches": 1,
+            "avg": 20.0
+          },
+          {
+            "name": "Brian Satterfield",
+            "gender": "M",
+            "matches": 1,
+            "avg": 16.0
+          },
+          {
+            "name": "Austin Wheatley",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Stan Mullins",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Dean Malone",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "John Johnson",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          }
+        ]
+      }
     },
     {
       "id": "wednesday-bardstown",
