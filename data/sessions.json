@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "divisions": [
     {
       "id": "monday-singles",
@@ -2037,30 +2037,49 @@
         {
           "week": 6,
           "date": "2026-11-04",
+          "notes": [
+            "Last chance to make roster changes"
+          ],
           "matches": [
             {
               "home": "Thought It Would Go",
               "away": "Bluegrass Bandits",
               "venue": "Bluegrass Tavern",
-              "table": "4"
+              "table": "4",
+              "score": [
+                7,
+                28
+              ]
             },
             {
               "home": "Old Enough",
               "away": "Chalk's Free",
               "venue": "Bluegrass Tavern",
-              "table": "3"
+              "table": "3",
+              "score": [
+                29,
+                26
+              ]
             },
             {
               "home": "Less Talk More Chalk",
               "away": "Death By 1000 Scratches",
               "venue": "Bluegrass Tavern",
-              "table": "1"
+              "table": "1",
+              "score": [
+                23,
+                37
+              ]
             },
             {
               "home": "3 Old Men",
               "away": "Soul Snatcher",
               "venue": "Bluegrass Tavern",
-              "table": "2"
+              "table": "2",
+              "score": [
+                20,
+                35
+              ]
             }
           ]
         },
@@ -2068,7 +2087,6 @@
           "week": 7,
           "date": "2026-11-11",
           "notes": [
-            "No more roster changes",
             "Make up match deadline"
           ],
           "matches": [
@@ -2100,47 +2118,47 @@
         }
       ],
       "standings": {
-        "round": 5,
+        "round": 6,
         "rows": [
           {
             "place": 1,
             "name": "Less Talk More Chalk",
-            "points": 199
+            "points": 222
           },
           {
             "place": 2,
             "name": "Soul Snatcher",
-            "points": 184
+            "points": 219
           },
           {
             "place": 3,
-            "name": "Thought It Would Go",
-            "points": 168
+            "name": "3 Old Men",
+            "points": 182
           },
           {
             "place": 4,
-            "name": "3 Old Men",
-            "points": 162
+            "name": "Thought It Would Go",
+            "points": 175
           },
           {
             "place": 5,
             "name": "Old Enough",
-            "points": 132
+            "points": 161
           },
           {
             "place": 6,
             "name": "Chalk's Free",
-            "points": 129
+            "points": 155
           },
           {
             "place": 7,
             "name": "Bluegrass Bandits",
-            "points": 123
+            "points": 151
           },
           {
             "place": 8,
             "name": "Death By 1000 Scratches",
-            "points": 97
+            "points": 134
           }
         ]
       },
@@ -2154,21 +2172,21 @@
             "avg": 17.5
           },
           {
-            "name": "Clint Hill",
-            "gender": "M",
-            "matches": 5,
-            "avg": 16.8
-          },
-          {
             "name": "Cole Bray",
             "gender": "M",
-            "matches": 3,
-            "avg": 16.0
+            "matches": 4,
+            "avg": 15.5
+          },
+          {
+            "name": "Clint Hill",
+            "gender": "M",
+            "matches": 6,
+            "avg": 14.17
           },
           {
             "name": "Mark Obrien",
             "gender": "M",
-            "matches": 2,
+            "matches": 3,
             "avg": 14.0
           },
           {
@@ -2180,44 +2198,32 @@
           {
             "name": "Bobby Goff",
             "gender": "M",
-            "matches": 3,
-            "avg": 14.0
-          },
-          {
-            "name": "Cockey Carey",
-            "gender": "M",
-            "matches": 5,
-            "avg": 13.0
-          },
-          {
-            "name": "Bentlee Barnett",
-            "gender": "M",
-            "matches": 5,
-            "avg": 12.6
-          },
-          {
-            "name": "Bill Gassman",
-            "gender": "M",
-            "matches": 4,
-            "avg": 12.5
-          },
-          {
-            "name": "Calvin Hardin",
-            "gender": "M",
             "matches": 4,
             "avg": 12.25
           },
           {
-            "name": "Ray Ralston",
+            "name": "Levi Hutchins",
+            "gender": "M",
+            "matches": 6,
+            "avg": 12.0
+          },
+          {
+            "name": "Bentlee Barnett",
+            "gender": "M",
+            "matches": 6,
+            "avg": 11.83
+          },
+          {
+            "name": "Brian Satterfield",
             "gender": "M",
             "matches": 3,
             "avg": 11.67
           },
           {
-            "name": "Levi Hutchins",
+            "name": "Cockey Carey",
             "gender": "M",
-            "matches": 5,
-            "avg": 11.6
+            "matches": 6,
+            "avg": 11.33
           },
           {
             "name": "Mert Netherland",
@@ -2226,16 +2232,28 @@
             "avg": 11.2
           },
           {
-            "name": "Brian Satterfield",
-            "gender": "M",
-            "matches": 2,
-            "avg": 10.5
-          },
-          {
             "name": "Joe Mann",
             "gender": "M",
-            "matches": 4,
-            "avg": 10.5
+            "matches": 5,
+            "avg": 11.2
+          },
+          {
+            "name": "Chuck Cordova",
+            "gender": "M",
+            "matches": 6,
+            "avg": 11.0
+          },
+          {
+            "name": "Bill Gassman",
+            "gender": "M",
+            "matches": 5,
+            "avg": 10.6
+          },
+          {
+            "name": "Calvin Hardin",
+            "gender": "M",
+            "matches": 5,
+            "avg": 10.4
           }
         ]
       }
