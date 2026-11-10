@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-10",
   "divisions": [
     {
       "id": "monday-singles",
@@ -661,7 +661,11 @@
             {
               "home": "Billy Wimberg",
               "away": "Marcus Odom",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                15
+              ]
             },
             {
               "home": "Mckay Payton",
@@ -735,7 +739,11 @@
             {
               "home": "Jason Ohlrich",
               "away": "Mckay Payton",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                1,
+                20
+              ]
             },
             {
               "home": "Joe Lowery",
@@ -763,7 +771,11 @@
             {
               "home": "Logan Outland",
               "away": "Billy Wimberg",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             }
           ]
         },
@@ -779,7 +791,11 @@
             {
               "home": "Teddy Barker jr.",
               "away": "Pat Schultz",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Gerry Herron",
@@ -851,12 +867,20 @@
             {
               "home": "Jason Ohlrich",
               "away": "Michael Roark",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                4
+              ]
             },
             {
               "home": "Joe Lowery",
               "away": "Ronald Prior",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                1,
+                22
+              ]
             },
             {
               "home": "Austin Wheatley",
@@ -904,7 +928,11 @@
             {
               "home": "Michael Roark",
               "away": "Mckay Payton",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Ronald Prior",
@@ -1067,7 +1095,7 @@
         }
       ],
       "standings": {
-        "round": 9,
+        "round": 10,
         "rows": [
           {
             "place": 1,
@@ -1075,79 +1103,79 @@
             "points": 171
           },
           {
-            "place": 2,
+            "place": 1,
             "name": "Michael Roark",
-            "points": 161
+            "points": 168
           },
           {
-            "place": 3,
+            "place": 1,
+            "name": "Mckay Payton",
+            "points": 146
+          },
+          {
+            "place": 1,
             "name": "Chance Whitlock",
             "points": 142
           },
           {
-            "place": 4,
+            "place": 1,
             "name": "Jason Ohlrich",
-            "points": 127
+            "points": 142
           },
           {
-            "place": 5,
+            "place": 1,
+            "name": "Marcus Odom",
+            "points": 126
+          },
+          {
+            "place": 1,
+            "name": "Joe Lowery",
+            "points": 125
+          },
+          {
+            "place": 1,
             "name": "Brian Satterfield",
             "points": 125
           },
           {
-            "place": 6,
-            "name": "Joe Lowery",
+            "place": 1,
+            "name": "Ronald Prior",
             "points": 124
           },
           {
-            "place": 7,
-            "name": "Mckay Payton",
-            "points": 112
-          },
-          {
-            "place": 8,
-            "name": "Marcus Odom",
-            "points": 111
-          },
-          {
-            "place": 9,
-            "name": "Logan Outland",
-            "points": 110
-          },
-          {
-            "place": 10,
+            "place": 1,
             "name": "Billy Wimberg",
-            "points": 104
+            "points": 121
           },
           {
-            "place": 11,
-            "name": "Ronald Prior",
-            "points": 102
+            "place": 1,
+            "name": "Logan Outland",
+            "points": 113
           },
           {
-            "place": 12,
+            "place": 1,
             "name": "Ray Stovall",
             "points": 96
           },
           {
-            "place": 13,
+            "place": 1,
             "name": "Austin Wheatley",
             "points": 88
           },
           {
-            "place": 14,
+            "place": 1,
             "name": "Pat Schultz",
-            "points": 72
+            "points": 86
           },
           {
-            "place": 15,
+            "place": 1,
             "name": "Chris Lucas",
             "points": 55
           },
           {
-            "place": 16,
+            "place": 1,
             "name": "Teddy Barker jr.",
-            "points": 51
+            "points": 54
           }
         ]
       },
@@ -1157,20 +1185,14 @@
           {
             "name": "Billy Wimberg",
             "gender": "M",
-            "matches": 8,
-            "avg": 13.0
+            "matches": 10,
+            "avg": 12.1
           },
           {
             "name": "Jason Ohlrich",
             "gender": "M",
-            "matches": 10,
-            "avg": 12.7
-          },
-          {
-            "name": "Michael Roark",
-            "gender": "M",
-            "matches": 13,
-            "avg": 12.38
+            "matches": 12,
+            "avg": 11.83
           },
           {
             "name": "Chance Whitlock",
@@ -1185,34 +1207,40 @@
             "avg": 11.4
           },
           {
-            "name": "Logan Outland",
-            "gender": "M",
-            "matches": 10,
-            "avg": 11.0
-          },
-          {
-            "name": "Joe Lowery",
-            "gender": "M",
-            "matches": 12,
-            "avg": 10.33
-          },
-          {
             "name": "Ronald Prior",
             "gender": "M",
-            "matches": 10,
-            "avg": 10.2
+            "matches": 11,
+            "avg": 11.27
           },
           {
             "name": "Mckay Payton",
             "gender": "M",
-            "matches": 11,
-            "avg": 10.18
+            "matches": 13,
+            "avg": 11.23
+          },
+          {
+            "name": "Michael Roark",
+            "gender": "M",
+            "matches": 15,
+            "avg": 11.2
           },
           {
             "name": "Marcus Odom",
             "gender": "M",
+            "matches": 12,
+            "avg": 10.5
+          },
+          {
+            "name": "Logan Outland",
+            "gender": "M",
             "matches": 11,
-            "avg": 10.09
+            "avg": 10.27
+          },
+          {
+            "name": "Joe Lowery",
+            "gender": "M",
+            "matches": 13,
+            "avg": 9.62
           }
         ]
       }
@@ -1282,7 +1310,7 @@
               ]
             },
             {
-              "home": "Gunners 2.0",
+              "home": "Up a creek w/o a Paddy",
               "away": "Sharp Shooters",
               "venue": "American Legion Post 113",
               "score": [
@@ -1322,7 +1350,7 @@
               "venue": "Hot Shots"
             },
             {
-              "home": "Gunners 2.0",
+              "home": "Up a creek w/o a Paddy",
               "away": "Make 'Em Pay",
               "venue": "American Legion Post 113"
             }
@@ -1359,7 +1387,7 @@
             },
             {
               "home": "The Billiard Bandits",
-              "away": "Gunners 2.0",
+              "away": "Up a creek w/o a Paddy",
               "venue": "Apex Billiards"
             }
           ]
@@ -1394,7 +1422,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners 2.0",
+              "home": "Up a creek w/o a Paddy",
               "away": "Comeback Cueists",
               "venue": "American Legion Post 113"
             }
@@ -1431,7 +1459,7 @@
             },
             {
               "home": "Booga & Bounce",
-              "away": "Gunners 2.0",
+              "away": "Up a creek w/o a Paddy",
               "venue": "Hot Shots"
             }
           ]
@@ -1466,7 +1494,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners 2.0",
+              "home": "Up a creek w/o a Paddy",
               "away": "The Recyclables",
               "venue": "American Legion Post 113"
             }
@@ -1503,7 +1531,7 @@
             },
             {
               "home": "Blazing Cue-migos",
-              "away": "Gunners 2.0",
+              "away": "Up a creek w/o a Paddy",
               "venue": "American Legion Post 113"
             }
           ]
@@ -1538,7 +1566,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners 2.0",
+              "home": "Up a creek w/o a Paddy",
               "away": "Off the Rail",
               "venue": "American Legion Post 113"
             }
@@ -1575,7 +1603,7 @@
             },
             {
               "home": "On Cue",
-              "away": "Gunners 2.0",
+              "away": "Up a creek w/o a Paddy",
               "venue": "Apex Billiards"
             }
           ]
@@ -1613,7 +1641,7 @@
               "venue": "Apex Billiards"
             },
             {
-              "home": "Gunners 2.0",
+              "home": "Up a creek w/o a Paddy",
               "away": "Beyond Cue",
               "venue": "American Legion Post 113"
             }
@@ -1629,7 +1657,7 @@
           "matches": [
             {
               "home": "Balls in Hand",
-              "away": "Gunners 2.0",
+              "away": "Up a creek w/o a Paddy",
               "venue": "Hot Shots"
             },
             {
@@ -1669,57 +1697,57 @@
             "points": 62
           },
           {
-            "place": 2,
+            "place": 1,
             "name": "Beyond Cue",
             "points": 44
           },
           {
-            "place": 3,
+            "place": 1,
             "name": "Blazing Cue-migos",
             "points": 42
           },
           {
-            "place": 4,
+            "place": 1,
             "name": "Balls in Hand",
             "points": 35
           },
           {
-            "place": 5,
-            "name": "Gunners 2.0",
+            "place": 1,
+            "name": "Up a creek w/o a Paddy",
             "points": 31
           },
           {
-            "place": 6,
+            "place": 1,
             "name": "Booga & Bounce",
             "points": 31
           },
           {
-            "place": 7,
+            "place": 1,
             "name": "Make 'Em Pay",
             "points": 28
           },
           {
-            "place": 8,
+            "place": 1,
             "name": "Sharp Shooters",
             "points": 20
           },
           {
-            "place": 9,
+            "place": 1,
             "name": "Off the Rail",
             "points": 20
           },
           {
-            "place": 10,
+            "place": 1,
             "name": "The Billiard Bandits",
             "points": 13
           },
           {
-            "place": 11,
+            "place": 1,
             "name": "The Recyclables",
             "points": 13
           },
           {
-            "place": 12,
+            "place": 1,
             "name": "On Cue",
             "points": 3
           }
@@ -1787,6 +1815,66 @@
             "gender": "M",
             "matches": 1,
             "avg": 14.0
+          },
+          {
+            "name": "Randy Morris",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Evan Oshel",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Kerry Brackus",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Kendra Brackus",
+            "gender": "F",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Jonathan Reed",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Terry McCorkle",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Eddie Hart",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Larry Brooks",
+            "gender": "M",
+            "matches": 1,
+            "avg": 7.0
+          },
+          {
+            "name": "Jason Potts",
+            "gender": "M",
+            "matches": 1,
+            "avg": 7.0
+          },
+          {
+            "name": "Brian Lucas",
+            "gender": "M",
+            "matches": 1,
+            "avg": 3.0
           }
         ]
       }
@@ -2047,8 +2135,8 @@
               "venue": "Bluegrass Tavern",
               "table": "4",
               "score": [
-                7,
-                28
+                10,
+                42
               ]
             },
             {
@@ -2126,37 +2214,37 @@
             "points": 222
           },
           {
-            "place": 2,
+            "place": 1,
             "name": "Soul Snatcher",
             "points": 219
           },
           {
-            "place": 3,
+            "place": 1,
             "name": "3 Old Men",
             "points": 182
           },
           {
-            "place": 4,
+            "place": 1,
             "name": "Thought It Would Go",
-            "points": 175
+            "points": 178
           },
           {
-            "place": 5,
+            "place": 1,
+            "name": "Bluegrass Bandits",
+            "points": 165
+          },
+          {
+            "place": 1,
             "name": "Old Enough",
             "points": 161
           },
           {
-            "place": 6,
+            "place": 1,
             "name": "Chalk's Free",
             "points": 155
           },
           {
-            "place": 7,
-            "name": "Bluegrass Bandits",
-            "points": 151
-          },
-          {
-            "place": 8,
+            "place": 1,
             "name": "Death By 1000 Scratches",
             "points": 134
           }
@@ -2190,12 +2278,6 @@
             "avg": 14.0
           },
           {
-            "name": "Brian Stirsman",
-            "gender": "M",
-            "matches": 4,
-            "avg": 14.0
-          },
-          {
             "name": "Bobby Goff",
             "gender": "M",
             "matches": 4,
@@ -2212,6 +2294,12 @@
             "gender": "M",
             "matches": 6,
             "avg": 11.83
+          },
+          {
+            "name": "Brian Stirsman",
+            "gender": "M",
+            "matches": 5,
+            "avg": 11.8
           },
           {
             "name": "Brian Satterfield",
