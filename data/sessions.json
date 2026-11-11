@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1327,32 +1327,56 @@
             {
               "home": "Sharp Shooters",
               "away": "Blazing Cue-migos",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                29,
+                30
+              ]
             },
             {
               "home": "Off the Rail",
               "away": "The Recyclables",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                45,
+                23
+              ]
             },
             {
               "home": "On Cue",
               "away": "Booga & Bounce",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                31,
+                28
+              ]
             },
             {
               "home": "Beyond Cue",
               "away": "Comeback Cueists",
-              "venue": "Apex Billiards"
+              "venue": "Apex Billiards",
+              "score": [
+                30,
+                32
+              ]
             },
             {
               "home": "Balls in Hand",
               "away": "The Billiard Bandits",
-              "venue": "Hot Shots"
+              "venue": "Hot Shots",
+              "score": [
+                38,
+                18
+              ]
             },
             {
               "home": "Up a creek w/o a Paddy",
               "away": "Make 'Em Pay",
-              "venue": "American Legion Post 113"
+              "venue": "American Legion Post 113",
+              "score": [
+                20,
+                31
+              ]
             }
           ]
         },
@@ -1689,67 +1713,67 @@
         }
       ],
       "standings": {
-        "round": 1,
+        "round": 2,
         "rows": [
           {
             "place": 1,
             "name": "Comeback Cueists",
-            "points": 62
+            "points": 94
           },
           {
             "place": 1,
             "name": "Beyond Cue",
-            "points": 44
-          },
-          {
-            "place": 1,
-            "name": "Blazing Cue-migos",
-            "points": 42
+            "points": 74
           },
           {
             "place": 1,
             "name": "Balls in Hand",
-            "points": 35
+            "points": 73
           },
           {
             "place": 1,
-            "name": "Up a creek w/o a Paddy",
-            "points": 31
-          },
-          {
-            "place": 1,
-            "name": "Booga & Bounce",
-            "points": 31
-          },
-          {
-            "place": 1,
-            "name": "Make 'Em Pay",
-            "points": 28
-          },
-          {
-            "place": 1,
-            "name": "Sharp Shooters",
-            "points": 20
+            "name": "Blazing Cue-migos",
+            "points": 72
           },
           {
             "place": 1,
             "name": "Off the Rail",
-            "points": 20
+            "points": 65
           },
           {
             "place": 1,
-            "name": "The Billiard Bandits",
-            "points": 13
+            "name": "Make 'Em Pay",
+            "points": 59
+          },
+          {
+            "place": 1,
+            "name": "Booga & Bounce",
+            "points": 59
+          },
+          {
+            "place": 1,
+            "name": "Up a creek w/o a Paddy",
+            "points": 51
+          },
+          {
+            "place": 1,
+            "name": "Sharp Shooters",
+            "points": 49
           },
           {
             "place": 1,
             "name": "The Recyclables",
-            "points": 13
+            "points": 36
           },
           {
             "place": 1,
             "name": "On Cue",
-            "points": 3
+            "points": 34
+          },
+          {
+            "place": 1,
+            "name": "The Billiard Bandits",
+            "points": 31
           }
         ]
       },
@@ -1759,23 +1783,11 @@
           {
             "name": "Tim Bryant",
             "gender": "M",
-            "matches": 1,
-            "avg": 21.0
+            "matches": 2,
+            "avg": 21.5
           },
           {
-            "name": "Michael Carroll",
-            "gender": "M",
-            "matches": 1,
-            "avg": 21.0
-          },
-          {
-            "name": "Josh Brangers",
-            "gender": "M",
-            "matches": 1,
-            "avg": 20.0
-          },
-          {
-            "name": "Roy Christofferson",
+            "name": "Tony Hoppenrath",
             "gender": "M",
             "matches": 1,
             "avg": 20.0
@@ -1787,10 +1799,22 @@
             "avg": 20.0
           },
           {
+            "name": "Terry McCorkle",
+            "gender": "M",
+            "matches": 2,
+            "avg": 17.5
+          },
+          {
             "name": "Brian Satterfield",
             "gender": "M",
             "matches": 1,
             "avg": 16.0
+          },
+          {
+            "name": "Steve Jaggers",
+            "gender": "M",
+            "matches": 1,
+            "avg": 15.0
           },
           {
             "name": "Austin Wheatley",
@@ -1799,7 +1823,7 @@
             "avg": 14.0
           },
           {
-            "name": "Stan Mullins",
+            "name": "Justin Geary",
             "gender": "M",
             "matches": 1,
             "avg": 14.0
@@ -1807,37 +1831,25 @@
           {
             "name": "Dean Malone",
             "gender": "M",
-            "matches": 1,
+            "matches": 2,
             "avg": 14.0
           },
           {
-            "name": "John Johnson",
+            "name": "Michael Carroll",
             "gender": "M",
-            "matches": 1,
-            "avg": 14.0
-          },
-          {
-            "name": "Randy Morris",
-            "gender": "M",
-            "matches": 1,
+            "matches": 2,
             "avg": 14.0
           },
           {
             "name": "Evan Oshel",
             "gender": "M",
-            "matches": 1,
+            "matches": 2,
             "avg": 14.0
           },
           {
             "name": "Kerry Brackus",
             "gender": "M",
-            "matches": 1,
-            "avg": 14.0
-          },
-          {
-            "name": "Kendra Brackus",
-            "gender": "F",
-            "matches": 1,
+            "matches": 2,
             "avg": 14.0
           },
           {
@@ -1847,7 +1859,7 @@
             "avg": 14.0
           },
           {
-            "name": "Terry McCorkle",
+            "name": "Zack Butler",
             "gender": "M",
             "matches": 1,
             "avg": 14.0
@@ -1855,26 +1867,38 @@
           {
             "name": "Eddie Hart",
             "gender": "M",
-            "matches": 1,
+            "matches": 2,
             "avg": 14.0
           },
           {
-            "name": "Larry Brooks",
+            "name": "Gerry Herron",
             "gender": "M",
-            "matches": 1,
-            "avg": 7.0
+            "matches": 2,
+            "avg": 12.5
           },
           {
-            "name": "Jason Potts",
+            "name": "Josh Brangers",
             "gender": "M",
-            "matches": 1,
-            "avg": 7.0
+            "matches": 2,
+            "avg": 11.5
           },
           {
-            "name": "Brian Lucas",
+            "name": "Roy Christofferson",
             "gender": "M",
-            "matches": 1,
-            "avg": 3.0
+            "matches": 2,
+            "avg": 11.5
+          },
+          {
+            "name": "Randy Morris",
+            "gender": "M",
+            "matches": 2,
+            "avg": 10.5
+          },
+          {
+            "name": "Kendra Brackus",
+            "gender": "F",
+            "matches": 2,
+            "avg": 10.5
           }
         ]
       }
