@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1103,77 +1103,77 @@
             "points": 171
           },
           {
-            "place": 1,
+            "place": 2,
             "name": "Michael Roark",
             "points": 168
           },
           {
-            "place": 1,
+            "place": 3,
             "name": "Mckay Payton",
             "points": 146
           },
           {
-            "place": 1,
+            "place": 4,
             "name": "Chance Whitlock",
             "points": 142
           },
           {
-            "place": 1,
+            "place": 5,
             "name": "Jason Ohlrich",
             "points": 142
           },
           {
-            "place": 1,
+            "place": 6,
             "name": "Marcus Odom",
             "points": 126
           },
           {
-            "place": 1,
+            "place": 7,
             "name": "Joe Lowery",
             "points": 125
           },
           {
-            "place": 1,
+            "place": 8,
             "name": "Brian Satterfield",
             "points": 125
           },
           {
-            "place": 1,
+            "place": 9,
             "name": "Ronald Prior",
             "points": 124
           },
           {
-            "place": 1,
+            "place": 10,
             "name": "Billy Wimberg",
             "points": 121
           },
           {
-            "place": 1,
+            "place": 11,
             "name": "Logan Outland",
             "points": 113
           },
           {
-            "place": 1,
+            "place": 12,
             "name": "Ray Stovall",
             "points": 96
           },
           {
-            "place": 1,
+            "place": 13,
             "name": "Austin Wheatley",
             "points": 88
           },
           {
-            "place": 1,
+            "place": 14,
             "name": "Pat Schultz",
             "points": 86
           },
           {
-            "place": 1,
+            "place": 15,
             "name": "Chris Lucas",
             "points": 55
           },
           {
-            "place": 1,
+            "place": 16,
             "name": "Teddy Barker jr.",
             "points": 54
           }
@@ -1721,57 +1721,57 @@
             "points": 94
           },
           {
-            "place": 1,
+            "place": 2,
             "name": "Beyond Cue",
             "points": 74
           },
           {
-            "place": 1,
+            "place": 3,
             "name": "Balls in Hand",
             "points": 73
           },
           {
-            "place": 1,
+            "place": 4,
             "name": "Blazing Cue-migos",
             "points": 72
           },
           {
-            "place": 1,
+            "place": 5,
             "name": "Off the Rail",
             "points": 65
           },
           {
-            "place": 1,
+            "place": 6,
             "name": "Make 'Em Pay",
             "points": 59
           },
           {
-            "place": 1,
+            "place": 7,
             "name": "Booga & Bounce",
             "points": 59
           },
           {
-            "place": 1,
+            "place": 8,
             "name": "Up a creek w/o a Paddy",
             "points": 51
           },
           {
-            "place": 1,
+            "place": 9,
             "name": "Sharp Shooters",
             "points": 49
           },
           {
-            "place": 1,
+            "place": 10,
             "name": "The Recyclables",
             "points": 36
           },
           {
-            "place": 1,
+            "place": 11,
             "name": "On Cue",
             "points": 34
           },
           {
-            "place": 1,
+            "place": 12,
             "name": "The Billiard Bandits",
             "points": 31
           }
@@ -2199,6 +2199,7 @@
           "week": 7,
           "date": "2026-11-11",
           "notes": [
+            "No more roster changes",
             "Make up match deadline"
           ],
           "matches": [
@@ -2206,71 +2207,87 @@
               "home": "Bluegrass Bandits",
               "away": "3 Old Men",
               "venue": "Bluegrass Tavern",
-              "table": "1"
+              "table": "1",
+              "score": [
+                24,
+                32
+              ]
             },
             {
               "home": "Soul Snatcher",
               "away": "Less Talk More Chalk",
               "venue": "Bluegrass Tavern",
-              "table": "3"
+              "table": "3",
+              "score": [
+                31,
+                24
+              ]
             },
             {
               "home": "Death By 1000 Scratches",
               "away": "Old Enough",
               "venue": "Bluegrass Tavern",
-              "table": "2"
+              "table": "2",
+              "score": [
+                28,
+                36
+              ]
             },
             {
               "home": "Chalk's Free",
               "away": "Thought It Would Go",
               "venue": "Bluegrass Tavern",
-              "table": "4"
+              "table": "4",
+              "score": [
+                22,
+                39
+              ]
             }
           ]
         }
       ],
       "standings": {
-        "round": 6,
+        "round": 7,
         "rows": [
           {
             "place": 1,
-            "name": "Less Talk More Chalk",
-            "points": 222
-          },
-          {
-            "place": 1,
             "name": "Soul Snatcher",
-            "points": 219
+            "points": 250
           },
           {
-            "place": 1,
-            "name": "3 Old Men",
-            "points": 182
+            "place": 2,
+            "name": "Less Talk More Chalk",
+            "points": 246
           },
           {
-            "place": 1,
+            "place": 3,
             "name": "Thought It Would Go",
-            "points": 178
+            "points": 217
           },
           {
-            "place": 1,
-            "name": "Bluegrass Bandits",
-            "points": 165
+            "place": 4,
+            "name": "3 Old Men",
+            "points": 214
           },
           {
-            "place": 1,
+            "place": 5,
             "name": "Old Enough",
-            "points": 161
+            "points": 197
           },
           {
-            "place": 1,
+            "place": 6,
+            "name": "Bluegrass Bandits",
+            "points": 189
+          },
+          {
+            "place": 7,
             "name": "Chalk's Free",
-            "points": 155
+            "points": 177
           },
           {
-            "place": 1,
+            "place": 8,
             "name": "Death By 1000 Scratches",
-            "points": 134
+            "points": 162
           }
         ]
       },
@@ -2278,46 +2295,46 @@
         "min_matches": 4,
         "rows": [
           {
-            "name": "Mikey Gilpin",
-            "gender": "M",
-            "matches": 2,
-            "avg": 17.5
-          },
-          {
             "name": "Cole Bray",
             "gender": "M",
-            "matches": 4,
-            "avg": 15.5
-          },
-          {
-            "name": "Clint Hill",
-            "gender": "M",
-            "matches": 6,
-            "avg": 14.17
+            "matches": 5,
+            "avg": 15.4
           },
           {
             "name": "Mark Obrien",
             "gender": "M",
-            "matches": 3,
+            "matches": 4,
             "avg": 14.0
           },
           {
+            "name": "Mikey Gilpin",
+            "gender": "M",
+            "matches": 3,
+            "avg": 13.0
+          },
+          {
             "name": "Bobby Goff",
+            "gender": "M",
+            "matches": 5,
+            "avg": 12.6
+          },
+          {
+            "name": "Clint Hill",
+            "gender": "M",
+            "matches": 7,
+            "avg": 12.57
+          },
+          {
+            "name": "Brian Satterfield",
             "gender": "M",
             "matches": 4,
             "avg": 12.25
           },
           {
-            "name": "Levi Hutchins",
-            "gender": "M",
-            "matches": 6,
-            "avg": 12.0
-          },
-          {
             "name": "Bentlee Barnett",
             "gender": "M",
-            "matches": 6,
-            "avg": 11.83
+            "matches": 7,
+            "avg": 12.14
           },
           {
             "name": "Brian Stirsman",
@@ -2326,16 +2343,16 @@
             "avg": 11.8
           },
           {
-            "name": "Brian Satterfield",
+            "name": "Joe Mann",
             "gender": "M",
-            "matches": 3,
+            "matches": 6,
             "avg": 11.67
           },
           {
-            "name": "Cockey Carey",
+            "name": "Brian Lucas",
             "gender": "M",
-            "matches": 6,
-            "avg": 11.33
+            "matches": 4,
+            "avg": 11.25
           },
           {
             "name": "Mert Netherland",
@@ -2344,28 +2361,28 @@
             "avg": 11.2
           },
           {
-            "name": "Joe Mann",
-            "gender": "M",
-            "matches": 5,
-            "avg": 11.2
-          },
-          {
-            "name": "Chuck Cordova",
+            "name": "Calvin Hardin",
             "gender": "M",
             "matches": 6,
             "avg": 11.0
           },
           {
-            "name": "Bill Gassman",
+            "name": "Levi Hutchins",
             "gender": "M",
-            "matches": 5,
-            "avg": 10.6
+            "matches": 7,
+            "avg": 10.71
           },
           {
-            "name": "Calvin Hardin",
+            "name": "Cockey Carey",
             "gender": "M",
-            "matches": 5,
-            "avg": 10.4
+            "matches": 7,
+            "avg": 10.71
+          },
+          {
+            "name": "Chuck Cordova",
+            "gender": "M",
+            "matches": 7,
+            "avg": 10.43
           }
         ]
       }
