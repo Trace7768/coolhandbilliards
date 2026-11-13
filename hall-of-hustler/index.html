@@ -82,7 +82,8 @@
   inductees.sort((a, b) => b.date.localeCompare(a.date));
   const score = (p) => [p.points && `${p.points} points`, p.game].filter(Boolean).join(" · ");
   // Repeat winners: only the first award has a card; the count shows how many they have.
-  const times = (p) => p.awards > 1 && el("span", { class: "tag times" }, `${p.awards}× Hall of Hustler`);
+  // "" (not false) for single winners: the viewer passes this straight to replaceChildren, which would print "false".
+  const times = (p) => (p.awards > 1 ? el("span", { class: "tag times" }, `${p.awards}× Hall of Hustler`) : "");
   // The card's date and score are from the first award, so say so for repeat winners.
   const when = (p) => (p.awards > 1 ? "First award: " : "") + fmtLong(p.date);
 
