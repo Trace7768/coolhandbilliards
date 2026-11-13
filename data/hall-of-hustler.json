@@ -1,6 +1,20 @@
 {
   "inductees": [
     {
+      "id": "christofferson-2026-10",
+      "name": "Roy Christofferson",
+      "date": "2026-10-20",
+      "points": 23,
+      "game": "9-Ball",
+      "note": "Always a pleasure to present one of our players with their first Hall of Hustler with us. Roy Christofferson put up 23 points in 9-Ball on a Tuesday night in Etown. Great shooting, Roy!",
+      "thumb": "media/hoh/christofferson-2026-10-thumb.jpg",
+      "photos": [
+        "media/hoh/christofferson-2026-10-1.jpg",
+        "media/hoh/christofferson-2026-10-2.jpg",
+        "media/hoh/christofferson-2026-10-3.jpg"
+      ]
+    },
+    {
       "id": "gassman-2026-08",
       "name": "Bill Gassman",
       "date": "2026-08-19",
