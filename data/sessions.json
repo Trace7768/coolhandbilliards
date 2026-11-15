@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-15",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1908,484 +1908,204 @@
       "name": "Bluegrass Tavern",
       "night": "Wednesday",
       "format": "No Limit LC",
-      "napa_division_id": "14465",
-      "start": "2026-09-30",
-      "end": "2026-11-11",
+      "napa_division_id": "14622",
+      "start": "2026-11-18",
+      "end": "2027-01-13",
       "venues": [
         "Bluegrass Tavern"
       ],
-      "source": "https://paper.playpool.io/print_schedule_web.php?did=14465",
+      "source": "https://paper.playpool.io/print_schedule_web.php?did=14622",
       "weeks": [
         {
           "week": 1,
-          "date": "2026-09-30",
+          "date": "2026-11-18",
           "matches": [
             {
-              "home": "Less Talk More Chalk",
-              "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                49,
-                15
-              ]
+              "home": "Bluegrass Bandits",
+              "away": "Chalk's Free",
+              "venue": "Bluegrass Tavern"
             },
             {
-              "home": "Old Enough",
-              "away": "Soul Snatcher",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                24,
-                35
-              ]
-            },
-            {
-              "home": "Chalk's Free",
-              "away": "Death By 1000 Scratches",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                42,
-                13
-              ]
+              "home": "Thought It Would Go",
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern"
             },
             {
               "home": "3 Old Men",
-              "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                19,
-                43
-              ]
+              "away": "Less Talk More Chalk",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Soul Snatchers",
+              "away": "Death by 1000 Scratches",
+              "venue": "Bluegrass Tavern"
             }
           ]
         },
         {
           "week": 2,
-          "date": "2026-10-07",
+          "date": "2026-11-25",
           "matches": [
             {
-              "home": "Thought It Would Go",
-              "away": "Death By 1000 Scratches",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                35,
-                28
-              ]
-            },
-            {
-              "home": "Soul Snatcher",
-              "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                43,
-                13
-              ]
-            },
-            {
-              "home": "Bluegrass Bandits",
-              "away": "Old Enough",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                8,
-                48
-              ]
-            },
-            {
-              "home": "3 Old Men",
+              "home": "Death by 1000 Scratches",
               "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                16,
-                43
-              ]
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Old Enough",
+              "away": "3 Old Men",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Chalk's Free",
+              "away": "Thought It Would Go",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Soul Snatchers",
+              "away": "Bluegrass Bandits",
+              "venue": "Bluegrass Tavern"
             }
           ]
         },
         {
           "week": 3,
-          "date": "2026-10-14",
+          "date": "2026-12-02",
           "matches": [
             {
-              "home": "Old Enough",
-              "away": "3 Old Men",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                23,
-                37
-              ]
+              "home": "Thought It Would Go",
+              "away": "Soul Snatchers",
+              "venue": "Bluegrass Tavern"
             },
             {
-              "home": "Chalk's Free",
-              "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                20,
-                36
-              ]
-            },
-            {
-              "home": "Death By 1000 Scratches",
-              "away": "Soul Snatcher",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                25,
-                31
-              ]
+              "home": "3 Old Men",
+              "away": "Chalk's Free",
+              "venue": "Bluegrass Tavern"
             },
             {
               "home": "Less Talk More Chalk",
-              "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                35,
-                29
-              ]
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Bluegrass Bandits",
+              "away": "Death by 1000 Scratches",
+              "venue": "Bluegrass Tavern"
             }
           ]
         },
         {
           "week": 4,
-          "date": "2026-10-21",
+          "date": "2026-12-09",
           "matches": [
             {
-              "home": "Thought It Would Go",
-              "away": "Soul Snatcher",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                24,
-                36
-              ]
+              "home": "Death by 1000 Scratches",
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Chalk's Free",
+              "away": "Less Talk More Chalk",
+              "venue": "Bluegrass Tavern"
             },
             {
               "home": "Bluegrass Bandits",
-              "away": "Death By 1000 Scratches",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                40,
-                22
-              ]
+              "away": "Thought It Would Go",
+              "venue": "Bluegrass Tavern"
             },
             {
-              "home": "Less Talk More Chalk",
-              "away": "Old Enough",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                42,
-                17
-              ]
-            },
-            {
-              "home": "3 Old Men",
-              "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                36,
-                28
-              ]
+              "home": "Soul Snatchers",
+              "away": "3 Old Men",
+              "venue": "Bluegrass Tavern"
             }
           ]
         },
         {
           "week": 5,
-          "date": "2026-10-28",
+          "date": "2026-12-16",
           "matches": [
             {
-              "home": "Death By 1000 Scratches",
-              "away": "3 Old Men",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                9,
-                54
-              ]
+              "home": "Less Talk More Chalk",
+              "away": "Soul Snatchers",
+              "venue": "Bluegrass Tavern"
             },
             {
-              "home": "Chalk's Free",
-              "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                26,
-                30
-              ]
-            },
-            {
-              "home": "Soul Snatcher",
+              "home": "3 Old Men",
               "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                39,
-                24
-              ]
+              "venue": "Bluegrass Tavern"
             },
             {
               "home": "Old Enough",
-              "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                20,
-                37
-              ]
+              "away": "Chalk's Free",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Thought It Would Go",
+              "away": "Death by 1000 Scratches",
+              "venue": "Bluegrass Tavern"
             }
           ]
         },
         {
           "week": 6,
-          "date": "2026-11-04",
+          "date": "2027-01-06",
           "notes": [
             "Last chance to make roster changes"
           ],
           "matches": [
             {
-              "home": "Thought It Would Go",
-              "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                10,
-                42
-              ]
-            },
-            {
-              "home": "Old Enough",
+              "home": "Death by 1000 Scratches",
               "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                29,
-                26
-              ]
+              "venue": "Bluegrass Tavern"
             },
             {
-              "home": "Less Talk More Chalk",
-              "away": "Death By 1000 Scratches",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                23,
-                37
-              ]
+              "home": "Thought It Would Go",
+              "away": "3 Old Men",
+              "venue": "Bluegrass Tavern"
             },
             {
-              "home": "3 Old Men",
-              "away": "Soul Snatcher",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                20,
-                35
-              ]
+              "home": "Bluegrass Bandits",
+              "away": "Less Talk More Chalk",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Soul Snatchers",
+              "away": "Old Enough",
+              "venue": "Bluegrass Tavern"
             }
           ]
         },
         {
           "week": 7,
-          "date": "2026-11-11",
+          "date": "2027-01-13",
           "notes": [
             "No more roster changes",
             "Make up match deadline"
           ],
           "matches": [
             {
-              "home": "Bluegrass Bandits",
-              "away": "3 Old Men",
-              "venue": "Bluegrass Tavern",
-              "table": "1",
-              "score": [
-                24,
-                32
-              ]
-            },
-            {
-              "home": "Soul Snatcher",
-              "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern",
-              "table": "3",
-              "score": [
-                31,
-                24
-              ]
-            },
-            {
-              "home": "Death By 1000 Scratches",
-              "away": "Old Enough",
-              "venue": "Bluegrass Tavern",
-              "table": "2",
-              "score": [
-                28,
-                36
-              ]
-            },
-            {
               "home": "Chalk's Free",
+              "away": "Soul Snatchers",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Old Enough",
+              "away": "Bluegrass Bandits",
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "Less Talk More Chalk",
               "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern",
-              "table": "4",
-              "score": [
-                22,
-                39
-              ]
+              "venue": "Bluegrass Tavern"
+            },
+            {
+              "home": "3 Old Men",
+              "away": "Death by 1000 Scratches",
+              "venue": "Bluegrass Tavern"
             }
           ]
         }
-      ],
-      "standings": {
-        "round": 7,
-        "rows": [
-          {
-            "place": 1,
-            "name": "Soul Snatcher",
-            "points": 250
-          },
-          {
-            "place": 2,
-            "name": "Less Talk More Chalk",
-            "points": 246
-          },
-          {
-            "place": 3,
-            "name": "Thought It Would Go",
-            "points": 217
-          },
-          {
-            "place": 4,
-            "name": "3 Old Men",
-            "points": 214
-          },
-          {
-            "place": 5,
-            "name": "Old Enough",
-            "points": 197
-          },
-          {
-            "place": 6,
-            "name": "Bluegrass Bandits",
-            "points": 189
-          },
-          {
-            "place": 7,
-            "name": "Chalk's Free",
-            "points": 177
-          },
-          {
-            "place": 8,
-            "name": "Death By 1000 Scratches",
-            "points": 162
-          }
-        ]
-      },
-      "leaders": {
-        "min_matches": 4,
-        "rows": [
-          {
-            "name": "Cole Bray",
-            "gender": "M",
-            "matches": 5,
-            "avg": 15.4
-          },
-          {
-            "name": "Mark Obrien",
-            "gender": "M",
-            "matches": 4,
-            "avg": 14.0
-          },
-          {
-            "name": "Mikey Gilpin",
-            "gender": "M",
-            "matches": 3,
-            "avg": 13.0
-          },
-          {
-            "name": "Bobby Goff",
-            "gender": "M",
-            "matches": 5,
-            "avg": 12.6
-          },
-          {
-            "name": "Clint Hill",
-            "gender": "M",
-            "matches": 7,
-            "avg": 12.57
-          },
-          {
-            "name": "Brian Satterfield",
-            "gender": "M",
-            "matches": 4,
-            "avg": 12.25
-          },
-          {
-            "name": "Bentlee Barnett",
-            "gender": "M",
-            "matches": 7,
-            "avg": 12.14
-          },
-          {
-            "name": "Brian Stirsman",
-            "gender": "M",
-            "matches": 5,
-            "avg": 11.8
-          },
-          {
-            "name": "Joe Mann",
-            "gender": "M",
-            "matches": 6,
-            "avg": 11.67
-          },
-          {
-            "name": "Brian Lucas",
-            "gender": "M",
-            "matches": 4,
-            "avg": 11.25
-          },
-          {
-            "name": "Mert Netherland",
-            "gender": "F",
-            "matches": 5,
-            "avg": 11.2
-          },
-          {
-            "name": "Calvin Hardin",
-            "gender": "M",
-            "matches": 6,
-            "avg": 11.0
-          },
-          {
-            "name": "Levi Hutchins",
-            "gender": "M",
-            "matches": 7,
-            "avg": 10.71
-          },
-          {
-            "name": "Cockey Carey",
-            "gender": "M",
-            "matches": 7,
-            "avg": 10.71
-          },
-          {
-            "name": "Chuck Cordova",
-            "gender": "M",
-            "matches": 7,
-            "avg": 10.43
-          }
-        ]
-      }
+      ]
     }
   ]
 }
