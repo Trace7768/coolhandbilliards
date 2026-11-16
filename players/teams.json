@@ -44,9 +44,9 @@
       "availability": {
         "napa_division_id": "14622",
         "players": [
-          { "name": "Gassman",    "weeks": ["PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY"] },
+          { "name": "Gassman",    "weeks": ["PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "PLAY", "OFF"] },
           { "name": "Stirsman",   "weeks": ["PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY"] },
-          { "name": "Mobley",     "weeks": ["PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "PLAY", "OFF"] },
+          { "name": "Mobley",     "weeks": ["PLAY", "PLAY", "OFF",  "PLAY", "PLAY", "OFF",  "PLAY"] },
           { "name": "Lucas",      "weeks": ["OFF",  "PLAY", "PLAY", "PLAY", "OFF",  "PLAY", "PLAY"] },
           { "name": "Mrs. Lucas", "weeks": ["OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF",  "OFF"] }
         ]
