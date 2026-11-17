@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-17",
   "divisions": [
     {
       "id": "monday-singles",
@@ -827,7 +827,11 @@
             {
               "home": "Ronald Prior",
               "away": "Austin Wheatley",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                15
+              ]
             },
             {
               "home": "Billy Wimberg",
@@ -1095,7 +1099,7 @@
         }
       ],
       "standings": {
-        "round": 10,
+        "round": 11,
         "rows": [
           {
             "place": 1,
@@ -1124,23 +1128,23 @@
           },
           {
             "place": 6,
+            "name": "Ronald Prior",
+            "points": 127
+          },
+          {
+            "place": 7,
             "name": "Marcus Odom",
             "points": 126
           },
           {
-            "place": 7,
+            "place": 8,
             "name": "Joe Lowery",
             "points": 125
           },
           {
-            "place": 8,
+            "place": 9,
             "name": "Brian Satterfield",
             "points": 125
-          },
-          {
-            "place": 9,
-            "name": "Ronald Prior",
-            "points": 124
           },
           {
             "place": 10,
@@ -1154,13 +1158,13 @@
           },
           {
             "place": 12,
-            "name": "Ray Stovall",
-            "points": 96
+            "name": "Austin Wheatley",
+            "points": 103
           },
           {
             "place": 13,
-            "name": "Austin Wheatley",
-            "points": 88
+            "name": "Ray Stovall",
+            "points": 96
           },
           {
             "place": 14,
@@ -1207,12 +1211,6 @@
             "avg": 11.4
           },
           {
-            "name": "Ronald Prior",
-            "gender": "M",
-            "matches": 11,
-            "avg": 11.27
-          },
-          {
             "name": "Mckay Payton",
             "gender": "M",
             "matches": 13,
@@ -1223,6 +1221,12 @@
             "gender": "M",
             "matches": 15,
             "avg": 11.2
+          },
+          {
+            "name": "Ronald Prior",
+            "gender": "M",
+            "matches": 12,
+            "avg": 10.58
           },
           {
             "name": "Marcus Odom",
@@ -1338,8 +1342,8 @@
               "away": "The Recyclables",
               "venue": "Apex Billiards",
               "score": [
-                45,
-                23
+                38,
+                25
               ]
             },
             {
@@ -1347,8 +1351,8 @@
               "away": "Booga & Bounce",
               "venue": "Apex Billiards",
               "score": [
-                31,
-                28
+                42,
+                17
               ]
             },
             {
@@ -1737,38 +1741,38 @@
           },
           {
             "place": 5,
-            "name": "Off the Rail",
-            "points": 65
-          },
-          {
-            "place": 6,
             "name": "Make 'Em Pay",
             "points": 59
           },
           {
-            "place": 7,
-            "name": "Booga & Bounce",
-            "points": 59
+            "place": 6,
+            "name": "Off the Rail",
+            "points": 58
           },
           {
-            "place": 8,
+            "place": 7,
             "name": "Up a creek w/o a Paddy",
             "points": 51
           },
           {
-            "place": 9,
+            "place": 8,
             "name": "Sharp Shooters",
             "points": 49
           },
           {
+            "place": 9,
+            "name": "Booga & Bounce",
+            "points": 48
+          },
+          {
             "place": 10,
-            "name": "The Recyclables",
-            "points": 36
+            "name": "On Cue",
+            "points": 45
           },
           {
             "place": 11,
-            "name": "On Cue",
-            "points": 34
+            "name": "The Recyclables",
+            "points": 38
           },
           {
             "place": 12,
@@ -1847,12 +1851,6 @@
             "avg": 14.0
           },
           {
-            "name": "Kerry Brackus",
-            "gender": "M",
-            "matches": 2,
-            "avg": 14.0
-          },
-          {
             "name": "Jonathan Reed",
             "gender": "M",
             "matches": 1,
@@ -1869,12 +1867,6 @@
             "gender": "M",
             "matches": 2,
             "avg": 14.0
-          },
-          {
-            "name": "Gerry Herron",
-            "gender": "M",
-            "matches": 2,
-            "avg": 12.5
           },
           {
             "name": "Josh Brangers",
@@ -1899,6 +1891,18 @@
             "gender": "F",
             "matches": 2,
             "avg": 10.5
+          },
+          {
+            "name": "Jason Ohlrich",
+            "gender": "M",
+            "matches": 2,
+            "avg": 9.0
+          },
+          {
+            "name": "Gerry Herron",
+            "gender": "M",
+            "matches": 2,
+            "avg": 9.0
           }
         ]
       }
@@ -1923,22 +1927,26 @@
             {
               "home": "Bluegrass Bandits",
               "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             },
             {
               "home": "Thought It Would Go",
               "away": "Old Enough",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             },
             {
               "home": "3 Old Men",
               "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             },
             {
               "home": "Soul Snatchers",
               "away": "Death by 1000 Scratches",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             }
           ]
         },
@@ -1949,22 +1957,26 @@
             {
               "home": "Death by 1000 Scratches",
               "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             },
             {
               "home": "Old Enough",
               "away": "3 Old Men",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             },
             {
               "home": "Chalk's Free",
               "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             },
             {
               "home": "Soul Snatchers",
               "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             }
           ]
         },
@@ -1975,22 +1987,26 @@
             {
               "home": "Thought It Would Go",
               "away": "Soul Snatchers",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             },
             {
               "home": "3 Old Men",
               "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             },
             {
               "home": "Less Talk More Chalk",
               "away": "Old Enough",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             },
             {
               "home": "Bluegrass Bandits",
               "away": "Death by 1000 Scratches",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             }
           ]
         },
@@ -2001,22 +2017,26 @@
             {
               "home": "Death by 1000 Scratches",
               "away": "Old Enough",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             },
             {
               "home": "Chalk's Free",
               "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             },
             {
               "home": "Bluegrass Bandits",
               "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             },
             {
               "home": "Soul Snatchers",
               "away": "3 Old Men",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             }
           ]
         },
@@ -2027,22 +2047,26 @@
             {
               "home": "Less Talk More Chalk",
               "away": "Soul Snatchers",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             },
             {
               "home": "3 Old Men",
               "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             },
             {
               "home": "Old Enough",
               "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             },
             {
               "home": "Thought It Would Go",
               "away": "Death by 1000 Scratches",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             }
           ]
         },
@@ -2056,22 +2080,26 @@
             {
               "home": "Death by 1000 Scratches",
               "away": "Chalk's Free",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             },
             {
               "home": "Thought It Would Go",
               "away": "3 Old Men",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             },
             {
               "home": "Bluegrass Bandits",
               "away": "Less Talk More Chalk",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             },
             {
               "home": "Soul Snatchers",
               "away": "Old Enough",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             }
           ]
         },
@@ -2086,22 +2114,26 @@
             {
               "home": "Chalk's Free",
               "away": "Soul Snatchers",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "1"
             },
             {
               "home": "Old Enough",
               "away": "Bluegrass Bandits",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "3"
             },
             {
               "home": "Less Talk More Chalk",
               "away": "Thought It Would Go",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "2"
             },
             {
               "home": "3 Old Men",
               "away": "Death by 1000 Scratches",
-              "venue": "Bluegrass Tavern"
+              "venue": "Bluegrass Tavern",
+              "table": "4"
             }
           ]
         }
