@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "divisions": [
     {
       "id": "monday-singles",
@@ -1952,25 +1952,41 @@
               "home": "Bluegrass Bandits",
               "away": "Chalk's Free",
               "venue": "Bluegrass Tavern",
-              "table": "1"
+              "table": "1",
+              "score": [
+                26,
+                30
+              ]
             },
             {
               "home": "Thought It Would Go",
               "away": "Old Enough",
               "venue": "Bluegrass Tavern",
-              "table": "4"
+              "table": "4",
+              "score": [
+                20,
+                31
+              ]
             },
             {
               "home": "3 Old Men",
               "away": "Less Talk More Chalk",
               "venue": "Bluegrass Tavern",
-              "table": "2"
+              "table": "2",
+              "score": [
+                24,
+                35
+              ]
             },
             {
               "home": "Soul Snatchers",
               "away": "Death by 1000 Scratches",
               "venue": "Bluegrass Tavern",
-              "table": "3"
+              "table": "3",
+              "score": [
+                31,
+                24
+              ]
             }
           ]
         },
@@ -2161,7 +2177,117 @@
             }
           ]
         }
-      ]
+      ],
+      "standings": {
+        "round": 1,
+        "rows": [
+          {
+            "place": 1,
+            "name": "Less Talk More Chalk",
+            "points": 35
+          },
+          {
+            "place": 2,
+            "name": "Soul Snatchers",
+            "points": 31
+          },
+          {
+            "place": 3,
+            "name": "Old Enough",
+            "points": 31
+          },
+          {
+            "place": 4,
+            "name": "Chalk's Free",
+            "points": 30
+          },
+          {
+            "place": 5,
+            "name": "Bluegrass Bandits",
+            "points": 26
+          },
+          {
+            "place": 6,
+            "name": "Death by 1000 Scratches",
+            "points": 24
+          },
+          {
+            "place": 7,
+            "name": "3 Old Men",
+            "points": 24
+          },
+          {
+            "place": 8,
+            "name": "Thought It Would Go",
+            "points": 20
+          }
+        ]
+      },
+      "leaders": {
+        "min_matches": 4,
+        "rows": [
+          {
+            "name": "Barry Isham",
+            "gender": "M",
+            "matches": 1,
+            "avg": 20.0
+          },
+          {
+            "name": "Chuck Cordova",
+            "gender": "M",
+            "matches": 1,
+            "avg": 20.0
+          },
+          {
+            "name": "Mikey Gilpin",
+            "gender": "M",
+            "matches": 1,
+            "avg": 20.0
+          },
+          {
+            "name": "Cody Lyon",
+            "gender": "M",
+            "matches": 1,
+            "avg": 15.0
+          },
+          {
+            "name": "Bruce Ralston",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Mike Bray",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Ken Crockett",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Allen Cross",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Mark Obrien",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
+            "name": "Clint Hill",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          }
+        ]
+      }
     }
   ]
 }
