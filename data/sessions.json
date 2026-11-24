@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-24",
   "divisions": [
     {
       "id": "monday-singles",
@@ -841,7 +841,11 @@
             {
               "home": "Ray Stovall",
               "away": "Logan Outland",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                21,
+                1
+              ]
             }
           ]
         },
@@ -946,7 +950,11 @@
             {
               "home": "Billy Wimberg",
               "away": "Joe Lowery",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Ray Stovall",
@@ -980,7 +988,11 @@
             {
               "home": "Chance Whitlock",
               "away": "Marcus Odom",
-              "venue": "Apex Billiards 7"
+              "venue": "Apex Billiards 7",
+              "score": [
+                14,
+                3
+              ]
             },
             {
               "home": "Brian Satterfield",
@@ -1056,7 +1068,11 @@
             {
               "home": "Ray Stovall",
               "away": "Jason Ohlrich",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                3,
+                14
+              ]
             },
             {
               "home": "Gerry Herron",
@@ -1099,7 +1115,7 @@
         }
       ],
       "standings": {
-        "round": 11,
+        "round": 12,
         "rows": [
           {
             "place": 1,
@@ -1113,33 +1129,33 @@
           },
           {
             "place": 3,
+            "name": "Chance Whitlock",
+            "points": 156
+          },
+          {
+            "place": 4,
+            "name": "Jason Ohlrich",
+            "points": 156
+          },
+          {
+            "place": 5,
             "name": "Mckay Payton",
             "points": 146
           },
           {
-            "place": 4,
-            "name": "Chance Whitlock",
-            "points": 142
-          },
-          {
-            "place": 5,
-            "name": "Jason Ohlrich",
-            "points": 142
-          },
-          {
             "place": 6,
-            "name": "Ronald Prior",
-            "points": 127
+            "name": "Joe Lowery",
+            "points": 139
           },
           {
             "place": 7,
             "name": "Marcus Odom",
-            "points": 126
+            "points": 129
           },
           {
             "place": 8,
-            "name": "Joe Lowery",
-            "points": 125
+            "name": "Ronald Prior",
+            "points": 127
           },
           {
             "place": 9,
@@ -1149,22 +1165,22 @@
           {
             "place": 10,
             "name": "Billy Wimberg",
-            "points": 121
+            "points": 124
           },
           {
             "place": 11,
-            "name": "Logan Outland",
-            "points": 113
+            "name": "Ray Stovall",
+            "points": 120
           },
           {
             "place": 12,
-            "name": "Austin Wheatley",
-            "points": 103
+            "name": "Logan Outland",
+            "points": 114
           },
           {
             "place": 13,
-            "name": "Ray Stovall",
-            "points": 96
+            "name": "Austin Wheatley",
+            "points": 103
           },
           {
             "place": 14,
@@ -1187,28 +1203,28 @@
         "min_matches": 15,
         "rows": [
           {
-            "name": "Billy Wimberg",
-            "gender": "M",
-            "matches": 10,
-            "avg": 12.1
-          },
-          {
             "name": "Jason Ohlrich",
             "gender": "M",
-            "matches": 12,
-            "avg": 11.83
+            "matches": 13,
+            "avg": 12.0
           },
           {
             "name": "Chance Whitlock",
             "gender": "M",
-            "matches": 12,
-            "avg": 11.83
+            "matches": 13,
+            "avg": 12.0
           },
           {
             "name": "Gerry Herron",
             "gender": "M",
             "matches": 15,
             "avg": 11.4
+          },
+          {
+            "name": "Billy Wimberg",
+            "gender": "M",
+            "matches": 11,
+            "avg": 11.27
           },
           {
             "name": "Mckay Payton",
@@ -1229,22 +1245,22 @@
             "avg": 10.58
           },
           {
+            "name": "Joe Lowery",
+            "gender": "M",
+            "matches": 14,
+            "avg": 9.93
+          },
+          {
             "name": "Marcus Odom",
             "gender": "M",
-            "matches": 12,
-            "avg": 10.5
+            "matches": 13,
+            "avg": 9.92
           },
           {
             "name": "Logan Outland",
             "gender": "M",
-            "matches": 11,
-            "avg": 10.27
-          },
-          {
-            "name": "Joe Lowery",
-            "gender": "M",
-            "matches": 13,
-            "avg": 9.62
+            "matches": 12,
+            "avg": 9.5
           }
         ]
       }
