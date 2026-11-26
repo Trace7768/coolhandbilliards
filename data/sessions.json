@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "divisions": [
     {
       "id": "monday-singles",
@@ -945,7 +945,11 @@
             {
               "home": "Ronald Prior",
               "away": "Jason Ohlrich",
-              "venue": "Apex Billiards 6"
+              "venue": "Apex Billiards 6",
+              "score": [
+                14,
+                7
+              ]
             },
             {
               "home": "Billy Wimberg",
@@ -1129,12 +1133,12 @@
           },
           {
             "place": 3,
-            "name": "Chance Whitlock",
-            "points": 156
+            "name": "Jason Ohlrich",
+            "points": 163
           },
           {
             "place": 4,
-            "name": "Jason Ohlrich",
+            "name": "Chance Whitlock",
             "points": 156
           },
           {
@@ -1144,18 +1148,18 @@
           },
           {
             "place": 6,
+            "name": "Ronald Prior",
+            "points": 141
+          },
+          {
+            "place": 7,
             "name": "Joe Lowery",
             "points": 139
           },
           {
-            "place": 7,
+            "place": 8,
             "name": "Marcus Odom",
             "points": 129
-          },
-          {
-            "place": 8,
-            "name": "Ronald Prior",
-            "points": 127
           },
           {
             "place": 9,
@@ -1203,16 +1207,16 @@
         "min_matches": 15,
         "rows": [
           {
-            "name": "Jason Ohlrich",
+            "name": "Chance Whitlock",
             "gender": "M",
             "matches": 13,
             "avg": 12.0
           },
           {
-            "name": "Chance Whitlock",
+            "name": "Jason Ohlrich",
             "gender": "M",
-            "matches": 13,
-            "avg": 12.0
+            "matches": 14,
+            "avg": 11.64
           },
           {
             "name": "Gerry Herron",
@@ -1241,8 +1245,8 @@
           {
             "name": "Ronald Prior",
             "gender": "M",
-            "matches": 12,
-            "avg": 10.58
+            "matches": 13,
+            "avg": 10.85
           },
           {
             "name": "Joe Lowery",
@@ -2038,25 +2042,41 @@
               "home": "Death by 1000 Scratches",
               "away": "Less Talk More Chalk",
               "venue": "Bluegrass Tavern",
-              "table": "3"
+              "table": "3",
+              "score": [
+                55,
+                5
+              ]
             },
             {
               "home": "Old Enough",
               "away": "3 Old Men",
               "venue": "Bluegrass Tavern",
-              "table": "1"
+              "table": "1",
+              "score": [
+                48,
+                7
+              ]
             },
             {
               "home": "Chalk's Free",
               "away": "Thought It Would Go",
               "venue": "Bluegrass Tavern",
-              "table": "2"
+              "table": "2",
+              "score": [
+                25,
+                31
+              ]
             },
             {
               "home": "Soul Snatchers",
               "away": "Bluegrass Bandits",
               "venue": "Bluegrass Tavern",
-              "table": "4"
+              "table": "4",
+              "score": [
+                28,
+                30
+              ]
             }
           ]
         },
@@ -2219,47 +2239,47 @@
         }
       ],
       "standings": {
-        "round": 1,
+        "round": 2,
         "rows": [
           {
             "place": 1,
-            "name": "Less Talk More Chalk",
-            "points": 35
+            "name": "Death by 1000 Scratches",
+            "points": 79
           },
           {
             "place": 2,
-            "name": "Soul Snatchers",
-            "points": 31
+            "name": "Old Enough",
+            "points": 79
           },
           {
             "place": 3,
-            "name": "Old Enough",
-            "points": 31
+            "name": "Soul Snatchers",
+            "points": 59
           },
           {
             "place": 4,
-            "name": "Chalk's Free",
-            "points": 30
+            "name": "Bluegrass Bandits",
+            "points": 56
           },
           {
             "place": 5,
-            "name": "Bluegrass Bandits",
-            "points": 26
+            "name": "Chalk's Free",
+            "points": 55
           },
           {
             "place": 6,
-            "name": "Death by 1000 Scratches",
-            "points": 24
+            "name": "Thought It Would Go",
+            "points": 51
           },
           {
             "place": 7,
-            "name": "3 Old Men",
-            "points": 24
+            "name": "Less Talk More Chalk",
+            "points": 40
           },
           {
             "place": 8,
-            "name": "Thought It Would Go",
-            "points": 20
+            "name": "3 Old Men",
+            "points": 31
           }
         ]
       },
@@ -2267,13 +2287,13 @@
         "min_matches": 4,
         "rows": [
           {
-            "name": "Barry Isham",
+            "name": "Billy Wimberg",
             "gender": "M",
             "matches": 1,
-            "avg": 20.0
+            "avg": 21.0
           },
           {
-            "name": "Chuck Cordova",
+            "name": "Cole Bray",
             "gender": "M",
             "matches": 1,
             "avg": 20.0
@@ -2285,10 +2305,28 @@
             "avg": 20.0
           },
           {
+            "name": "Barry Isham",
+            "gender": "M",
+            "matches": 2,
+            "avg": 17.5
+          },
+          {
             "name": "Cody Lyon",
             "gender": "M",
+            "matches": 2,
+            "avg": 14.5
+          },
+          {
+            "name": "Brian Lucas",
+            "gender": "M",
             "matches": 1,
-            "avg": 15.0
+            "avg": 14.0
+          },
+          {
+            "name": "Eric Anderson",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
           },
           {
             "name": "Bruce Ralston",
@@ -2297,33 +2335,15 @@
             "avg": 14.0
           },
           {
+            "name": "Ray Ralston",
+            "gender": "M",
+            "matches": 1,
+            "avg": 14.0
+          },
+          {
             "name": "Mike Bray",
             "gender": "M",
-            "matches": 1,
-            "avg": 14.0
-          },
-          {
-            "name": "Ken Crockett",
-            "gender": "M",
-            "matches": 1,
-            "avg": 14.0
-          },
-          {
-            "name": "Allen Cross",
-            "gender": "M",
-            "matches": 1,
-            "avg": 14.0
-          },
-          {
-            "name": "Mark Obrien",
-            "gender": "M",
-            "matches": 1,
-            "avg": 14.0
-          },
-          {
-            "name": "Clint Hill",
-            "gender": "M",
-            "matches": 1,
+            "matches": 2,
             "avg": 14.0
           }
         ]
