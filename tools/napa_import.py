@@ -102,6 +102,10 @@ def fetch(url, tries=3, fatal=True):
             time.sleep(20 * attempt)
 
 
+class UnreadablePage(Exception):
+    """NAPA answered, but not with a schedule we can read (error or holding page)."""
+
+
 def parse_division(key, did):
     page = fetch(SOURCE.format(did))
     p = RowParser()
@@ -110,7 +114,7 @@ def parse_division(key, did):
     title = next((h for h in p.h5 if re.match(r"^\w+day\s+\"", h)), "")
     tm = re.match(r'^(\w+day)\s+"([^"]+)"\s+(.*?)\s*League$', title)
     if not tm:
-        sys.exit(f"{did}: could not read the division title (got {title!r})")
+        raise UnreadablePage(f"{did}: could not read the division title (got {title!r})")
     night, name, fmt = tm.groups()
 
     weeks, week = [], None
@@ -143,7 +147,7 @@ def parse_division(key, did):
             del w["notes"]
 
     if not weeks:
-        sys.exit(f"{did}: no weeks found on the NAPA page")
+        raise UnreadablePage(f"{did}: no weeks found on the NAPA page")
     venues = sorted({m["venue"] for w in weeks for m in w["matches"] if m["venue"]})
     return {
         "id": key,
@@ -211,6 +215,27 @@ def parse_scratch(did):
     return out
 
 
+def read_division(key, did, previous, tries=3):
+    """parse_division, retrying when NAPA serves a page we can't read.
+
+    Returns (division, kept_previous). If the page stays unreadable, keeps the
+    last good copy of that division (when there is one) so one bad page
+    doesn't stop the others from updating.
+    """
+    for attempt in range(1, tries + 1):
+        try:
+            return parse_division(key, did), False
+        except UnreadablePage as e:
+            if attempt < tries:
+                print(f"{e}; retrying in {30 * attempt}s")
+                time.sleep(30 * attempt)
+            elif previous:
+                print(f"{e}; keeping the last good copy of {key}")
+                return previous, True
+            else:
+                sys.exit(str(e))
+
+
 def main(args):
     if not args:
         sys.exit(__doc__)
@@ -219,12 +244,17 @@ def main(args):
         args = [f"{d['id']}={d['napa_division_id']}" for d in old.get("divisions", [])]
         if not args:
             sys.exit(f"--refresh: no divisions in {OUT}")
-    divisions = []
+    divisions, kept = [], 0
     for arg in args:
         key, _, did = arg.partition("=")
         if not (key and did.isdigit()):
             sys.exit(f"Bad argument {arg!r}; expected key=ID, e.g. tuesday-etown-metro=14269")
-        d = parse_division(key, did)
+        prev = next((o for o in old.get("divisions", []) if o.get("napa_division_id") == str(did)), None)
+        d, stale = read_division(key, did, prev)
+        if stale:
+            kept += 1
+            divisions.append(d)
+            continue
         sc = parse_scratch(did)
         if sc is None:  # couldn't read NAPA's sheet: keep the last good copy
             prev = next((o for o in old.get("divisions", []) if o.get("napa_division_id") == str(did)), {})
@@ -233,6 +263,9 @@ def main(args):
         matches = sum(len(w["matches"]) for w in d["weeks"])
         print(f"{key}: {d['night']} {d['name']} ({did}) - {len(d['weeks'])} weeks, {matches} matches, {d['start']} to {d['end']}")
         divisions.append(d)
+    if kept == len(divisions):
+        # Every page unreadable: something is really wrong. Fail so the owner gets an email.
+        sys.exit("No NAPA schedule page could be read; nothing updated.")
     if divisions == old.get("divisions"):
         print("No changes.")
         return
